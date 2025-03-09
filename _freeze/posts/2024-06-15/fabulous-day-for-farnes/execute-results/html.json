@@ -1,0 +1,15 @@
+{
+  "hash": "0399f57bf7b2a8fda210f2c677e16bec",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: Fabulous day for Farnes\ndate: 2024-06-15\ncategories: []\noutput:\n  distill::distill_article:\n    self_contained: false\n---\n\n\n- Distance: 20.2 km\n- [Strava](https://www.strava.com/activities/11661152170)\n\nWith Kirstie, Josh &amp; Felix\n\n\n::: {.cell preview='true'}\n::: {.cell-output-display}\n![](https://dgtzuqphqg23d.cloudfront.net/7Py5oWOHvHzPrt2RWmjUut8bKcRbAr4z6Z5pInL2FjE-768x433.jpg)\n:::\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

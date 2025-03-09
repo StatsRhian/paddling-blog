@@ -1,0 +1,15 @@
+{
+  "hash": "38bf2c327496a483b3ae157ec40df795",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: Great &amp; Little Orme, escorted by seals\ndate: 2024-07-18\ncategories: []\noutput:\n  distill::distill_article:\n    self_contained: false\n---\n\n\n- Distance: 17.4 km\n- [Strava](https://www.strava.com/activities/11920114573)\n\n\n\n\n::: {.cell preview='true'}\n::: {.cell-output-display}\n![](https://dgtzuqphqg23d.cloudfront.net/TWh_lD5_QR0esgqEeKjNzWB3f7zmbU_8_ijw93OApYk-768x432.jpg)\n:::\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

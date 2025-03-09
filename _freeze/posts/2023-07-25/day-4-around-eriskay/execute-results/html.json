@@ -1,0 +1,15 @@
+{
+  "hash": "4841dae52441b2e37cce52577a28cee1",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Day 4: Around Eriskay\"\ndate: 2023-07-25\ncategories: []\noutput:\n  distill::distill_article:\n    self_contained: false\n---\n\n\n- Distance: 23 km\n- [Strava](https://www.strava.com/activities/9550634712)\n\nEverything from a classic sea kayak day out\n\n- Circumnavigating an island\n- Little islands to hop around\n- Seals\n- Caves\n- A standing wave under the bridge\n- Pub at the finish\n\n\n::: {.cell preview='true'}\n::: {.cell-output-display}\n![](https://dgtzuqphqg23d.cloudfront.net/CqokW4v9KtF7_Cz6O7gFxgPeFebI51O3Gn5wg1HC-WM-768x477.jpg)\n:::\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

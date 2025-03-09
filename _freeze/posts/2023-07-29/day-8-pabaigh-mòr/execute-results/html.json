@@ -1,0 +1,15 @@
+{
+  "hash": "a8b2e52c5a8d5d0ccd32763c466e79e0",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Day 8: Pabaigh Mòr\"\ndate: 2023-07-29\ncategories: []\noutput:\n  distill::distill_article:\n    self_contained: false\n---\n\n\n- Distance: 10.7 km\n- [Strava](https://www.strava.com/activities/9550672671)\n\nThe owner of Pabaigh Mòr gave us a tour of the blackhouses she lives in during the summer months\n\n\n::: {.cell preview='true'}\n::: {.cell-output-display}\n![](https://dgtzuqphqg23d.cloudfront.net/O1-cwXxSvmuuUkpD5uRuq0Q7wKslq8vyjm8YrnyVbiY-768x576.jpg)\n:::\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

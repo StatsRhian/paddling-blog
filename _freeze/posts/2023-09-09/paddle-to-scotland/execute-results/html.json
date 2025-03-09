@@ -1,0 +1,15 @@
+{
+  "hash": "72246ba75f60f6aa8aba2ae94336fb7b",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: Paddle to Scotland\ndate: 2023-09-09\ncategories: []\noutput:\n  distill::distill_article:\n    self_contained: false\n---\n\n\n- Distance: 25.5 km\n- [Strava](https://www.strava.com/activities/9817184085)\n\n\n\n\n::: {.cell preview='true'}\n::: {.cell-output-display}\n![](https://dgtzuqphqg23d.cloudfront.net/L8tlNsq7NvUF9dv-5jZqtZJiOn8ny-jm9Pbq8wkBThw-768x576.jpg)\n:::\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

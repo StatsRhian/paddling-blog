@@ -1,0 +1,15 @@
+{
+  "hash": "553d37f5158d490dbce2cd0b600f0a91",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: North to table rocks\ndate: 2024-09-03\ncategories: []\noutput:\n  distill::distill_article:\n    self_contained: false\n---\n\n\n- Distance: 11.9 km\n- [Strava](https://www.strava.com/activities/12317795674)\n\nPaul, Kev, Claire, Cath, Mark and Gordon with\nDave setting off a little late and meeting us on the water. \n\nIt was gentle turning the corner around the pier with not much swell and the wind behind our backs.\n\nNo surf at Longsands, but it was high enough tide to paddle through the Cullercoats arch and even into Table Rocks pool\n\nTide was ebbing as we came back around the piers which meant a little effort was needed to get back into the mouth. \n\nWe put a little speed on for the sprint along the wall and back into the Haven just as it was getting dark.\n\n\n📸: Kev Thompson\n\n\n::: {.cell preview='true'}\n::: {.cell-output-display}\n![](https://dgtzuqphqg23d.cloudfront.net/6nBcwGyWI-crymJOuZaEpW1DLe6yxdJvtlSLQt2J04E-768x418.jpg)\n:::\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

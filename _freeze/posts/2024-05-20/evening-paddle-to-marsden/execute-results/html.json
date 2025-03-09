@@ -1,0 +1,15 @@
+{
+  "hash": "a00f313a167b4bc0ece71f9233cf7cef",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: Evening paddle to Marsden\ndate: 2024-05-20\ncategories: []\noutput:\n  distill::distill_article:\n    self_contained: false\n---\n\n\n- Distance: 13.7 km\n- [Strava](https://www.strava.com/activities/11458361785)\n\nWith Kirstie, Dave and Penny\n\n\n::: {.cell preview='true'}\n::: {.cell-output-display}\n![](https://dgtzuqphqg23d.cloudfront.net/kAb4-PqaQRmqUOa3xYkhXOixdYa74IkC9EPxohvrndA-768x433.jpg)\n:::\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

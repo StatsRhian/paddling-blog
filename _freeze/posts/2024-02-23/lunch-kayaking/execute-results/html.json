@@ -1,0 +1,15 @@
+{
+  "hash": "21278d0fb8fe41bce5e8ce88d218592a",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: Lunch Kayaking\ndate: 2024-02-23\ncategories: []\noutput:\n  distill::distill_article:\n    self_contained: false\n---\n\n\n- Distance: 5.7 km\n- [Strava](https://www.strava.com/activities/10820453778)\n\n\n\n\n::: {.cell preview='true'}\n::: {.cell-output-display}\n![](https://dgtzuqphqg23d.cloudfront.net/aqPqH6p6nqvWUFNg3DizKPFPWhj3iQlk60kKgQnYzWM-2048x1152.jpg)\n:::\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "hash": "bad38cc78807194b43770a4bba5ef9ad",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: Paddle UK #BigPaddleCleanup with TCC\ndate: 2024-06-02\ncategories: []\noutput:\n  distill::distill_article:\n    self_contained: false\n---\n\n\n- Distance: 8.2 km\n- [Strava](https://www.strava.com/activities/11555714357)\n\n\n\n\n::: {.cell preview='true'}\n::: {.cell-output-display}\n![](https://dgtzuqphqg23d.cloudfront.net/RZnZ_Q_ciWcybUuDt0hJxFctAVYQdrq0_oUV30kno2g-768x576.jpg)\n:::\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

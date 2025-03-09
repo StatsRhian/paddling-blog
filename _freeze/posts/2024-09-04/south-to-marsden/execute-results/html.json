@@ -1,0 +1,15 @@
+{
+  "hash": "b681ceaecc3d9036d8da0dde15d29f86",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: South to Marsden\ndate: 2024-09-04\ncategories: []\noutput:\n  distill::distill_article:\n    self_contained: false\n---\n\n\n- Distance: 10 km\n- [Strava](https://www.strava.com/activities/12327006515)\n\nMaking the most of evening light we headed South tonight (Paul, Sarah, Cath, Claire, Kev, Mark). Chased the DFDS out between  the piers. Slight tide race off the North pier. \n\nQuite choppy and a good height (5m) for playing in rock gardens between Trow &amp; Marsden.\n \nTwo Shields youths entertained themselves by throwing rocks at us 🙄\n\nMick caught us up for some rock hopping before we headed back around South pier at sunset.\n\n\n\n::: {.cell preview='true'}\n::: {.cell-output-display}\n![](https://dgtzuqphqg23d.cloudfront.net/0r78uwq7Mbby4LHXfjut1xHCuHq9CFMa_WiUBFq0lSQ-768x511.jpg)\n:::\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "hash": "d032bd1201e6968a8f350fa677bc9f6d",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: Spanish City &amp; back\ndate: 2024-03-20\ncategories: []\noutput:\n  distill::distill_article:\n    self_contained: false\n---\n\n\n- Distance: 12.7 km\n- [Strava](https://www.strava.com/activities/11001736245)\n\n\n\n\n::: {.cell preview='true'}\n::: {.cell-output-display}\n![](https://dgtzuqphqg23d.cloudfront.net/D9Miy47sVZwArhG-AnYkXLM0PRxshZ2OLNzlQ_mUyCo-768x576.jpg)\n:::\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

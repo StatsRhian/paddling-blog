@@ -1,0 +1,15 @@
+{
+  "hash": "ccb02e30b8076df8800471f6add3aa11",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: Puffins &amp; seals\ndate: 2024-03-31\ncategories: []\noutput:\n  distill::distill_article:\n    self_contained: false\n---\n\n\n- Distance: 8.3 km\n- [Strava](https://www.strava.com/activities/11075266893)\n\nShort trip around Coquet Island \n\n\n::: {.cell preview='true'}\n::: {.cell-output-display}\n![](https://dgtzuqphqg23d.cloudfront.net/7OaAkMXZH6Bui3zET3aks3qkL66SV8AedUPcX4cragU-768x432.jpg)\n:::\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

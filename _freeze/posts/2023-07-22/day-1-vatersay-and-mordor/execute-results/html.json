@@ -1,0 +1,15 @@
+{
+  "hash": "7b70c68eac511f0638e27b0ada89dbe7",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Day 1: Vatersay and &quot;Mordor&quot;\"\ndate: 2023-07-22\ncategories: []\noutput:\n  distill::distill_article:\n    self_contained: false\n---\n\n\n- Distance: 24.8 km\n- [Strava](https://www.strava.com/activities/9502804864)\n\nThe &quot;warm up&quot; paddle involving a completely unnecessary crossing to &quot;Mordor&quot; in force 5 winds, and 12ft CalMac ferry wake 😂\n\n\n::: {.cell preview='true'}\n::: {.cell-output-display}\n![](https://dgtzuqphqg23d.cloudfront.net/1FMxegtk03GVmSCRZDtpwPYeiwd-beNU1Emvq_6oP3w-768x576.jpg)\n:::\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

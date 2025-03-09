@@ -1,0 +1,15 @@
+{
+  "hash": "b7490ada196ffc5b830e5f975bc01fa6",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: To the dome and back\ndate: 2023-12-10\ncategories: []\noutput:\n  distill::distill_article:\n    self_contained: false\n---\n\n\n- Distance: 11.8 km\n- [Strava](https://www.strava.com/activities/10358200769)\n\nNice swell \n\n\n::: {.cell preview='true'}\n::: {.cell-output-display}\n![](https://dgtzuqphqg23d.cloudfront.net/q9OhlVNwy1SWiKZogK4L_M1nMs0wSNEDBEfpOlM_ix0-576x768.jpg)\n:::\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

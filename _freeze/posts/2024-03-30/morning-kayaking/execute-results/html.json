@@ -1,0 +1,15 @@
+{
+  "hash": "68bd13a2476b9f9499183b996d959270",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: Morning Kayaking\ndate: 2024-03-30\ncategories: []\noutput:\n  distill::distill_article:\n    self_contained: false\n---\n\n\n- Distance: 11.8 km\n- [Strava](https://www.strava.com/activities/11069142648)\n\n\n\n\n::: {.cell preview='true'}\n::: {.cell-output-display}\n![](https://dgtzuqphqg23d.cloudfront.net/VYmIbsMjq46TI1RtxaYv481dQELiZ70rw-DT7DrxprY-2048x1152.jpg)\n:::\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

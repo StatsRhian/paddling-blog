@@ -1,0 +1,15 @@
+{
+  "hash": "0ca98731875fc07c9c3e87502d4cf80f",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: After work St Marys's with Kirstie\ndate: 2023-05-16\ncategories: []\noutput:\n  distill::distill_article:\n    self_contained: false\n---\n\n\n- Distance: 16.8 km\n- [Strava](https://www.strava.com/activities/9083852766)\n\nEider ducks, rainbows and a wreck.\n\n\n::: {.cell preview='true'}\n::: {.cell-output-display}\n![](https://dgtzuqphqg23d.cloudfront.net/iQ3KU_aNL4ZW-bn3Y-PV4ZOILO0lGxCgelElEZM0nQs-768x576.jpg)\n:::\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

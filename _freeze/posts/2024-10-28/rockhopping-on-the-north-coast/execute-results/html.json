@@ -1,0 +1,15 @@
+{
+  "hash": "09bc153c0afa6455172717b5f2409d2d",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: Rockhopping on the North coast\ndate: 2024-10-28\ncategories: []\noutput:\n  distill::distill_article:\n    self_contained: false\n---\n\n\n- Distance: 15.2 km\n- [Strava](https://www.strava.com/activities/12775167129)\n\nPorth Wen brickworks \n\n\n::: {.cell preview='true'}\n::: {.cell-output-display}\n![](https://dgtzuqphqg23d.cloudfront.net/kDX-_PoDLtQ5LXmW4ZhYnl0_3VUhDX2AM9neA5ulCNQ-768x578.jpg)\n:::\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

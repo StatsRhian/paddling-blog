@@ -1,0 +1,15 @@
+{
+  "hash": "b986f5261668b5381074ecc1f764d519",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: Sunset paddle up the Coquet\ndate: 2024-11-17\ncategories: []\noutput:\n  distill::distill_article:\n    self_contained: false\n---\n\n\n- Distance: 10.2 km\n- [Strava](https://www.strava.com/activities/12923564372)\n\nA very autumnal afternoon 🍂\nPootle up to the weir and back. Saw a sleepy heron. And lots of lapwings.\nPaddled up to the harbour to watch the big waves breaking.\nGot chips and curry sauce before 😋\n\nWith Kirstie, Sarah, Paul, Ann, Pauline, Julian, Chris &amp; Dave F\n\n\n::: {.cell preview='true'}\n::: {.cell-output-display}\n![](https://dgtzuqphqg23d.cloudfront.net/xNbHStoYJ9QHCgjyHzHN9ySqsJqzlOU22XulpzEqfxg-768x432.jpg)\n:::\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

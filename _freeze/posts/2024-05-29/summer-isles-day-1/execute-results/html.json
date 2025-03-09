@@ -1,0 +1,15 @@
+{
+  "hash": "16d4ba418420279fa51f7241fff04d7f",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: Summer Isles Day 1\ndate: 2024-05-29\ncategories: []\noutput:\n  distill::distill_article:\n    self_contained: false\n---\n\n\n- Distance: 21.3 km\n- [Strava](https://www.strava.com/activities/11528043608)\n\nExploring islands in the sunshine, a chorus of happy birthday in a cave, cake around a bonfire and lovely company. Fabulous way to spend a birthday 💙🚣🏻‍♀️🍰\n\n\n::: {.cell preview='true'}\n::: {.cell-output-display}\n![](https://dgtzuqphqg23d.cloudfront.net/onOrboRDtN8p0GKhbJrd7RDcjTWMxiLgRD4OKPraf_Q-2048x969.jpg)\n:::\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

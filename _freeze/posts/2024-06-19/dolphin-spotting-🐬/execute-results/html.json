@@ -1,0 +1,15 @@
+{
+  "hash": "ad07066d1f4eb866b6a007af4e4aeef1",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: Dolphin spotting 🐬\ndate: 2024-06-19\ncategories: []\noutput:\n  distill::distill_article:\n    self_contained: false\n---\n\n\n- Distance: 6.9 km\n- [Strava](https://www.strava.com/activities/11691543171)\n\n\n\n\n::: {.cell preview='true'}\n::: {.cell-output-display}\n![](https://dgtzuqphqg23d.cloudfront.net/nnDXDyecxJxfRknJbWE0hS1rkTqHNaF2yBRRviCpkFY-2048x1536.jpg)\n:::\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

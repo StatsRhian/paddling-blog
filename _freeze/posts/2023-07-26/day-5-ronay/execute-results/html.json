@@ -1,0 +1,15 @@
+{
+  "hash": "d73bb9c744cd75c6d38d4d24ae34e226",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Day 5: Ronay\"\ndate: 2023-07-26\ncategories: []\noutput:\n  distill::distill_article:\n    self_contained: false\n---\n\n\n- Distance: 14.1 km\n- [Strava](https://www.strava.com/activities/9550643781)\n\n\n\n\n::: {.cell preview='true'}\n::: {.cell-output-display}\n![](https://dgtzuqphqg23d.cloudfront.net/M_uQGVS5YuADbtkAR2HmeS7eTOsxbCl3xcbE8XxiWcE-768x576.jpg)\n:::\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

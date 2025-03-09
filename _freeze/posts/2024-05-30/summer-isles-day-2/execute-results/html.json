@@ -1,0 +1,15 @@
+{
+  "hash": "8d7384be3ee75951ee76ec8f6806c78e",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: Summer Isles Day 2\ndate: 2024-05-30\ncategories: []\noutput:\n  distill::distill_article:\n    self_contained: false\n---\n\n\n- Distance: 16.8 km\n- [Strava](https://www.strava.com/activities/11535005120)\n\nCaves and bioluminescence \n\n\n::: {.cell preview='true'}\n::: {.cell-output-display}\n![](https://dgtzuqphqg23d.cloudfront.net/fv-x9o0HIPgEf636NMCcPVmPPaOrhadoeutvgYh7Ank-2048x825.jpg)\n:::\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

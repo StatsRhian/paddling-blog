@@ -1,0 +1,15 @@
+{
+  "hash": "dfe402b118928dece3c3dd0eb6a2b648",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: Escorting the King of the Sea 👑\ndate: 2024-06-16\ncategories: []\noutput:\n  distill::distill_article:\n    self_contained: false\n---\n\n\n- Distance: 8.2 km\n- [Strava](https://www.strava.com/activities/11665065016)\n\nCoquet Canoe Club Around the Island race \n\n\n::: {.cell preview='true'}\n::: {.cell-output-display}\n![](https://dgtzuqphqg23d.cloudfront.net/LoybrAqfSzqUzUABHB_nG3WDJEO6pAGqool6LWPemVU-768x441.jpg)\n:::\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

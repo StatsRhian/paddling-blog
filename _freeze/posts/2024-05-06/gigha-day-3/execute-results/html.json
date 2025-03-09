@@ -1,0 +1,15 @@
+{
+  "hash": "0a862f3fd5c1376aca9bec6adbc0ddf1",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: Gigha day 3\ndate: 2024-05-06\ncategories: []\noutput:\n  distill::distill_article:\n    self_contained: false\n---\n\n\n- Distance: 6.2 km\n- [Strava](https://www.strava.com/activities/11343665747)\n\n\n\n\n::: {.cell preview='true'}\n::: {.cell-output-display}\n![](https://dgtzuqphqg23d.cloudfront.net/tTECOejrku18r081MBIAHvoXGHHt5_enzNuBuc0QfsU-2048x1541.jpg)\n:::\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

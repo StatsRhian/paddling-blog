@@ -1,0 +1,15 @@
+{
+  "hash": "d4ee6b17561068119f10bd5bf40ef937",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Sea Kayak Trail: Day 7\"\ndate: 2023-06-11\ncategories: []\noutput:\n  distill::distill_article:\n    self_contained: false\n---\n\n\n- Distance: 13.3 km\n- [Strava](https://www.strava.com/activities/9259551547)\n\n\n\n\n::: {.cell preview='true'}\n::: {.cell-output-display}\n![](https://dgtzuqphqg23d.cloudfront.net/vZ5nr5zGs_3hvlxk4fF7ZuuEHrK9xNqptmCqHIG-p6Q-2048x1536.jpg)\n:::\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

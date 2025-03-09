@@ -1,0 +1,15 @@
+{
+  "hash": "1601a42b43affd020408842059f9e95d",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Day 9: Callanish stones\"\ndate: 2023-07-30\ncategories: []\noutput:\n  distill::distill_article:\n    self_contained: false\n---\n\n\n- Distance: 10.9 km\n- [Strava](https://www.strava.com/activities/9550677653)\n\nA lovely gentle paddle with Chris to round off the trip\n\n\n::: {.cell preview='true'}\n::: {.cell-output-display}\n![](https://dgtzuqphqg23d.cloudfront.net/JNgA9xNDAra5WurITmQNH7Bt9PD4rD84awTT5eFDSRo-768x576.jpg)\n:::\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

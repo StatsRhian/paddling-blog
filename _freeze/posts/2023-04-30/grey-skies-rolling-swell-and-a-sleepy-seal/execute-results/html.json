@@ -1,0 +1,15 @@
+{
+  "hash": "746160bcbbdd85eba65f1f77d8f0371b",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: Grey skies, rolling swell and a sleepy seal\ndate: 2023-04-30\ncategories: []\noutput:\n  distill::distill_article:\n    self_contained: false\n---\n\n\n- Distance: 8.9 km\n- [Strava](https://www.strava.com/activities/8983057480)\n\n\n\n\n::: {.cell preview='true'}\n::: {.cell-output-display}\n![](https://dgtzuqphqg23d.cloudfront.net/yydoAypSRkZnYvb5Kydb34TDv4spoD8X5KGJPgLM1Pw-768x576.jpg)\n:::\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

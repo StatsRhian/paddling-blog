@@ -1,0 +1,15 @@
+{
+  "hash": "ce21884ac22669d6f041bfd3d5be115c",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: High tide fun with Kirstie and Mick\ndate: 2023-10-01\ncategories: []\noutput:\n  distill::distill_article:\n    self_contained: false\n---\n\n\n- Distance: 11.9 km\n- [Strava](https://www.strava.com/activities/9958085527)\n\n\n\n\n::: {.cell preview='true'}\n::: {.cell-output-display}\n![](https://dgtzuqphqg23d.cloudfront.net/Tg1qD-_czTYAgpPHkTUasIzRAN8Pxr771Gy3tzXyRJU-768x576.jpg)\n:::\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

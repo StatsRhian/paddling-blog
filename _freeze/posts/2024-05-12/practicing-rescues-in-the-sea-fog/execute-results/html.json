@@ -1,0 +1,15 @@
+{
+  "hash": "2d4c9f512c36e4f63b7853a3fae6c29c",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: Practicing rescues in the sea fog\ndate: 2024-05-12\ncategories: []\noutput:\n  distill::distill_article:\n    self_contained: false\n---\n\n\n- Distance: 10.9 km\n- [Strava](https://www.strava.com/activities/11393712782)\n\n\n\n\n::: {.cell preview='true'}\n::: {.cell-output-display}\n![](https://dgtzuqphqg23d.cloudfront.net/jSiXzmI7nD55VjtSE1tCzMHBecgNroCCEkje4GNSK-g-768x461.jpg)\n:::\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

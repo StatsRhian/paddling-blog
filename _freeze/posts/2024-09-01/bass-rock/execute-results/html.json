@@ -1,0 +1,15 @@
+{
+  "hash": "a134b33826f1722eef8e421c57bb9f84",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: Bass rock\ndate: 2024-09-01\ncategories: []\noutput:\n  distill::distill_article:\n    self_contained: false\n---\n\n\n- Distance: 12.4 km\n- [Strava](https://www.strava.com/activities/12298229617)\n\nHeadwind to Bass Rock meant slow progress. Love the noise of the Gannets.\n\n\nWith Sarah, Paul, Phil &amp; Mark.\n\n\n::: {.cell preview='true'}\n::: {.cell-output-display}\n![](https://dgtzuqphqg23d.cloudfront.net/Z6A2NN_7mcozKoVwFmBTXjY3esr23SR3OFqnd-jylEo-768x408.jpg)\n:::\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

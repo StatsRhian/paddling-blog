@@ -1,0 +1,15 @@
+{
+  "hash": "e32ffe9884d408949c9599ac951bf169",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"WSKF day 2: Attempting to lead the crossing to Middle Mouse 😬\"\ndate: 2024-07-20\ncategories: []\noutput:\n  distill::distill_article:\n    self_contained: false\n---\n\n\n- Distance: 11.6 km\n- [Strava](https://www.strava.com/activities/11940610469)\n\nPlaying in the race and rolling practice \n\n\n::: {.cell preview='true'}\n::: {.cell-output-display}\n![](https://dgtzuqphqg23d.cloudfront.net/UXg_ReIQgvzieHnNGgclNgy-C4LDJhwtWfr40jcV6Os-768x345.jpg)\n:::\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

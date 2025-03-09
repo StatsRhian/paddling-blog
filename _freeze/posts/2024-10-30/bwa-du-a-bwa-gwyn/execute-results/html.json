@@ -1,0 +1,15 @@
+{
+  "hash": "b39d242c15ba3e321e4895cd8eae0150",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: Bwa Du a Bwa Gwyn\ndate: 2024-10-30\ncategories: []\noutput:\n  distill::distill_article:\n    self_contained: false\n---\n\n\n- Distance: 12.1 km\n- [Strava](https://www.strava.com/activities/12781440458)\n\n\n\n\n::: {.cell preview='true'}\n::: {.cell-output-display}\n![](https://dgtzuqphqg23d.cloudfront.net/hP3vx7u30fmyQzA1luxStSy-RPg6iTa2rE60dSDDoF4-432x768.jpg)\n:::\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

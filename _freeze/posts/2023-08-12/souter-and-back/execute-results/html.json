@@ -1,0 +1,15 @@
+{
+  "hash": "0e51bd7e63b94f35a00a10145a280f1f",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: Souter and back\ndate: 2023-08-12\ncategories: []\noutput:\n  distill::distill_article:\n    self_contained: false\n---\n\n\n- Distance: 15.8 km\n- [Strava](https://www.strava.com/activities/9631876277)\n\n\n\n\n::: {.cell preview='true'}\n::: {.cell-output-display}\n![](https://dgtzuqphqg23d.cloudfront.net/OXj1_bKdbHSG5_g04II9SmYK4U4Ur9D1_1_cVJEpOjE-768x576.jpg)\n:::\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

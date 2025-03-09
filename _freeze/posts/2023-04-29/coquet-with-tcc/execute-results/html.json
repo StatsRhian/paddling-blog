@@ -1,0 +1,15 @@
+{
+  "hash": "2ec6b2dddcbd0b4a3ead16846d7dfb4c",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: Coquet with TCC\ndate: 2023-04-29\ncategories: []\noutput:\n  distill::distill_article:\n    self_contained: false\n---\n\n\n- Distance: 7.6 km\n- [Strava](https://www.strava.com/activities/8978809720)\n\nA seal followed us up and down river. First terns of the year\n\n\n::: {.cell preview='true'}\n::: {.cell-output-display}\n![](https://dgtzuqphqg23d.cloudfront.net/vUcg1SkEBHRhe-mfvkOxoQuP3uwxuM2gZsHqH6Aj3aY-768x364.jpg)\n:::\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
