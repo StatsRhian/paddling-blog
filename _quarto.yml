@@ -1,0 +1,34 @@
+project:
+  type: website
+
+website:
+  title: "Rhi on the Sea"
+  description: A paddling log
+  site-url: https://rhionthesea.netlify.app/
+  navbar:
+    right:
+    - text: "Home"
+      href: index.html
+    - text: "About"
+      href: about.html
+    - text: "Maps"
+      href: map.html
+    - text: "Philosophy"
+      href: philosophy.html
+    - icon: github
+      href: https://github.com/statsrhian/paddling-blog
+format:
+  html:
+    theme: cosmo
+    css: theme.css
+
+
+
+
+base_url: https://rhionthesea.netlify.app/
+
+
+
+
+
+

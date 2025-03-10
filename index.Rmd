@@ -1,5 +1,0 @@
----
-title: "Paddle Reports"
-site: distill::distill_website
-listing: posts
----
