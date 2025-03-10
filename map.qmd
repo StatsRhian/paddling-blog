@@ -1,5 +1,6 @@
 ---
 title: "Map"
+freeze: true
 ---
 
 ## Interactive map
