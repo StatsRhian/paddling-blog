@@ -1,4 +1,4 @@
-name: 🔄 Update data
+name: 🔄 Update data 
 
 on:
   schedule:
@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
-   steps:
+    steps:
       - name: 📥 Checkout repo
         uses: actions/checkout@v3
 
