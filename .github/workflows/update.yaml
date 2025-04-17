@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
-   steps:
+    steps:
       - name: 📥 Checkout repo
         uses: actions/checkout@v3
 
@@ -25,7 +25,7 @@ jobs:
           
       - name:  📦 Install R packages
         run: |
-          install.packages(c("httr", "sf", "dplyr", "tibble", "googlePolylines", "rStrava")
+          install.packages(c("dplyr", "googlePolylines", "httr", "rStrava", "sf", "tibble"))
         shell: Rscript {0}
         
       - name: 🔄 Update data
