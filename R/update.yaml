@@ -1,0 +1,45 @@
+name: 🔄 Update data
+
+on:
+  schedule:
+    - cron: '0 9 * * 1'  # Every Monday at 09:00 UTC
+  workflow_dispatch:  # Allow manual triggering
+
+jobs:
+  update_data:
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+   steps:
+      - name: 📥 Checkout repo
+        uses: actions/checkout@v3
+
+      - name: 🦜 Set up R
+        uses: r-lib/actions/setup-r@v2
+
+      - name: 🔧 Install system dependencies for sf
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            libudunits2-dev libgdal-dev libgeos-dev libproj-dev
+          
+      - name:  📦 Install R packages
+        run: |
+          install.packages(c("httr", "sf", "dplyr", "tibble", "googlePolylines", "rStrava")
+        shell: Rscript {0}
+        
+      - name: 🔄 Update data
+        run: |
+          source("R/update.R")
+        shell: Rscript {0}
+        env:
+          STRAVA_ID: ${{ secrets.STRAVA_ID }}
+          STRAVA_TOKEN: ${{ secrets.STRAVA_SECRET }}
+        
+      - name: 💾 Commit files
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
+          git add --all
+          git commit -am ":bento: Update data"
+          git push 
