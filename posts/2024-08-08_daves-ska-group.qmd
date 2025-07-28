@@ -1,15 +1,15 @@
 ---
 title: "Dave's SKA group"
 date: 2024-08-08
-categories: ["tpc","south shields","sea"]
+categories: ["tpc","south-shields","sea"]
 image: https://dgtzuqphqg23d.cloudfront.net/m6giEFvgZSG_vujOjBVspKkN2XlP389dChvux7am-0Q-768x345.jpg
 ---
 
 - Distance: 3.5 km
 - [Strava](https://www.strava.com/activities/12097950826)
 
-Bow rudders and rescues 
-
+Bow rudders and rescues 
+
 📸: Kevin Thompson 
 
 ![](https://dgtzuqphqg23d.cloudfront.net/m6giEFvgZSG_vujOjBVspKkN2XlP389dChvux7am-0Q-768x345.jpg)

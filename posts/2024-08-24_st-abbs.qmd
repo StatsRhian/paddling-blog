@@ -1,7 +1,7 @@
 ---
 title: "St. Abbs"
 date: 2024-08-24
-categories: ["peer","st abbs"]
+categories: ["peer","st-abbs"]
 image: https://dgtzuqphqg23d.cloudfront.net/n7ZvfEpGf_ypy0u5z_1c7wHKg934ONNDfmAfQy2ZHII-768x432.jpg
 ---
 

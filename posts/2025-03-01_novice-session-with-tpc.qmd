@@ -8,9 +8,9 @@ image: https://dgtzuqphqg23d.cloudfront.net/KAVVnYegyd9sJe8oDILifZPFd3JFGj6g7GRN
 - Distance: 10.8 km
 - [Strava](https://www.strava.com/activities/13759578339)
 
-Running a novice session for new paddlers. We met them at Longsands, and then paddled north to Cullercoats to practice skills in the bay. 
-
-Followed by chips at Oswins 😋
+Running a novice session for new paddlers. We met them at Longsands, and then paddled north to Cullercoats to practice skills in the bay. 
+
+Followed by chips at Oswins 😋
 
 
 ![](https://dgtzuqphqg23d.cloudfront.net/KAVVnYegyd9sJe8oDILifZPFd3JFGj6g7GRNOgyUIrY-768x576.jpg)

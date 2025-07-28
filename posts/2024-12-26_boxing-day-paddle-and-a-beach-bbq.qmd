@@ -8,8 +8,8 @@ image: https://dgtzuqphqg23d.cloudfront.net/ln8aq3L-HoUx-qCp8T44jY9wd4jc3q7IPphm
 - Distance: 6 km
 - [Strava](https://www.strava.com/activities/13191888244)
 
-Short paddle on boxing day.
-
+Short paddle on boxing day.
+
 Paul and Tim make some breakfast rolls on the BBQ. 
 
 ![](https://dgtzuqphqg23d.cloudfront.net/ln8aq3L-HoUx-qCp8T44jY9wd4jc3q7IPphmmL0ictA-768x345.jpg)

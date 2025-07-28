@@ -8,16 +8,16 @@ image: https://dgtzuqphqg23d.cloudfront.net/6nBcwGyWI-crymJOuZaEpW1DLe6yxdJvtlSL
 - Distance: 11.9 km
 - [Strava](https://www.strava.com/activities/12317795674)
 
-Paul, Kev, Claire, Cath, Mark and Gordon 
-Dave setting off a little late and meeting us on the water. 
-
-High tide and not much swell
-
-Tide was ebbing as we came around the piers which meant a little effort was needed to get back into the mouth. 
-
-We put a little speed on for the sprint along the wall and into the Haven 
-
-
+Paul, Kev, Claire, Cath, Mark and Gordon 
+Dave setting off a little late and meeting us on the water. 
+
+High tide and not much swell
+
+Tide was ebbing as we came around the piers which meant a little effort was needed to get back into the mouth. 
+
+We put a little speed on for the sprint along the wall and into the Haven 
+
+
 📸: Kev Thompson
 
 ![](https://dgtzuqphqg23d.cloudfront.net/6nBcwGyWI-crymJOuZaEpW1DLe6yxdJvtlSLQt2J04E-768x418.jpg)
