@@ -1,0 +1,4023 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.31">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Paddle Reports – Rhi on the Sea</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-dfb324f25d9b1687192fa8be62ac8f9c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      page: 25,
+    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="theme.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Rhi on the Sea</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="./index.html" aria-current="page"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./map.html"> 
+<span class="menu-text">Maps</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./philosophy.html"> 
+<span class="menu-text">Philosophy</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/statsrhian/paddling-blog"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-page-left">
+      <h1 class="title">Paddle Reports</h1>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta column-page-left">
+
+      
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(126)</span></div><div class="category" data-category="MjAyNS1sY2Mtc2t5ZQ==">2025-lcc-skye <span class="quarto-category-count">(6)</span></div><div class="category" data-category="MjAyNS10cGMtbXVsbA==">2025-tpc-mull <span class="quarto-category-count">(3)</span></div><div class="category" data-category="YW1ibGU=">amble <span class="quarto-category-count">(1)</span></div><div class="category" data-category="YW5nbGVzZXk=">anglesey <span class="quarto-category-count">(3)</span></div><div class="category" data-category="YXJkbmFtdXJjaGFu">ardnamurchan <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Y2M=">cc <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Y29xdWV0">coquet <span class="quarto-category-count">(5)</span></div><div class="category" data-category="Y291cnNl">course <span class="quarto-category-count">(3)</span></div><div class="category" data-category="ZXhwZWQ=">exped <span class="quarto-category-count">(9)</span></div><div class="category" data-category="ZmFybmVz">farnes <span class="quarto-category-count">(1)</span></div><div class="category" data-category="anVyYQ==">jura <span class="quarto-category-count">(6)</span></div><div class="category" data-category="bGFrZQ==">lake <span class="quarto-category-count">(1)</span></div><div class="category" data-category="bGNj">lcc <span class="quarto-category-count">(6)</span></div><div class="category" data-category="bGVhZGVyc2hpcA==">leadership <span class="quarto-category-count">(2)</span></div><div class="category" data-category="bG9jaC1rZW4=">loch-ken <span class="quarto-category-count">(1)</span></div><div class="category" data-category="bXVsbA==">mull <span class="quarto-category-count">(6)</span></div><div class="category" data-category="bmlnaHQ=">night <span class="quarto-category-count">(2)</span></div><div class="category" data-category="cGVlcg==">peer <span class="quarto-category-count">(25)</span></div><div class="category" data-category="cmFjZQ==">race <span class="quarto-category-count">(1)</span></div><div class="category" data-category="c2Vh">sea <span class="quarto-category-count">(48)</span></div><div class="category" data-category="c2t5ZQ==">skye <span class="quarto-category-count">(6)</span></div><div class="category" data-category="c29sbw==">solo <span class="quarto-category-count">(1)</span></div><div class="category" data-category="c291dGgtc2hpZWxkcw==">south-shields <span class="quarto-category-count">(5)</span></div><div class="category" data-category="c3QtYWJicw==">st-abbs <span class="quarto-category-count">(1)</span></div><div class="category" data-category="dGlkZS1yYWNlcw==">tide-races <span class="quarto-category-count">(1)</span></div><div class="category" data-category="dHBj">tpc <span class="quarto-category-count">(13)</span></div><div class="category" data-category="dHluZW1vdXRo">tynemouth <span class="quarto-category-count">(15)</span></div></div></div>
+<!-- main -->
+<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+
+
+
+
+
+
+
+
+
+<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="cGVlciUyQ211bGwlMkNzZWE=" data-listing-date-sort="1753484400000" data-listing-file-modified-sort="1753725043773" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="150">
+<div class="thumbnail"><a href="./posts/2025-07-26_ardmore-point-calve-island.html" class="no-external">
+
+<img loading="lazy" src="https://dgtzuqphqg23d.cloudfront.net/FKRPawIUIg9TVFaohYKRXH4NodzLCRwUqly8TaO3dh8-768x576.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2025-07-26_ardmore-point-calve-island.html" class="no-external">Ardmore point &amp; Calve island</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('cGVlcg=='); return false;">peer</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('bXVsbA=='); return false;">mull</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('c2Vh'); return false;">sea</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/2025-07-26_ardmore-point-calve-island.html" class="no-external">
+We set off from the colourful houses of Balamory / Tobermory in warm sunshine. What was supposed to be a short 8km jaunt to the lighthouse and back ended up as a 3 hour…
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2025-07-26_ardmore-point-calve-island.html" class="no-external">
+<div class="listing-date">
+Jul 26, 2025
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="cGVlciUyQ211bGwlMkNzZWE=" data-listing-date-sort="1753398000000" data-listing-file-modified-sort="1753725043774" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="69">
+<div class="thumbnail"><a href="./posts/2025-07-25_tràigh-gheal.html" class="no-external">
+
+<img loading="lazy" src="https://dgtzuqphqg23d.cloudfront.net/1tooooqLtXEroiMK4KDXtkGYhTBCkq6ma5pv28FknAc-768x431.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2025-07-25_tràigh-gheal.html" class="no-external">Tràigh Gheal</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('cGVlcg=='); return false;">peer</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('bXVsbA=='); return false;">mull</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('c2Vh'); return false;">sea</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/2025-07-25_tràigh-gheal.html" class="no-external">
+A slow start and an easy paddle around to this beautiful beach.
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2025-07-25_tràigh-gheal.html" class="no-external">
+<div class="listing-date">
+Jul 25, 2025
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="2" data-categories="cGVlciUyQ211bGwlMkNzZWE=" data-listing-date-sort="1753311600000" data-listing-file-modified-sort="1753725043807" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="44">
+<div class="thumbnail"><a href="./posts/2025-07-24_staffa-from-kintra.html" class="no-external">
+
+<img loading="lazy" src="https://dgtzuqphqg23d.cloudfront.net/gGo5tmSQH_7LU3Yn5YxOFCIoKLyh3-x-O80c4rBLnQs-768x576.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2025-07-24_staffa-from-kintra.html" class="no-external">Staffa from Kintra</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('cGVlcg=='); return false;">peer</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('bXVsbA=='); return false;">mull</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('c2Vh'); return false;">sea</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/2025-07-24_staffa-from-kintra.html" class="no-external">
+Saw a minke whale, dolphins and porpoises on the paddle out. On the return we saw a pod of common dolphins doing some high breaches and watched the shearwaters skim over the…
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2025-07-24_staffa-from-kintra.html" class="no-external">
+<div class="listing-date">
+Jul 24, 2025
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="3" data-categories="MjAyNS10cGMtbXVsbCUyQ211bGwlMkN0cGMlMkNzZWE=" data-listing-date-sort="1753225200000" data-listing-file-modified-sort="1753725043807" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="69">
+<div class="thumbnail"><a href="./posts/2025-07-23_erraid.html" class="no-external">
+
+<img loading="lazy" src="https://dgtzuqphqg23d.cloudfront.net/vZl1dQxlL7Cyt618XKeHNigBZJpARaQiBD2hxSiKSKc-768x431.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2025-07-23_erraid.html" class="no-external">Erraid</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('MjAyNS10cGMtbXVsbA=='); return false;">2025-tpc-mull</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('bXVsbA=='); return false;">mull</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('dHBj'); return false;">tpc</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('c2Vh'); return false;">sea</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/2025-07-23_erraid.html" class="no-external">
+Last day of the TPC club trip. We planned to only paddle in the morning as the wind was due to pick up in the afternoon. We did a little paddle around Erraid to a huge…
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2025-07-23_erraid.html" class="no-external">
+<div class="listing-date">
+Jul 23, 2025
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="4" data-categories="MjAyNS10cGMtbXVsbCUyQ211bGwlMkN0cGM=" data-listing-date-sort="1753138800000" data-listing-file-modified-sort="1753725043807" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="183">
+<div class="thumbnail"><a href="./posts/2025-07-22_fidden-to-bunessan.html" class="no-external">
+
+<img loading="lazy" src="https://dgtzuqphqg23d.cloudfront.net/ajkuhVYz81FFj60cRupgxr8Fkof0LQK4yhtxrrBsGFY-768x576.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2025-07-22_fidden-to-bunessan.html" class="no-external">Fidden to Bunessan</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('MjAyNS10cGMtbXVsbA=='); return false;">2025-tpc-mull</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('bXVsbA=='); return false;">mull</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('dHBj'); return false;">tpc</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/2025-07-22_fidden-to-bunessan.html" class="no-external">
+The wind was forecast to be F4+ and gusting so we planned a downwind run along to Bunessan. A slow start OTW 13:30 to avoid stronger winds in the morning. There was quite a…
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2025-07-22_fidden-to-bunessan.html" class="no-external">
+<div class="listing-date">
+Jul 22, 2025
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="5" data-categories="MjAyNS10cGMtbXVsbCUyQ3RwYyUyQ211bGwlMkNzZWE=" data-listing-date-sort="1753052400000" data-listing-file-modified-sort="1753725043807" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="21">
+<div class="thumbnail"><a href="./posts/2025-07-21_around-iona.html" class="no-external">
+
+<img loading="lazy" src="https://dgtzuqphqg23d.cloudfront.net/dtdIhGpppnQPaJSeqVO4kvWEQFfa4fjSZhuWnAHw0MI-768x576.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2025-07-21_around-iona.html" class="no-external">Around Iona</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('MjAyNS10cGMtbXVsbA=='); return false;">2025-tpc-mull</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('dHBj'); return false;">tpc</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('bXVsbA=='); return false;">mull</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('c2Vh'); return false;">sea</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/2025-07-21_around-iona.html" class="no-external">
+Blue skies, thick fog, calm water, spouting caves, swell and rock hopping. We had it all today.
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2025-07-21_around-iona.html" class="no-external">
+<div class="listing-date">
+Jul 21, 2025
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="6" data-categories="cGVlciUyQ2V4cGVkJTJDYXJkbmFtdXJjaGFuJTJDc2Vh" data-listing-date-sort="1752793200000" data-listing-file-modified-sort="1753725043807" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="17">
+<div class="thumbnail"><a href="./posts/2025-07-18_ardtoe-to-sanna.html" class="no-external">
+
+<img loading="lazy" src="https://dgtzuqphqg23d.cloudfront.net/DApvi_nP1Dyw2BRHkaJw-PGMnU4cGuoy5pkLLkNxIIU-576x768.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2025-07-18_ardtoe-to-sanna.html" class="no-external">Ardtoe to Sanna</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('cGVlcg=='); return false;">peer</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZXhwZWQ='); return false;">exped</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('YXJkbmFtdXJjaGFu'); return false;">ardnamurchan</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('c2Vh'); return false;">sea</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/2025-07-18_ardtoe-to-sanna.html" class="no-external">
+Lots of manx shearwaters, gannets and two minke whales feeding off Ockle point
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2025-07-18_ardtoe-to-sanna.html" class="no-external">
+<div class="listing-date">
+Jul 18, 2025
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="7" data-categories="c2VhJTJDdHBjJTJDdHluZW1vdXRo" data-listing-date-sort="1752102000000" data-listing-file-modified-sort="1753725043807" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="46">
+<div class="thumbnail"><a href="./posts/2025-07-10_tpc-novice-session.html" class="no-external">
+
+<img loading="lazy" src="https://dgtzuqphqg23d.cloudfront.net/lWa18UHoBDWipIPTrs38bzH63enuXaeOxxEvwMhfMoU-768x432.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2025-07-10_tpc-novice-session.html" class="no-external">TPC novice session</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('c2Vh'); return false;">sea</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('dHBj'); return false;">tpc</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('dHluZW1vdXRo'); return false;">tynemouth</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/2025-07-10_tpc-novice-session.html" class="no-external">
+Pretty evening although I was exhausted and had to nap at Longsands whilst the novices got ready. Did some skills along the wall at Browns Bay. Had a beer on the wall…
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2025-07-10_tpc-novice-session.html" class="no-external">
+<div class="listing-date">
+Jul 10, 2025
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="8" data-categories="cGVlciUyQ2NvcXVldCUyQ3NlYQ==" data-listing-date-sort="1751756400000" data-listing-file-modified-sort="1753725043807" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="107">
+<div class="thumbnail"><a href="./posts/2025-07-06_maiden-voyage-for-the-new-boat.html" class="no-external">
+
+<img loading="lazy" src="https://dgtzuqphqg23d.cloudfront.net/LLul6iVQ5obKmWE2CcYJ7mHySp-t8fwCmVRoZV8-P1I-768x314.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2025-07-06_maiden-voyage-for-the-new-boat.html" class="no-external">Maiden voyage for the new boat</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('cGVlcg=='); return false;">peer</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Y29xdWV0'); return false;">coquet</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('c2Vh'); return false;">sea</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/2025-07-06_maiden-voyage-for-the-new-boat.html" class="no-external">
+My first time out in my plastic SKUK Romany Sportive - which I’ve christened Guto. The boat handled really well and I couldn’t tell much difference between that and my…
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2025-07-06_maiden-voyage-for-the-new-boat.html" class="no-external">
+<div class="listing-date">
+Jul 6, 2025
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="9" data-categories="dHBjJTJDdHluZW1vdXRoJTJDc2Vh" data-listing-date-sort="1750806000000" data-listing-file-modified-sort="1753725043824" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="22">
+<div class="thumbnail"><a href="./posts/2025-06-25_ska-training.html" class="no-external">
+
+<img loading="lazy" src="https://dgtzuqphqg23d.cloudfront.net/3JqkaSLAbfSI1zviNDoI10Ym0WMWEzbJMSYT76sMpGw-768x576.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2025-06-25_ska-training.html" class="no-external">SKA training</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('dHBj'); return false;">tpc</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('dHluZW1vdXRo'); return false;">tynemouth</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('c2Vh'); return false;">sea</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/2025-06-25_ska-training.html" class="no-external">
+Supporting the TPC SKA training.
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2025-06-25_ska-training.html" class="no-external">
+<div class="listing-date">
+Jun 25, 2025
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="10" data-categories="cmFjZSUyQ3NlYSUyQ2NvcXVldA==" data-listing-date-sort="1750546800000" data-listing-file-modified-sort="1753725043824" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="11">
+<div class="thumbnail"><a href="./posts/2025-06-22_round-the-island-race.html" class="no-external">
+
+<img loading="lazy" src="https://dgtzuqphqg23d.cloudfront.net/eXLjg5JtWLH0U2gPkM2t9gaM5IGBfND5LZYjYp_qcdY-768x575.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2025-06-22_round-the-island-race.html" class="no-external">Round the Island Race</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('cmFjZQ=='); return false;">race</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('c2Vh'); return false;">sea</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Y29xdWV0'); return false;">coquet</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/2025-06-22_round-the-island-race.html" class="no-external">
+The seals were out spectating. 2nd woman.
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2025-06-22_round-the-island-race.html" class="no-external">
+<div class="listing-date">
+Jun 22, 2025
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="11" data-categories="cGVlciUyQ3NlYSUyQ3R5bmVtb3V0aA==" data-listing-date-sort="1749596400000" data-listing-file-modified-sort="1753725043824" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="28">
+<div class="thumbnail"><a href="./posts/2025-06-11_rolling-practice.html" class="no-external">
+
+<img loading="lazy" src="https://dgtzuqphqg23d.cloudfront.net/Yz6RwWpoUjScYY6WnzZqqQHMaX-iFkcvfcJ2BHl3yiY-768x511.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2025-06-11_rolling-practice.html" class="no-external">Rolling practice</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('cGVlcg=='); return false;">peer</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('c2Vh'); return false;">sea</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('dHluZW1vdXRo'); return false;">tynemouth</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/2025-06-11_rolling-practice.html" class="no-external">
+With mixed success. Paul, Sarah, Kev &amp; Mark tried a few different rescues including playing with flooded hatches and rolling in a heavy boat.
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2025-06-11_rolling-practice.html" class="no-external">
+<div class="listing-date">
+Jun 11, 2025
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="12" data-categories="dHBjJTJDdHluZW1vdXRoJTJDc2Vh" data-listing-date-sort="1749250800000" data-listing-file-modified-sort="1753725043824" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="103">
+<div class="thumbnail"><a href="./posts/2025-06-07_the-early-paddler-catches-the-dfds.html" class="no-external">
+
+<img loading="lazy" src="https://dgtzuqphqg23d.cloudfront.net/qfTqcPGCzLLWAA2E3iuPz-xoA58JqBnimbd2-vv9Sss-768x575.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2025-06-07_the-early-paddler-catches-the-dfds.html" class="no-external">The early paddler catches the DFDS</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('dHBj'); return false;">tpc</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('dHluZW1vdXRo'); return false;">tynemouth</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('c2Vh'); return false;">sea</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/2025-06-07_the-early-paddler-catches-the-dfds.html" class="no-external">
+Early morning start for a Saturday TPC improvers session. I was on the water early enough to catch the DFDS coming in, which is always exciting.
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2025-06-07_the-early-paddler-catches-the-dfds.html" class="no-external">
+<div class="listing-date">
+Jun 7, 2025
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="13" data-categories="cGVlciUyQ3NlYSUyQ3NvdXRoLXNoaWVsZHM=" data-listing-date-sort="1749078000000" data-listing-file-modified-sort="1753725043824" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="168">
+<div class="thumbnail"><a href="./posts/2025-06-05_surrounded-by-dolphins.html" class="no-external">
+
+<img loading="lazy" src="https://d35tn3x5zm6xrc.cloudfront.net/wJpBolqqe2NTIW_A1LES4ametW9M0ziv7lJ-Kyu_7F8/thumbnails/wJpBolqqe2NTIW_A1LES4ametW9M0ziv7lJ-Kyu_7F8_848x478.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2025-06-05_surrounded-by-dolphins.html" class="no-external">Surrounded by dolphins</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('cGVlcg=='); return false;">peer</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('c2Vh'); return false;">sea</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('c291dGgtc2hpZWxkcw=='); return false;">south-shields</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/2025-06-05_surrounded-by-dolphins.html" class="no-external">
+After a chaotic start (leaving my kit bucket back at home and having to drive back for it 🤦) had a lovely, chatty paddle with Kirstie. Rain showers and rainbows.
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2025-06-05_surrounded-by-dolphins.html" class="no-external">
+<div class="listing-date">
+Jun 5, 2025
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="14" data-categories="cGVlciUyQ3NlYSUyQ3R5bmVtb3V0aA==" data-listing-date-sort="1748386800000" data-listing-file-modified-sort="1753725043824" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="65">
+<div class="thumbnail"><a href="./posts/2025-05-28_rolling-practice-at-cullercoats.html" class="no-external">
+
+<img loading="lazy" src="https://dgtzuqphqg23d.cloudfront.net/Cg_XrwjnkaigM0Dht0DPTkwqkbnJ9dLGJjj8ObD-lpM-768x511.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2025-05-28_rolling-practice-at-cullercoats.html" class="no-external">Rolling practice at Cullercoats</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('cGVlcg=='); return false;">peer</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('c2Vh'); return false;">sea</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('dHluZW1vdXRo'); return false;">tynemouth</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/2025-05-28_rolling-practice-at-cullercoats.html" class="no-external">
+Quick after work paddle with Sarah, Kev &amp; Mark. Quite choppy around the piers.
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2025-05-28_rolling-practice-at-cullercoats.html" class="no-external">
+<div class="listing-date">
+May 28, 2025
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="15" data-categories="ZXhwZWQlMkNqdXJhJTJDcGVlciUyQ3NlYQ==" data-listing-date-sort="1747868400000" data-listing-file-modified-sort="1753725043824" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
+<div class="thumbnail"><a href="./posts/2025-05-22_back-to-easedale-via-belnahua.html" class="no-external">
+
+<img loading="lazy" src="https://dgtzuqphqg23d.cloudfront.net/eSV-2Urxh_jCcjIUsFF_KGrmBPrDYQSmjYWIi9O9KAs-768x576.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2025-05-22_back-to-easedale-via-belnahua.html" class="no-external">Back to Easedale via Belnahua</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZXhwZWQ='); return false;">exped</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('anVyYQ=='); return false;">jura</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('cGVlcg=='); return false;">peer</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('c2Vh'); return false;">sea</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/2025-05-22_back-to-easedale-via-belnahua.html" class="no-external">
+To do
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2025-05-22_back-to-easedale-via-belnahua.html" class="no-external">
+<div class="listing-date">
+May 22, 2025
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="16" data-categories="ZXhwZWQlMkNqdXJhJTJDcGVlciUyQ3NlYQ==" data-listing-date-sort="1747782000000" data-listing-file-modified-sort="1753725043824" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="12">
+<div class="thumbnail"><a href="./posts/2025-05-21_corryvreckan-and-grey-dogs.html" class="no-external">
+
+<img loading="lazy" src="https://dgtzuqphqg23d.cloudfront.net/dyuhZzMlb05M34JuAuNXvIU7yRnORNYrEFqUc1v5QKg-768x432.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2025-05-21_corryvreckan-and-grey-dogs.html" class="no-external">Corryvreckan and grey dogs</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZXhwZWQ='); return false;">exped</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('anVyYQ=='); return false;">jura</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('cGVlcg=='); return false;">peer</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('c2Vh'); return false;">sea</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/2025-05-21_corryvreckan-and-grey-dogs.html" class="no-external">
+Corryvrevken was at slack with no swell 😅
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2025-05-21_corryvreckan-and-grey-dogs.html" class="no-external">
+<div class="listing-date">
+May 21, 2025
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="17" data-categories="ZXhwZWQlMkNqdXJhJTJDcGVlciUyQ3NlYQ==" data-listing-date-sort="1747695600000" data-listing-file-modified-sort="1753725043840" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="22">
+<div class="thumbnail"><a href="./posts/2025-05-20_back-up-west-jura-to-glengarrisdale-bothy.html" class="no-external">
+
+<img loading="lazy" src="https://d35tn3x5zm6xrc.cloudfront.net/_RR2BoErs0DXtSsV0wWgfrPJAMTQXguSWJmjXL2iCUs/thumbnails/_RR2BoErs0DXtSsV0wWgfrPJAMTQXguSWJmjXL2iCUs_600x600.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2025-05-20_back-up-west-jura-to-glengarrisdale-bothy.html" class="no-external">Back up West Jura to Glengarrisdale bothy</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZXhwZWQ='); return false;">exped</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('anVyYQ=='); return false;">jura</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('cGVlcg=='); return false;">peer</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('c2Vh'); return false;">sea</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/2025-05-20_back-up-west-jura-to-glengarrisdale-bothy.html" class="no-external">
+Very calm conditions and had a minke whale breach near us a few times 😮
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2025-05-20_back-up-west-jura-to-glengarrisdale-bothy.html" class="no-external">
+<div class="listing-date">
+May 20, 2025
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="18" data-categories="ZXhwZWQlMkNqdXJhJTJDcGVlciUyQ3NlYQ==" data-listing-date-sort="1747609200000" data-listing-file-modified-sort="1753725043840" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="11">
+<div class="thumbnail"><a href="./posts/2025-05-19_down-to-ruantallain-bothy.html" class="no-external">
+
+<img loading="lazy" src="https://dgtzuqphqg23d.cloudfront.net/gJNMQNe0cuxhmBbwQ4h94rwj8AIE5E9KjsKIQ-4A52Q-768x576.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2025-05-19_down-to-ruantallain-bothy.html" class="no-external">Down to Ruantallain bothy</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZXhwZWQ='); return false;">exped</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('anVyYQ=='); return false;">jura</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('cGVlcg=='); return false;">peer</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('c2Vh'); return false;">sea</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/2025-05-19_down-to-ruantallain-bothy.html" class="no-external">
+Stopping to explore the dry caves
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2025-05-19_down-to-ruantallain-bothy.html" class="no-external">
+<div class="listing-date">
+May 19, 2025
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="19" data-categories="ZXhwZWQlMkNqdXJhJTJDcGVlciUyQ3NlYQ==" data-listing-date-sort="1747522800000" data-listing-file-modified-sort="1753725043840" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
+<div class="thumbnail"><a href="./posts/2025-05-18_down-the-west-coast-of-jura-to-shian-bay.html" class="no-external">
+
+<img loading="lazy" src="https://dgtzuqphqg23d.cloudfront.net/5vIs2SeCN7DiymLcZTqIygeBFYgczvJJLIXHcIV-n4Y-768x432.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2025-05-18_down-the-west-coast-of-jura-to-shian-bay.html" class="no-external">Down the west coast of Jura to Shian bay</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZXhwZWQ='); return false;">exped</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('anVyYQ=='); return false;">jura</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('cGVlcg=='); return false;">peer</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('c2Vh'); return false;">sea</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/2025-05-18_down-the-west-coast-of-jura-to-shian-bay.html" class="no-external">
+To do
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2025-05-18_down-the-west-coast-of-jura-to-shian-bay.html" class="no-external">
+<div class="listing-date">
+May 18, 2025
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="20" data-categories="ZXhwZWQlMkNqdXJhJTJDcGVlciUyQ3NlYQ==" data-listing-date-sort="1747436400000" data-listing-file-modified-sort="1753725043840" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="7">
+<div class="thumbnail"><a href="./posts/2025-05-17_easedale-to-bagh-gleann-nam-muc.html" class="no-external">
+
+<img loading="lazy" src="https://dgtzuqphqg23d.cloudfront.net/Q_cn0MyV532opLpYzJWewXKOCK6rv4nV4ypDQ4DHw60-768x432.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2025-05-17_easedale-to-bagh-gleann-nam-muc.html" class="no-external">Easedale to Bagh Gleann nam Muc</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZXhwZWQ='); return false;">exped</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('anVyYQ=='); return false;">jura</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('cGVlcg=='); return false;">peer</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('c2Vh'); return false;">sea</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/2025-05-17_easedale-to-bagh-gleann-nam-muc.html" class="no-external">
+Avoiding the Corrievreckan
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2025-05-17_easedale-to-bagh-gleann-nam-muc.html" class="no-external">
+<div class="listing-date">
+May 17, 2025
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="21" data-categories="bGNjJTJDc2t5ZSUyQ3NlYSUyQzIwMjUtbGNjLXNreWU=" data-listing-date-sort="1747350000000" data-listing-file-modified-sort="1753725043840" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="324">
+<div class="thumbnail"><a href="./posts/2025-05-16_rubha-hunish.html" class="no-external">
+
+<img loading="lazy" src="https://dgtzuqphqg23d.cloudfront.net/HXqRfDFSTDhP8DngKSaoy8HYpZ7VQk19j_jc3FYh3mA-768x576.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2025-05-16_rubha-hunish.html" class="no-external">Rubha Hunish</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('bGNj'); return false;">lcc</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('c2t5ZQ=='); return false;">skye</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('c2Vh'); return false;">sea</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('MjAyNS1sY2Mtc2t5ZQ=='); return false;">2025-lcc-skye</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/2025-05-16_rubha-hunish.html" class="no-external">
+Amazing rocks hopping along the cliffs, mega caves and sea eagles.
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2025-05-16_rubha-hunish.html" class="no-external">
+<div class="listing-date">
+May 16, 2025
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="22" data-categories="bGNjJTJDc2t5ZSUyQ3NlYSUyQzIwMjUtbGNjLXNreWUlMkNleHBlZA==" data-listing-date-sort="1747263600000" data-listing-file-modified-sort="1753725043840" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="255">
+<div class="thumbnail"><a href="./posts/2025-05-15_back-to-skye-via-skye-bridge.html" class="no-external">
+
+<img loading="lazy" src="https://dgtzuqphqg23d.cloudfront.net/eERelZUP4Qgh0jaj39jq16dlo6pOMt8qvRx1i15bwvU-768x206.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2025-05-15_back-to-skye-via-skye-bridge.html" class="no-external">Back to Skye via Skye bridge</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('bGNj'); return false;">lcc</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('c2t5ZQ=='); return false;">skye</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('c2Vh'); return false;">sea</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('MjAyNS1sY2Mtc2t5ZQ=='); return false;">2025-lcc-skye</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZXhwZWQ='); return false;">exped</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/2025-05-15_back-to-skye-via-skye-bridge.html" class="no-external">
+The next day dawned sunny and ominously still. We were woken at about 04:30 by the local cuckoo but returned to snoozing until the inevitable could be delayed no longer, and…
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2025-05-15_back-to-skye-via-skye-bridge.html" class="no-external">
+<div class="listing-date">
+May 15, 2025
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="23" data-categories="bGNjJTJDc2t5ZSUyQ3NlYSUyQzIwMjUtbGNjLXNreWUlMkNleHBlZA==" data-listing-date-sort="1747177200000" data-listing-file-modified-sort="1753725043840" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="124">
+<div class="thumbnail"><a href="./posts/2025-05-14_to-uags-bothy.html" class="no-external">
+
+<img loading="lazy" src="https://dgtzuqphqg23d.cloudfront.net/cw53SsUd1DJJjVfr9PhiPumkSg3_4Y01GElEsTCW2SE-432x768.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2025-05-14_to-uags-bothy.html" class="no-external">To Uags Bothy</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('bGNj'); return false;">lcc</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('c2t5ZQ=='); return false;">skye</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('c2Vh'); return false;">sea</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('MjAyNS1sY2Mtc2t5ZQ=='); return false;">2025-lcc-skye</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZXhwZWQ='); return false;">exped</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/2025-05-14_to-uags-bothy.html" class="no-external">
+Finally joined by Sue, this was day 1 of a 2 day overnight trip to the mainland at Applecross bothy. Launching from Broadford after restocking and much boat handling down a…
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2025-05-14_to-uags-bothy.html" class="no-external">
+<div class="listing-date">
+May 14, 2025
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="24" data-categories="bGNjJTJDc2t5ZSUyQ3NlYSUyQzIwMjUtbGNjLXNreWU=" data-listing-date-sort="1747090800000" data-listing-file-modified-sort="1753725043840" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="273">
+<div class="thumbnail"><a href="./posts/2025-05-13_around-point-of-sleat.html" class="no-external">
+
+<img loading="lazy" src="https://dgtzuqphqg23d.cloudfront.net/WziLcQd7X2-_02SGAGE9_M-MfK-58XTSnzSWfpEGBkg-768x576.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2025-05-13_around-point-of-sleat.html" class="no-external">Around Point of Sleat</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('bGNj'); return false;">lcc</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('c2t5ZQ=='); return false;">skye</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('c2Vh'); return false;">sea</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('MjAyNS1sY2Mtc2t5ZQ=='); return false;">2025-lcc-skye</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/2025-05-13_around-point-of-sleat.html" class="no-external">
+The fact that Sue couldn’t join us again due to ongoing van problems was the only spoiler of this perfect day; the first trip that involved a shuttle (with many thanks to…
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2025-05-13_around-point-of-sleat.html" class="no-external">
+<div class="listing-date">
+May 13, 2025
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="25" data-categories="bGNjJTJDc2t5ZSUyQ3NlYSUyQzIwMjUtbGNjLXNreWU=" data-listing-date-sort="1747004400000" data-listing-file-modified-sort="1753725043840" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="200">
+<div class="thumbnail"><a href="./posts/2025-05-12_cuillin-magic.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/Sms2YCPVMZPYWxOVs8ZOJ-PjE7gHqaDR-asHFx5E1Hg-768x256.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2025-05-12_cuillin-magic.html" class="no-external">Cuillin Magic</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('bGNj'); return false;">lcc</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('c2t5ZQ=='); return false;">skye</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('c2Vh'); return false;">sea</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('MjAyNS1sY2Mtc2t5ZQ=='); return false;">2025-lcc-skye</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/2025-05-12_cuillin-magic.html" class="no-external">
+Stunning views of the Cullins and a lovely swim in Loch Coruisk.
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2025-05-12_cuillin-magic.html" class="no-external">
+<div class="listing-date">
+May 12, 2025
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="26" data-categories="bGNjJTJDc2VhJTJDc2t5ZSUyQzIwMjUtbGNjLXNreWU=" data-listing-date-sort="1746918000000" data-listing-file-modified-sort="1753725043857" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="298">
+<div class="thumbnail"><a href="./posts/2025-05-11_loch-bracadale.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/5sGoxj71Vu_j4BeRM9Mt_I4qyBmpNOTxzUjCsyCu8Vg-768x224.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2025-05-11_loch-bracadale.html" class="no-external">Loch Bracadale</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('bGNj'); return false;">lcc</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('c2Vh'); return false;">sea</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('c2t5ZQ=='); return false;">skye</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('MjAyNS1sY2Mtc2t5ZQ=='); return false;">2025-lcc-skye</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/2025-05-11_loch-bracadale.html" class="no-external">
+Oronsay, Wiay, Tarner and Harlosh islands.
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2025-05-11_loch-bracadale.html" class="no-external">
+<div class="listing-date">
+May 11, 2025
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="27" data-categories="dHBjJTJDc2VhJTJDdHluZW1vdXRo" data-listing-date-sort="1745967600000" data-listing-file-modified-sort="1753725043857" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="63">
+<div class="thumbnail"><a href="./posts/2025-04-30_tpc-novice-session-at-high-tide.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/ZYp_MUWA5yppWtVNMnMDsRRJaOxqQHuQRiuObvyTP8g-768x432.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2025-04-30_tpc-novice-session-at-high-tide.html" class="no-external">TPC Novice session at high tide</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('dHBj'); return false;">tpc</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('c2Vh'); return false;">sea</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('dHluZW1vdXRo'); return false;">tynemouth</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/2025-04-30_tpc-novice-session-at-high-tide.html" class="no-external">
+Three novice paddlers joined us at Longsands. We took them to Cullercoats arch to practice draw strokes. It was a big springs (5.3m) at high tide so the arch was quite…
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2025-04-30_tpc-novice-session-at-high-tide.html" class="no-external">
+<div class="listing-date">
+Apr 30, 2025
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="28" data-categories="cGVlciUyQ3NlYSUyQ2NvcXVldA==" data-listing-date-sort="1745103600000" data-listing-file-modified-sort="1753725043857" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="70">
+<div class="thumbnail"><a href="./posts/2025-04-20_round-the-island.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/YkcXO0ApFm9Hz45LvdtlQUb56A3jApGFom2PC1Yu0eI-768x432.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2025-04-20_round-the-island.html" class="no-external">Round the island</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('cGVlcg=='); return false;">peer</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('c2Vh'); return false;">sea</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Y29xdWV0'); return false;">coquet</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/2025-04-20_round-the-island.html" class="no-external">
+Standard loop around Coquet. We considered doing surf practice on the other side of the north pier but it was pretty big swell, so we left Andy and Tim to play whilst Sarah…
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2025-04-20_round-the-island.html" class="no-external">
+<div class="listing-date">
+Apr 20, 2025
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="29" data-categories="c29sbyUyQ3RwYyUyQ3R5bmVtb3V0aCUyQ3NlYQ==" data-listing-date-sort="1744844400000" data-listing-file-modified-sort="1753725043857" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="62">
+<div class="thumbnail"><a href="./posts/2025-04-17_evening-kayaking.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/qPkGpL2drYKGDPoYHMP9qFAuJqjPI4OgnlCsS4Is8Pw-768x334.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2025-04-17_evening-kayaking.html" class="no-external">Evening Kayaking</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('c29sbw=='); return false;">solo</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('dHBj'); return false;">tpc</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('dHluZW1vdXRo'); return false;">tynemouth</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('c2Vh'); return false;">sea</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/2025-04-17_evening-kayaking.html" class="no-external">
+Paddled solo from the Haven to Browns bay and then joined in with the TPC club session.
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2025-04-17_evening-kayaking.html" class="no-external">
+<div class="listing-date">
+Apr 17, 2025
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="30" data-categories="Y291cnNlJTJDZmFybmVzJTJDc2Vh" data-listing-date-sort="1744498800000" data-listing-file-modified-sort="1753725043857" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
+<div class="thumbnail"><a href="./posts/2025-04-13_sk-leader-training-day-2.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/WeycoQyOFUhU8YJ3tsqtcIM7rL9UmAcCuAlZAOcjPXc-768x576.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2025-04-13_sk-leader-training-day-2.html" class="no-external">SK Leader training day 2</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('Y291cnNl'); return false;">course</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZmFybmVz'); return false;">farnes</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('c2Vh'); return false;">sea</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/2025-04-13_sk-leader-training-day-2.html" class="no-external">
+To do
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2025-04-13_sk-leader-training-day-2.html" class="no-external">
+<div class="listing-date">
+Apr 13, 2025
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="31" data-categories="dHBjJTJDc2VhJTJDdHluZW1vdXRo" data-listing-date-sort="1744153200000" data-listing-file-modified-sort="1753725043857" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="75">
+<div class="thumbnail"><a href="./posts/2025-04-09_first-tpc-mid-week-of-the-season.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/y1ITUyVCbXR5fKu7yupFTfnb8Pk70iyOQk03jVCCMVg-768x432.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2025-04-09_first-tpc-mid-week-of-the-season.html" class="no-external">First TPC mid-week of the season</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('dHBj'); return false;">tpc</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('c2Vh'); return false;">sea</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('dHluZW1vdXRo'); return false;">tynemouth</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/2025-04-09_first-tpc-mid-week-of-the-season.html" class="no-external">
+Short session tonight to give our novices a chance to paddle from Longsands. We had two capsizes, one at the north end of Longsands, and one as we came in to the surf-landing.
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2025-04-09_first-tpc-mid-week-of-the-season.html" class="no-external">
+<div class="listing-date">
+Apr 9, 2025
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="32" data-categories="dHBjJTJDbG9jaC1rZW4lMkNsYWtl" data-listing-date-sort="1743807600000" data-listing-file-modified-sort="1753725043857" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="112">
+<div class="thumbnail"><a href="./posts/2025-04-05_loch-ken.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/puTDP8zyvC2XikmBedriW5uSzmyOT7QiIl_u4cRiSDc-768x441.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2025-04-05_loch-ken.html" class="no-external">Loch Ken</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('dHBj'); return false;">tpc</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('bG9jaC1rZW4='); return false;">loch-ken</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('bGFrZQ=='); return false;">lake</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/2025-04-05_loch-ken.html" class="no-external">
+With Josh &amp; Kev both who had physical niggles so we took it easy. F4 gusting F6 Easterlies so we hand-railed to get shelter. I practiced some nav along the way trying to pin…
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2025-04-05_loch-ken.html" class="no-external">
+<div class="listing-date">
+Apr 5, 2025
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="33" data-categories="cGVlciUyQ2NvcXVldCUyQ3NlYQ==" data-listing-date-sort="1741478400000" data-listing-file-modified-sort="1753725043236" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="69">
+<div class="thumbnail"><a href="./posts/2025-03-09_surrounded-by-seals.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/6pqfUqBiC1lBHer5EJpUSMcOcLiOZsslEqW77RvOVx4-768x576.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2025-03-09_surrounded-by-seals.html" class="no-external">Surrounded by seals</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('cGVlcg=='); return false;">peer</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Y29xdWV0'); return false;">coquet</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('c2Vh'); return false;">sea</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/2025-03-09_surrounded-by-seals.html" class="no-external">
+First Coquet island trip of the year. The seals came out to play and we were surrounded whilst they played with our toggles. Ann &amp; Pauline headed back after lap one whilst…
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2025-03-09_surrounded-by-seals.html" class="no-external">
+<div class="listing-date">
+Mar 9, 2025
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="34" data-categories="dHBjJTJDdHluZW1vdXRoJTJDc2Vh" data-listing-date-sort="1740787200000" data-listing-file-modified-sort="1753725043242" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="34">
+<div class="thumbnail"><a href="./posts/2025-03-01_novice-session-with-tpc.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/KAVVnYegyd9sJe8oDILifZPFd3JFGj6g7GRNOgyUIrY-768x576.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2025-03-01_novice-session-with-tpc.html" class="no-external">Novice session with TPC</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('dHBj'); return false;">tpc</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('dHluZW1vdXRo'); return false;">tynemouth</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('c2Vh'); return false;">sea</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/2025-03-01_novice-session-with-tpc.html" class="no-external">
+Running a novice session for new paddlers. We met them at Longsands, and then paddled north to Cullercoats to practice skills in the bay.
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2025-03-01_novice-session-with-tpc.html" class="no-external">
+<div class="listing-date">
+Mar 1, 2025
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="35" data-categories="cGVlciUyQ3R5bmVtb3V0aCUyQ25pZ2h0JTJDc2Vh" data-listing-date-sort="1738800000000" data-listing-file-modified-sort="1753725043245" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="137">
+<div class="thumbnail"><a href="./posts/2025-02-06_night-paddle-to-the-dome-and-back.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/focqQunjb_JU5gdkiHJrNjhGmQmjkScuFEwKZtm0VFU-768x432.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2025-02-06_night-paddle-to-the-dome-and-back.html" class="no-external">Night paddle to the dome and back</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('cGVlcg=='); return false;">peer</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('dHluZW1vdXRo'); return false;">tynemouth</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('bmlnaHQ='); return false;">night</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('c2Vh'); return false;">sea</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/2025-02-06_night-paddle-to-the-dome-and-back.html" class="no-external">
+Evening paddle to Spanish city and back with Paul, Sarah, Will, Gordon and Geoff. It was cold but calm and the half moon lit the sky well enough to see without our torches.…
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2025-02-06_night-paddle-to-the-dome-and-back.html" class="no-external">
+<div class="listing-date">
+Feb 6, 2025
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="36" data-categories="cGVlciUyQ3R5bmVtb3V0aCUyQ3NlYQ==" data-listing-date-sort="1738368000000" data-listing-file-modified-sort="1753725043246" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="63">
+<div class="thumbnail"><a href="./posts/2025-02-01_will-paddle-for-chips.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/_fxGlomH0fK_uvFZqBdLquQQptYR5HmibJ_3Ic9ak5A-768x432.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2025-02-01_will-paddle-for-chips.html" class="no-external">Will paddle for chips</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('cGVlcg=='); return false;">peer</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('dHluZW1vdXRo'); return false;">tynemouth</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('c2Vh'); return false;">sea</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/2025-02-01_will-paddle-for-chips.html" class="no-external">
+Just me, Paul and Sarah out for a short paddle before the swimming pool session. I had really bad cramps and it hurt to sit in an upright paddling position so I paddled very…
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2025-02-01_will-paddle-for-chips.html" class="no-external">
+<div class="listing-date">
+Feb 1, 2025
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="37" data-categories="cGVlciUyQ3NvdXRoLXNoaWVsZHMlMkNzZWE=" data-listing-date-sort="1735257600000" data-listing-file-modified-sort="1753725043251" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="65">
+<div class="thumbnail"><a href="./posts/2024-12-27_the-fog-cleared.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/BV5rpabh4IHD0bmHfUMWz37L8sr3oNaFnMC0eqz6HZ8-768x345.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-12-27_the-fog-cleared.html" class="no-external">The fog cleared</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('cGVlcg=='); return false;">peer</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('c291dGgtc2hpZWxkcw=='); return false;">south-shields</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('c2Vh'); return false;">sea</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/2024-12-27_the-fog-cleared.html" class="no-external">
+Initially the fog was heavy, and we considered just paddling North, rather than cross the channel in the fog. However, by the time we were getting on the water, the fog…
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-12-27_the-fog-cleared.html" class="no-external">
+<div class="listing-date">
+Dec 27, 2024
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="38" data-categories="cGVlciUyQ3R5bmVtb3V0aCUyQ3NlYQ==" data-listing-date-sort="1735171200000" data-listing-file-modified-sort="1753725043253" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="19">
+<div class="thumbnail"><a href="./posts/2024-12-26_boxing-day-paddle-and-a-beach-bbq.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/ln8aq3L-HoUx-qCp8T44jY9wd4jc3q7IPphmmL0ictA-768x345.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-12-26_boxing-day-paddle-and-a-beach-bbq.html" class="no-external">Boxing Day paddle and a beach BBQ</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('cGVlcg=='); return false;">peer</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('dHluZW1vdXRo'); return false;">tynemouth</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('c2Vh'); return false;">sea</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/2024-12-26_boxing-day-paddle-and-a-beach-bbq.html" class="no-external">
+Short paddle on boxing day.
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-12-26_boxing-day-paddle-and-a-beach-bbq.html" class="no-external">
+<div class="listing-date">
+Dec 26, 2024
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="39" data-categories="cGVlciUyQ2NvcXVldCUyQ2FtYmxlJTJDc2Vh" data-listing-date-sort="1731801600000" data-listing-file-modified-sort="1753725043253" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="49">
+<div class="thumbnail"><a href="./posts/2024-11-17_sunset-paddle-up-the-coquet.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/xNbHStoYJ9QHCgjyHzHN9ySqsJqzlOU22XulpzEqfxg-768x432.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-11-17_sunset-paddle-up-the-coquet.html" class="no-external">Sunset paddle up the Coquet</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('cGVlcg=='); return false;">peer</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Y29xdWV0'); return false;">coquet</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('YW1ibGU='); return false;">amble</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('c2Vh'); return false;">sea</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/2024-11-17_sunset-paddle-up-the-coquet.html" class="no-external">
+A very autumnal afternoon 🍂 Pootle up to the weir and back. Saw a sleepy heron. And lots of lapwings. Paddled up to the harbour to watch the big waves breaking. Got chips…
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-11-17_sunset-paddle-up-the-coquet.html" class="no-external">
+<div class="listing-date">
+Nov 17, 2024
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="40" data-categories="cGVlciUyQ3R5bmVtb3V0aCUyQ3NlYSUyQ25pZ2h0" data-listing-date-sort="1730851200000" data-listing-file-modified-sort="1753725043256" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="26">
+<div class="thumbnail"><a href="./posts/2024-11-06_night-paddle.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/WQhnH27pAJs-batnMHcmA2p0qKDVlh11MCX6aym711w-768x432.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-11-06_night-paddle.html" class="no-external">Night paddle</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('cGVlcg=='); return false;">peer</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('dHluZW1vdXRo'); return false;">tynemouth</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('c2Vh'); return false;">sea</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('bmlnaHQ='); return false;">night</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/2024-11-06_night-paddle.html" class="no-external">
+With Sarah and Paul. Nice level for paddling through the Cullercoats cave. Watched a fishing boat come in being followed by seagulls.
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-11-06_night-paddle.html" class="no-external">
+<div class="listing-date">
+Nov 6, 2024
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="41" data-categories="YW5nbGVzZXklMkNzZWElMkNwZWVyJTJDc2Vh" data-listing-date-sort="1730246400000" data-listing-file-modified-sort="1753725043259" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="52">
+<div class="thumbnail"><a href="./posts/2024-10-30_bwa-du-a-bwa-gwyn.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/hP3vx7u30fmyQzA1luxStSy-RPg6iTa2rE60dSDDoF4-432x768.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-10-30_bwa-du-a-bwa-gwyn.html" class="no-external">Bwa Du a Bwa Gwyn</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('YW5nbGVzZXk='); return false;">anglesey</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('c2Vh'); return false;">sea</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('cGVlcg=='); return false;">peer</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('c2Vh'); return false;">sea</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/2024-10-30_bwa-du-a-bwa-gwyn.html" class="no-external">
+The day after our tidal race course, Paul, Sarah and I did a short paddle from Porch Dafach.
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-10-30_bwa-du-a-bwa-gwyn.html" class="no-external">
+<div class="listing-date">
+Oct 30, 2024
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="42" data-categories="Y291cnNlJTJDYW5nbGVzZXklMkN0aWRlLXJhY2VzJTJDc2Vh" data-listing-date-sort="1730160000000" data-listing-file-modified-sort="1753725043260" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="18">
+<div class="thumbnail"><a href="./posts/2024-10-29_tide-races-on-the-west-coast-of-anglesey.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/DIoumFlCJcI2D3RMbwnOy0WDP2LuwA77vjyQRph3SVk-578x768.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-10-29_tide-races-on-the-west-coast-of-anglesey.html" class="no-external">Tide races on the west coast of Anglesey</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('Y291cnNl'); return false;">course</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('YW5nbGVzZXk='); return false;">anglesey</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('dGlkZS1yYWNlcw=='); return false;">tide-races</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('c2Vh'); return false;">sea</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/2024-10-29_tide-races-on-the-west-coast-of-anglesey.html" class="no-external">
+Led by Paul Williams North Stack, South Stack and Penrhyn mawr With Paul &amp; Sarah
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-10-29_tide-races-on-the-west-coast-of-anglesey.html" class="no-external">
+<div class="listing-date">
+Oct 29, 2024
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="43" data-categories="Y291cnNlJTJDYW5nbGVzZXklMkNzZWE=" data-listing-date-sort="1730073600000" data-listing-file-modified-sort="1753725043260" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="8">
+<div class="thumbnail"><a href="./posts/2024-10-28_rockhopping-on-the-north-coast.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/kDX-_PoDLtQ5LXmW4ZhYnl0_3VUhDX2AM9neA5ulCNQ-768x578.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-10-28_rockhopping-on-the-north-coast.html" class="no-external">Rockhopping on the North coast</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('Y291cnNl'); return false;">course</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('YW5nbGVzZXk='); return false;">anglesey</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('c2Vh'); return false;">sea</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/2024-10-28_rockhopping-on-the-north-coast.html" class="no-external">
+Porth Wen brickworks
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-10-28_rockhopping-on-the-north-coast.html" class="no-external">
+<div class="listing-date">
+Oct 28, 2024
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="44" data-categories="Y2MlMkNzZWElMkNsZWFkZXJzaGlwJTJDc291dGgtc2hpZWxkcw==" data-listing-date-sort="1726354800000" data-listing-file-modified-sort="1753725043260" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="27">
+<div class="thumbnail"><a href="./posts/2024-09-15_cumbria-canoeists-visit-tynemouth-day-2.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/FyUFQiKNkHkNr_F6vOSo1jASldNxn3IEJN99lyTozlc-768x432.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-09-15_cumbria-canoeists-visit-tynemouth-day-2.html" class="no-external">Cumbria Canoeists visit Tynemouth Day 2</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('Y2M='); return false;">cc</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('c2Vh'); return false;">sea</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('bGVhZGVyc2hpcA=='); return false;">leadership</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('c291dGgtc2hpZWxkcw=='); return false;">south-shields</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/2024-09-15_cumbria-canoeists-visit-tynemouth-day-2.html" class="no-external">
+A second day of practising leading with the Cumbria Canoeists trip.
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-09-15_cumbria-canoeists-visit-tynemouth-day-2.html" class="no-external">
+<div class="listing-date">
+Sep 15, 2024
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="45" data-categories="Y2MlMkNzZWElMkNsZWFkZXJzaGlwJTJDdHluZW1vdXRo" data-listing-date-sort="1726268400000" data-listing-file-modified-sort="1753725043260" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="20">
+<div class="thumbnail"><a href="./posts/2024-09-14_cumbria-canoeists-visit-tynemouth-day-1.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/MN2CB_enZncfRW5OKh-34qSjWN82w0JfzT5pfiz9cBo-768x432.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-09-14_cumbria-canoeists-visit-tynemouth-day-1.html" class="no-external">Cumbria Canoeists visit Tynemouth Day 1</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('Y2M='); return false;">cc</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('c2Vh'); return false;">sea</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('bGVhZGVyc2hpcA=='); return false;">leadership</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('dHluZW1vdXRo'); return false;">tynemouth</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/2024-09-14_cumbria-canoeists-visit-tynemouth-day-1.html" class="no-external">
+My first attempt at leading a group formally involved a number of swims (including my own!)
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-09-14_cumbria-canoeists-visit-tynemouth-day-1.html" class="no-external">
+<div class="listing-date">
+Sep 14, 2024
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="46" data-categories="cGVlciUyQ3NvdXRoLXNoaWVsZHMlMkNzZWE=" data-listing-date-sort="1725404400000" data-listing-file-modified-sort="1753725043260" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="78">
+<div class="thumbnail"><a href="./posts/2024-09-04_south-to-marsden.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/0r78uwq7Mbby4LHXfjut1xHCuHq9CFMa_WiUBFq0lSQ-768x511.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-09-04_south-to-marsden.html" class="no-external">South to Marsden</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('cGVlcg=='); return false;">peer</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('c291dGgtc2hpZWxkcw=='); return false;">south-shields</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('c2Vh'); return false;">sea</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/2024-09-04_south-to-marsden.html" class="no-external">
+Making the most of evening light we headed South tonight (Paul, Sarah, Cath, Claire, Kev, Mark). Chased the DFDS out between the piers. Slight tide race off the North pier.
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-09-04_south-to-marsden.html" class="no-external">
+<div class="listing-date">
+Sep 4, 2024
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="47" data-listing-date-sort="1725318000000" data-listing-file-modified-sort="1753725043271" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="69">
+<div class="thumbnail"><a href="./posts/2024-09-03_north-to-table-rocks.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/6nBcwGyWI-crymJOuZaEpW1DLe6yxdJvtlSLQt2J04E-768x418.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-09-03_north-to-table-rocks.html" class="no-external">North to table rocks</a>
+</h3>
+<div class="delink listing-description"><a href="./posts/2024-09-03_north-to-table-rocks.html" class="no-external">
+Paul, Kev, Claire, Cath, Mark and Gordon Dave setting off a little late and meeting us on the water.
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-09-03_north-to-table-rocks.html" class="no-external">
+<div class="listing-date">
+Sep 3, 2024
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="48" data-categories="" data-listing-date-sort="1725145200000" data-listing-file-modified-sort="1753725043273" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="22">
+<div class="thumbnail"><a href="./posts/2024-09-01_bass-rock.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/Z6A2NN_7mcozKoVwFmBTXjY3esr23SR3OFqnd-jylEo-768x408.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-09-01_bass-rock.html" class="no-external">Bass rock</a>
+</h3>
+<div class="listing-categories">
+
+</div>
+<div class="delink listing-description"><a href="./posts/2024-09-01_bass-rock.html" class="no-external">
+Headwind to Bass Rock meant slow progress. Love the noise of the Gannets.
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-09-01_bass-rock.html" class="no-external">
+<div class="listing-date">
+Sep 1, 2024
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="49" data-categories="" data-listing-date-sort="1725058800000" data-listing-file-modified-sort="1753725043538" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
+<div class="thumbnail"><a href="./posts/2024-08-31_end-of-summer-paddle.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/wGXr8a_lU_KoeLZY_VP04a2UJl-tXWyjTp4GRuAYMDE-768x432.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-08-31_end-of-summer-paddle.html" class="no-external">End of Summer paddle</a>
+</h3>
+<div class="listing-categories">
+
+</div>
+<div class="delink listing-description"><a href="./posts/2024-08-31_end-of-summer-paddle.html" class="no-external">
+To do
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-08-31_end-of-summer-paddle.html" class="no-external">
+<div class="listing-date">
+Aug 31, 2024
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="50" data-listing-date-sort="1724799600000" data-listing-file-modified-sort="1753725043541" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="23">
+<div class="thumbnail"><a href="./posts/2024-08-28_afternoon-kayaking.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/dCeFFv1d0vm_3sfzsjLUYgzYg6wHTH5laObJc1S-x-I-768x578.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-08-28_afternoon-kayaking.html" class="no-external">Afternoon Kayaking</a>
+</h3>
+<div class="delink listing-description"><a href="./posts/2024-08-28_afternoon-kayaking.html" class="no-external">
+Quite a low tide. Did some surf practice at Longsands. Watched the MS Ambition leave port.
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-08-28_afternoon-kayaking.html" class="no-external">
+<div class="listing-date">
+Aug 28, 2024
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="51" data-categories="cGVlciUyQ3N0LWFiYnM=" data-listing-date-sort="1724454000000" data-listing-file-modified-sort="1753725043543" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="22">
+<div class="thumbnail"><a href="./posts/2024-08-24_st-abbs.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/n7ZvfEpGf_ypy0u5z_1c7wHKg934ONNDfmAfQy2ZHII-768x432.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-08-24_st-abbs.html" class="no-external">St.&nbsp;Abbs</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('cGVlcg=='); return false;">peer</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('c3QtYWJicw=='); return false;">st-abbs</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/2024-08-24_st-abbs.html" class="no-external">
+On a fairly low tide. Saw 15+ dolphins, some seals and plenty of jellies and sea urchins.
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-08-24_st-abbs.html" class="no-external">
+<div class="listing-date">
+Aug 24, 2024
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="52" data-categories="dHBjJTJDc291dGgtc2hpZWxkcyUyQ3NlYQ==" data-listing-date-sort="1723071600000" data-listing-file-modified-sort="1753725043545" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="12">
+<div class="thumbnail"><a href="./posts/2024-08-08_daves-ska-group.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/m6giEFvgZSG_vujOjBVspKkN2XlP389dChvux7am-0Q-768x345.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-08-08_daves-ska-group.html" class="no-external">Dave’s SKA group</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('dHBj'); return false;">tpc</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('c291dGgtc2hpZWxkcw=='); return false;">south-shields</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('c2Vh'); return false;">sea</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/2024-08-08_daves-ska-group.html" class="no-external">
+Bow rudders and rescues
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-08-08_daves-ska-group.html" class="no-external">
+<div class="listing-date">
+Aug 8, 2024
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="53" data-categories="dHBjJTJDc2VhJTJDdHluZW1vdXRo" data-listing-date-sort="1722294000000" data-listing-file-modified-sort="1753725043547" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="8">
+<div class="thumbnail"><a href="./posts/2024-07-30_pauls-ska-group.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/UItF-yislp2T9yWdDikOF-F4DubWL3BWiVRNltr1MdY-768x434.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-07-30_pauls-ska-group.html" class="no-external">Paul’s SKA group</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('dHBj'); return false;">tpc</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('c2Vh'); return false;">sea</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('dHluZW1vdXRo'); return false;">tynemouth</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/2024-07-30_pauls-ska-group.html" class="no-external">
+Towing and rescues
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-07-30_pauls-ska-group.html" class="no-external">
+<div class="listing-date">
+Jul 30, 2024
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="54" data-listing-date-sort="1721516400000" data-listing-file-modified-sort="1753725043549" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
+<div class="thumbnail"><a href="./posts/2024-07-21_wskf-day-3-playing-at-penmon.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/FSg9Kdt8kMoQFo40IK2ZKKN9Xc3ZzNvV47XxbtMB26g-768x768.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-07-21_wskf-day-3-playing-at-penmon.html" class="no-external">WSKF day 3 Playing at Penmon</a>
+</h3>
+<div class="delink listing-description"><a href="./posts/2024-07-21_wskf-day-3-playing-at-penmon.html" class="no-external">
+To do
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-07-21_wskf-day-3-playing-at-penmon.html" class="no-external">
+<div class="listing-date">
+Jul 21, 2024
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="55" data-categories="" data-listing-date-sort="1721430000000" data-listing-file-modified-sort="1753725043551" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="12">
+<div class="thumbnail"><a href="./posts/2024-07-20_wskf-day-2-attempting-to-lead-the-crossing-to-middle-mouse-😬.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/UXg_ReIQgvzieHnNGgclNgy-C4LDJhwtWfr40jcV6Os-768x345.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-07-20_wskf-day-2-attempting-to-lead-the-crossing-to-middle-mouse-😬.html" class="no-external">WSKF day 2 Attempting to lead the crossing to Middle Mouse 😬</a>
+</h3>
+<div class="listing-categories">
+
+</div>
+<div class="delink listing-description"><a href="./posts/2024-07-20_wskf-day-2-attempting-to-lead-the-crossing-to-middle-mouse-😬.html" class="no-external">
+Playing in the race and rolling practice
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-07-20_wskf-day-2-attempting-to-lead-the-crossing-to-middle-mouse-😬.html" class="no-external">
+<div class="listing-date">
+Jul 20, 2024
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="56" data-categories="" data-listing-date-sort="1721343600000" data-listing-file-modified-sort="1753725043553" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
+<div class="thumbnail"><a href="./posts/2024-07-19_essential-wskf-day-1-rescues-in-the-wind.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/Vyp-PBTQtZaeruCn1GeNlDrjdoIaL7UVi_kf20TuXiY-768x433.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-07-19_essential-wskf-day-1-rescues-in-the-wind.html" class="no-external">Essential WSKF day 1 Rescues in the wind</a>
+</h3>
+<div class="listing-categories">
+
+</div>
+<div class="delink listing-description"><a href="./posts/2024-07-19_essential-wskf-day-1-rescues-in-the-wind.html" class="no-external">
+To do
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-07-19_essential-wskf-day-1-rescues-in-the-wind.html" class="no-external">
+<div class="listing-date">
+Jul 19, 2024
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="57" data-categories="" data-listing-date-sort="1721257200000" data-listing-file-modified-sort="1753725043555" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
+<div class="thumbnail"><a href="./posts/2024-07-18_great-little-orme-escorted-by-seals.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/TWh_lD5_QR0esgqEeKjNzWB3f7zmbU_8_ijw93OApYk-768x432.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-07-18_great-little-orme-escorted-by-seals.html" class="no-external">Great &amp; Little Orme, escorted by seals</a>
+</h3>
+<div class="listing-categories">
+
+</div>
+<div class="delink listing-description"><a href="./posts/2024-07-18_great-little-orme-escorted-by-seals.html" class="no-external">
+To do
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-07-18_great-little-orme-escorted-by-seals.html" class="no-external">
+<div class="listing-date">
+Jul 18, 2024
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="58" data-listing-date-sort="1718751600000" data-listing-file-modified-sort="1753725043557" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
+<div class="thumbnail"><a href="./posts/2024-06-19_dolphin-spotting-🐬.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/nnDXDyecxJxfRknJbWE0hS1rkTqHNaF2yBRRviCpkFY-768x576.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-06-19_dolphin-spotting-🐬.html" class="no-external">Dolphin spotting 🐬</a>
+</h3>
+<div class="delink listing-description"><a href="./posts/2024-06-19_dolphin-spotting-🐬.html" class="no-external">
+To do
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-06-19_dolphin-spotting-🐬.html" class="no-external">
+<div class="listing-date">
+Jun 19, 2024
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="59" data-categories="" data-listing-date-sort="1718665200000" data-listing-file-modified-sort="1753725043559" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="16">
+<div class="thumbnail"><a href="./posts/2024-06-18_to-the-yellow-buoy.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/NceuOSr2_t0YD-dGbIYDxIjR1MNUX6YPA49bVN0T-pA-768x576.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-06-18_to-the-yellow-buoy.html" class="no-external">To the yellow buoy</a>
+</h3>
+<div class="listing-categories">
+
+</div>
+<div class="delink listing-description"><a href="./posts/2024-06-18_to-the-yellow-buoy.html" class="no-external">
+Good dose of Vitamin Sea. Dolphins on the way back 🐬
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-06-18_to-the-yellow-buoy.html" class="no-external">
+<div class="listing-date">
+Jun 18, 2024
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="60" data-categories="" data-listing-date-sort="1718578800000" data-listing-file-modified-sort="1753725043565" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
+<div class="thumbnail"><a href="./posts/2024-06-17_morning-kayaking.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/ouEfZg7QltXSdTmcNR5CmZrFaSuZOIJ0VPmiHutbppI-768x432.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-06-17_morning-kayaking.html" class="no-external">Morning Kayaking</a>
+</h3>
+<div class="listing-categories">
+
+</div>
+<div class="delink listing-description"><a href="./posts/2024-06-17_morning-kayaking.html" class="no-external">
+To do
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-06-17_morning-kayaking.html" class="no-external">
+<div class="listing-date">
+Jun 17, 2024
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="61" data-categories="" data-listing-date-sort="1718492400000" data-listing-file-modified-sort="1753725043571" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="12">
+<div class="thumbnail"><a href="./posts/2024-06-16_escorting-the-king-of-the-sea-👑.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/LoybrAqfSzqUzUABHB_nG3WDJEO6pAGqool6LWPemVU-768x441.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-06-16_escorting-the-king-of-the-sea-👑.html" class="no-external">Escorting the King of the Sea 👑</a>
+</h3>
+<div class="listing-categories">
+
+</div>
+<div class="delink listing-description"><a href="./posts/2024-06-16_escorting-the-king-of-the-sea-👑.html" class="no-external">
+Coquet Canoe Club Around the Island race
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-06-16_escorting-the-king-of-the-sea-👑.html" class="no-external">
+<div class="listing-date">
+Jun 16, 2024
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="62" data-listing-date-sort="1718406000000" data-listing-file-modified-sort="1753725043574" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="9">
+<div class="thumbnail"><a href="./posts/2024-06-15_fabulous-day-for-farnes.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/7Py5oWOHvHzPrt2RWmjUut8bKcRbAr4z6Z5pInL2FjE-768x433.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-06-15_fabulous-day-for-farnes.html" class="no-external">Fabulous day for Farnes</a>
+</h3>
+<div class="delink listing-description"><a href="./posts/2024-06-15_fabulous-day-for-farnes.html" class="no-external">
+With Kirstie, Josh &amp; Felix
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-06-15_fabulous-day-for-farnes.html" class="no-external">
+<div class="listing-date">
+Jun 15, 2024
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="63" data-categories="" data-listing-date-sort="1717282800000" data-listing-file-modified-sort="1753725043576" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
+<div class="thumbnail"><a href="./posts/2024-06-02_paddle-uk-bigpaddlecleanup-with-tcc.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/RZnZ_Q_ciWcybUuDt0hJxFctAVYQdrq0_oUV30kno2g-768x576.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-06-02_paddle-uk-bigpaddlecleanup-with-tcc.html" class="no-external">Paddle UK #BigPaddleCleanup with TCC</a>
+</h3>
+<div class="listing-categories">
+
+</div>
+<div class="delink listing-description"><a href="./posts/2024-06-02_paddle-uk-bigpaddlecleanup-with-tcc.html" class="no-external">
+To do
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-06-02_paddle-uk-bigpaddlecleanup-with-tcc.html" class="no-external">
+<div class="listing-date">
+Jun 2, 2024
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="64" data-listing-date-sort="1717110000000" data-listing-file-modified-sort="1753725043579" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
+<div class="thumbnail"><a href="./posts/2024-05-31_summer-isles-day-3.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/2mxCcOjnhqD4NQoGUxRnAix0NMze5G6SU1RqIEfh7WA-768x349.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-05-31_summer-isles-day-3.html" class="no-external">Summer Isles Day 3</a>
+</h3>
+<div class="delink listing-description"><a href="./posts/2024-05-31_summer-isles-day-3.html" class="no-external">
+To do
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-05-31_summer-isles-day-3.html" class="no-external">
+<div class="listing-date">
+May 31, 2024
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="65" data-listing-date-sort="1717023600000" data-listing-file-modified-sort="1753725043579" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="8">
+<div class="thumbnail"><a href="./posts/2024-05-30_summer-isles-day-2.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/fv-x9o0HIPgEf636NMCcPVmPPaOrhadoeutvgYh7Ank-768x309.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-05-30_summer-isles-day-2.html" class="no-external">Summer Isles Day 2</a>
+</h3>
+<div class="delink listing-description"><a href="./posts/2024-05-30_summer-isles-day-2.html" class="no-external">
+Caves and bioluminescence
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-05-30_summer-isles-day-2.html" class="no-external">
+<div class="listing-date">
+May 30, 2024
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="66" data-listing-date-sort="1716937200000" data-listing-file-modified-sort="1753725043579" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="31">
+<div class="thumbnail"><a href="./posts/2024-05-29_summer-isles-day-1.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/onOrboRDtN8p0GKhbJrd7RDcjTWMxiLgRD4OKPraf_Q-768x363.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-05-29_summer-isles-day-1.html" class="no-external">Summer Isles Day 1</a>
+</h3>
+<div class="delink listing-description"><a href="./posts/2024-05-29_summer-isles-day-1.html" class="no-external">
+Exploring islands in the sunshine, a chorus of happy birthday in a cave, cake around a bonfire and lovely company. Fabulous way to spend a birthday 💙🚣🏻‍♀️🍰
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-05-29_summer-isles-day-1.html" class="no-external">
+<div class="listing-date">
+May 29, 2024
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="67" data-categories="" data-listing-date-sort="1716850800000" data-listing-file-modified-sort="1753725043579" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
+<div class="thumbnail"><a href="./posts/2024-05-28_moray-firth-to-eathie-bothy.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/-CzzRc5ApwGceXs9-QDc_qLqCjtOqZXbTEpqcBCT-lI-768x432.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-05-28_moray-firth-to-eathie-bothy.html" class="no-external">Moray Firth to Eathie bothy</a>
+</h3>
+<div class="listing-categories">
+
+</div>
+<div class="delink listing-description"><a href="./posts/2024-05-28_moray-firth-to-eathie-bothy.html" class="no-external">
+To do
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-05-28_moray-firth-to-eathie-bothy.html" class="no-external">
+<div class="listing-date">
+May 28, 2024
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="68" data-categories="" data-listing-date-sort="1716764400000" data-listing-file-modified-sort="1753725043579" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
+<div class="thumbnail"><a href="./posts/2024-05-27_arbroath-cliffs.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/zjzj2IL267JMWmgHR1rLOVuXpS0W3ZhB0_yAuaoMEOw-768x432.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-05-27_arbroath-cliffs.html" class="no-external">Arbroath cliffs</a>
+</h3>
+<div class="listing-categories">
+
+</div>
+<div class="delink listing-description"><a href="./posts/2024-05-27_arbroath-cliffs.html" class="no-external">
+To do
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-05-27_arbroath-cliffs.html" class="no-external">
+<div class="listing-date">
+May 27, 2024
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="69" data-categories="" data-listing-date-sort="1716159600000" data-listing-file-modified-sort="1753725043726" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="9">
+<div class="thumbnail"><a href="./posts/2024-05-20_evening-paddle-to-marsden.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/kAb4-PqaQRmqUOa3xYkhXOixdYa74IkC9EPxohvrndA-768x433.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-05-20_evening-paddle-to-marsden.html" class="no-external">Evening paddle to Marsden</a>
+</h3>
+<div class="listing-categories">
+
+</div>
+<div class="delink listing-description"><a href="./posts/2024-05-20_evening-paddle-to-marsden.html" class="no-external">
+With Kirstie, Dave and Penny
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-05-20_evening-paddle-to-marsden.html" class="no-external">
+<div class="listing-date">
+May 20, 2024
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="70" data-categories="" data-listing-date-sort="1716073200000" data-listing-file-modified-sort="1753725043726" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="7">
+<div class="thumbnail"><a href="./posts/2024-05-19_first-dolphins-of-the-season.html" class="no-external">
+
+<img loading="lazy" data-src="https://image.mux.com/kCzAUveHGqRKyaMmLO1RaO219JjBIiV02lk026udXwNTs/thumbnail.jpg?width=600&amp;height=338&amp;fit_mode=preserve&amp;time=0" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-05-19_first-dolphins-of-the-season.html" class="no-external">First dolphins of the season</a>
+</h3>
+<div class="listing-categories">
+
+</div>
+<div class="delink listing-description"><a href="./posts/2024-05-19_first-dolphins-of-the-season.html" class="no-external">
+Round Coquet
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-05-19_first-dolphins-of-the-season.html" class="no-external">
+<div class="listing-date">
+May 19, 2024
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="71" data-categories="" data-listing-date-sort="1715468400000" data-listing-file-modified-sort="1753725043726" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
+<div class="thumbnail"><a href="./posts/2024-05-12_practicing-rescues-in-the-sea-fog.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/jSiXzmI7nD55VjtSE1tCzMHBecgNroCCEkje4GNSK-g-768x461.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-05-12_practicing-rescues-in-the-sea-fog.html" class="no-external">Practicing rescues in the sea fog</a>
+</h3>
+<div class="listing-categories">
+
+</div>
+<div class="delink listing-description"><a href="./posts/2024-05-12_practicing-rescues-in-the-sea-fog.html" class="no-external">
+To do
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-05-12_practicing-rescues-in-the-sea-fog.html" class="no-external">
+<div class="listing-date">
+May 12, 2024
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="72" data-listing-date-sort="1714950000000" data-listing-file-modified-sort="1753725043726" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
+<div class="thumbnail"><a href="./posts/2024-05-06_gigha-day-3.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/tTECOejrku18r081MBIAHvoXGHHt5_enzNuBuc0QfsU-768x578.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-05-06_gigha-day-3.html" class="no-external">Gigha day 3</a>
+</h3>
+<div class="delink listing-description"><a href="./posts/2024-05-06_gigha-day-3.html" class="no-external">
+To do
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-05-06_gigha-day-3.html" class="no-external">
+<div class="listing-date">
+May 6, 2024
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="73" data-listing-date-sort="1714863600000" data-listing-file-modified-sort="1753725043726" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="10">
+<div class="thumbnail"><a href="./posts/2024-05-05_gigha-day-2.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/6S0bAJmCKAmzE7DZvbQ5r7VaDUPLMmKQRwahEfjC2Bk-768x432.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-05-05_gigha-day-2.html" class="no-external">Gigha day 2</a>
+</h3>
+<div class="delink listing-description"><a href="./posts/2024-05-05_gigha-day-2.html" class="no-external">
+Down the west coast to Cara
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-05-05_gigha-day-2.html" class="no-external">
+<div class="listing-date">
+May 5, 2024
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="74" data-listing-date-sort="1714777200000" data-listing-file-modified-sort="1753725043726" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
+<div class="thumbnail"><a href="./posts/2024-05-04_gigha-day-1.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/BvJaWPXBJxlLnLr292DxzhiCTZ5OaPwp0vZysTCz_v4-768x433.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-05-04_gigha-day-1.html" class="no-external">Gigha day 1</a>
+</h3>
+<div class="delink listing-description"><a href="./posts/2024-05-04_gigha-day-1.html" class="no-external">
+To do
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-05-04_gigha-day-1.html" class="no-external">
+<div class="listing-date">
+May 4, 2024
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="75" data-listing-date-sort="1714777200000" data-listing-file-modified-sort="1753725043741" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
+<div class="thumbnail"><a href="./posts/2024-05-04_great-cumbrae-day-2.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/GBLXPK-FnrzuWm5v8VQOC9K0wbTB-YT17jO6zLHAlhU-768x433.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-05-04_great-cumbrae-day-2.html" class="no-external">Great Cumbrae day 2</a>
+</h3>
+<div class="delink listing-description"><a href="./posts/2024-05-04_great-cumbrae-day-2.html" class="no-external">
+To do
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-05-04_great-cumbrae-day-2.html" class="no-external">
+<div class="listing-date">
+May 4, 2024
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="76" data-listing-date-sort="1714690800000" data-listing-file-modified-sort="1753725043743" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
+<div class="thumbnail"><a href="./posts/2024-05-03_great-cumbrae-day-1.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/_dhIwH9LYFmxMwjajJofhZKpvYfzb1b_bZxkD5nuATo-768x432.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-05-03_great-cumbrae-day-1.html" class="no-external">Great Cumbrae day 1</a>
+</h3>
+<div class="delink listing-description"><a href="./posts/2024-05-03_great-cumbrae-day-1.html" class="no-external">
+To do
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-05-03_great-cumbrae-day-1.html" class="no-external">
+<div class="listing-date">
+May 3, 2024
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="77" data-categories="" data-listing-date-sort="1713654000000" data-listing-file-modified-sort="1753725043745" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="29">
+<div class="thumbnail"><a href="./posts/2024-04-21_little-evening-paddle-to-coquet.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/FktlsJuwvHcUh6liCHJndURSM397G50nx4HBEGQz3RM-768x578.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-04-21_little-evening-paddle-to-coquet.html" class="no-external">Little evening paddle to Coquet</a>
+</h3>
+<div class="listing-categories">
+
+</div>
+<div class="delink listing-description"><a href="./posts/2024-04-21_little-evening-paddle-to-coquet.html" class="no-external">
+After a fabulous two day boat repair course. Surfing in between the piers in an unfamiliar boat 😀
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-04-21_little-evening-paddle-to-coquet.html" class="no-external">
+<div class="listing-date">
+Apr 21, 2024
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="78" data-categories="" data-listing-date-sort="1711843200000" data-listing-file-modified-sort="1753725043747" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="10">
+<div class="thumbnail"><a href="./posts/2024-03-31_puffins-seals.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/7OaAkMXZH6Bui3zET3aks3qkL66SV8AedUPcX4cragU-768x432.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-03-31_puffins-seals.html" class="no-external">Puffins &amp; seals</a>
+</h3>
+<div class="listing-categories">
+
+</div>
+<div class="delink listing-description"><a href="./posts/2024-03-31_puffins-seals.html" class="no-external">
+Short trip around Coquet Island
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-03-31_puffins-seals.html" class="no-external">
+<div class="listing-date">
+Mar 31, 2024
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="79" data-listing-date-sort="1711756800000" data-listing-file-modified-sort="1753725043748" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
+<div class="thumbnail"><a href="./posts/2024-03-30_morning-kayaking.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/VYmIbsMjq46TI1RtxaYv481dQELiZ70rw-DT7DrxprY-768x432.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-03-30_morning-kayaking.html" class="no-external">Morning Kayaking</a>
+</h3>
+<div class="delink listing-description"><a href="./posts/2024-03-30_morning-kayaking.html" class="no-external">
+To do
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-03-30_morning-kayaking.html" class="no-external">
+<div class="listing-date">
+Mar 30, 2024
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="80" data-categories="" data-listing-date-sort="1710892800000" data-listing-file-modified-sort="1753725043750" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
+<div class="thumbnail"><a href="./posts/2024-03-20_spanish-city-back.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/D9Miy47sVZwArhG-AnYkXLM0PRxshZ2OLNzlQ_mUyCo-768x576.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-03-20_spanish-city-back.html" class="no-external">Spanish City &amp; back</a>
+</h3>
+<div class="listing-categories">
+
+</div>
+<div class="delink listing-description"><a href="./posts/2024-03-20_spanish-city-back.html" class="no-external">
+To do
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-03-20_spanish-city-back.html" class="no-external">
+<div class="listing-date">
+Mar 20, 2024
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="81" data-listing-date-sort="1708646400000" data-listing-file-modified-sort="1753725043751" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
+<div class="thumbnail"><a href="./posts/2024-02-23_lunch-kayaking.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/aqPqH6p6nqvWUFNg3DizKPFPWhj3iQlk60kKgQnYzWM-768x432.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-02-23_lunch-kayaking.html" class="no-external">Lunch Kayaking</a>
+</h3>
+<div class="delink listing-description"><a href="./posts/2024-02-23_lunch-kayaking.html" class="no-external">
+To do
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-02-23_lunch-kayaking.html" class="no-external">
+<div class="listing-date">
+Feb 23, 2024
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="82" data-listing-date-sort="1704412800000" data-listing-file-modified-sort="1753725043751" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
+<div class="thumbnail"><a href="./posts/2024-01-05_morning-kayaking.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/78uF-N3dGk97KSIA_oplQ87pGgsLfzHPAQrXrkDpTjw-768x578.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-01-05_morning-kayaking.html" class="no-external">Morning Kayaking</a>
+</h3>
+<div class="delink listing-description"><a href="./posts/2024-01-05_morning-kayaking.html" class="no-external">
+Rolling swell
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-01-05_morning-kayaking.html" class="no-external">
+<div class="listing-date">
+Jan 5, 2024
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="83" data-listing-date-sort="1704067200000" data-listing-file-modified-sort="1753725043756" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
+<div class="thumbnail"><a href="./posts/2024-01-01_morning-kayaking.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/rdXnwbyx_bFDMI9q72mYhXvIZnTgQznVv00gG-e7g9A-768x433.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-01-01_morning-kayaking.html" class="no-external">Morning Kayaking</a>
+</h3>
+<div class="delink listing-description"><a href="./posts/2024-01-01_morning-kayaking.html" class="no-external">
+To do
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-01-01_morning-kayaking.html" class="no-external">
+<div class="listing-date">
+Jan 1, 2024
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="84" data-categories="" data-listing-date-sort="1702166400000" data-listing-file-modified-sort="1753725043758" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="7">
+<div class="thumbnail"><a href="./posts/2023-12-10_to-the-dome-and-back.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/q9OhlVNwy1SWiKZogK4L_M1nMs0wSNEDBEfpOlM_ix0-576x768.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2023-12-10_to-the-dome-and-back.html" class="no-external">To the dome and back</a>
+</h3>
+<div class="listing-categories">
+
+</div>
+<div class="delink listing-description"><a href="./posts/2023-12-10_to-the-dome-and-back.html" class="no-external">
+Nice swell
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2023-12-10_to-the-dome-and-back.html" class="no-external">
+<div class="listing-date">
+Dec 10, 2023
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="85" data-categories="" data-listing-date-sort="1696114800000" data-listing-file-modified-sort="1753725043760" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
+<div class="thumbnail"><a href="./posts/2023-10-01_high-tide-fun-with-kirstie-and-mick.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/Tg1qD-_czTYAgpPHkTUasIzRAN8Pxr771Gy3tzXyRJU-768x576.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2023-10-01_high-tide-fun-with-kirstie-and-mick.html" class="no-external">High tide fun with Kirstie and Mick</a>
+</h3>
+<div class="listing-categories">
+
+</div>
+<div class="delink listing-description"><a href="./posts/2023-10-01_high-tide-fun-with-kirstie-and-mick.html" class="no-external">
+To do
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2023-10-01_high-tide-fun-with-kirstie-and-mick.html" class="no-external">
+<div class="listing-date">
+Oct 1, 2023
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="86" data-categories="" data-listing-date-sort="1694300400000" data-listing-file-modified-sort="1753725043762" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
+<div class="thumbnail"><a href="./posts/2023-09-10_fret-dolphins-and-the-red-arrows.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/hUFJ9nJc6AM7xqnttPFAeMmax1sxGVFDpQF_ZmAQNX8-587x768.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2023-09-10_fret-dolphins-and-the-red-arrows.html" class="no-external">Fret, dolphins and the red arrows</a>
+</h3>
+<div class="listing-categories">
+
+</div>
+<div class="delink listing-description"><a href="./posts/2023-09-10_fret-dolphins-and-the-red-arrows.html" class="no-external">
+To do
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2023-09-10_fret-dolphins-and-the-red-arrows.html" class="no-external">
+<div class="listing-date">
+Sep 10, 2023
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="87" data-categories="" data-listing-date-sort="1694214000000" data-listing-file-modified-sort="1753725043763" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
+<div class="thumbnail"><a href="./posts/2023-09-09_paddle-to-scotland.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/L8tlNsq7NvUF9dv-5jZqtZJiOn8ny-jm9Pbq8wkBThw-768x576.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2023-09-09_paddle-to-scotland.html" class="no-external">Paddle to Scotland</a>
+</h3>
+<div class="listing-categories">
+
+</div>
+<div class="delink listing-description"><a href="./posts/2023-09-09_paddle-to-scotland.html" class="no-external">
+To do
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2023-09-09_paddle-to-scotland.html" class="no-external">
+<div class="listing-date">
+Sep 9, 2023
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="88" data-categories="" data-listing-date-sort="1693695600000" data-listing-file-modified-sort="1753725043765" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="13">
+<div class="thumbnail"><a href="./posts/2023-09-03_will-paddle-for-icecream.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/Dk57KngDFBc8WlaWdHrZVqERg0z_wk8X0encIil21mU-768x346.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2023-09-03_will-paddle-for-icecream.html" class="no-external">Will paddle for icecream</a>
+</h3>
+<div class="listing-categories">
+
+</div>
+<div class="delink listing-description"><a href="./posts/2023-09-03_will-paddle-for-icecream.html" class="no-external">
+Dolphins, ice cream, and messing around in boats
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2023-09-03_will-paddle-for-icecream.html" class="no-external">
+<div class="listing-date">
+Sep 3, 2023
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="89" data-categories="" data-listing-date-sort="1693090800000" data-listing-file-modified-sort="1753725043767" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
+<div class="thumbnail"><a href="./posts/2023-08-27_tcc-novice-session-at-wansbeck.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/LXPpT8hmKK2Sp7JE1n1awIBq7NRRAgkaLKK1nT0zEC4-768x364.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2023-08-27_tcc-novice-session-at-wansbeck.html" class="no-external">TCC Novice session at Wansbeck</a>
+</h3>
+<div class="listing-categories">
+
+</div>
+<div class="delink listing-description"><a href="./posts/2023-08-27_tcc-novice-session-at-wansbeck.html" class="no-external">
+To do
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2023-08-27_tcc-novice-session-at-wansbeck.html" class="no-external">
+<div class="listing-date">
+Aug 27, 2023
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="90" data-categories="" data-listing-date-sort="1692140400000" data-listing-file-modified-sort="1753725043768" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="24">
+<div class="thumbnail"><a href="./posts/2023-08-16_taking-tyler-out-on-the-sup.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/ateYIb-Q_OvPDTg02i9Yc6vVaDXuIE3fR-tSkneeSuQ-768x576.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2023-08-16_taking-tyler-out-on-the-sup.html" class="no-external">Taking Tyler out on the SUP</a>
+</h3>
+<div class="listing-categories">
+
+</div>
+<div class="delink listing-description"><a href="./posts/2023-08-16_taking-tyler-out-on-the-sup.html" class="no-external">
+And a bit of play in the surf. Nice to play in my lil whitewater boat for a change
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2023-08-16_taking-tyler-out-on-the-sup.html" class="no-external">
+<div class="listing-date">
+Aug 16, 2023
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="91" data-listing-date-sort="1691881200000" data-listing-file-modified-sort="1753725043770" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
+<div class="thumbnail"><a href="./posts/2023-08-13_rockhopping-and-rescues-from-trow-point.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/U2rbcfpRoJN7cqtqQru5NL8VSq6-1Bko46CXAJHBBug-768x346.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2023-08-13_rockhopping-and-rescues-from-trow-point.html" class="no-external">Rockhopping and rescues from Trow Point</a>
+</h3>
+<div class="delink listing-description"><a href="./posts/2023-08-13_rockhopping-and-rescues-from-trow-point.html" class="no-external">
+To do
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2023-08-13_rockhopping-and-rescues-from-trow-point.html" class="no-external">
+<div class="listing-date">
+Aug 13, 2023
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="92" data-categories="" data-listing-date-sort="1691794800000" data-listing-file-modified-sort="1753725043857" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
+<div class="thumbnail"><a href="./posts/2023-08-12_souter-and-back.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/OXj1_bKdbHSG5_g04II9SmYK4U4Ur9D1_1_cVJEpOjE-768x576.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2023-08-12_souter-and-back.html" class="no-external">Souter and back</a>
+</h3>
+<div class="listing-categories">
+
+</div>
+<div class="delink listing-description"><a href="./posts/2023-08-12_souter-and-back.html" class="no-external">
+To do
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2023-08-12_souter-and-back.html" class="no-external">
+<div class="listing-date">
+Aug 12, 2023
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="93" data-categories="" data-listing-date-sort="1691535600000" data-listing-file-modified-sort="1753725043857" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
+<div class="thumbnail"><a href="./posts/2023-08-09_tcc-novice-session.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/-2uD6xdoFk-99Gqv4RhxA4jApONFZBA2H5_ZQOs1Jpk-768x483.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2023-08-09_tcc-novice-session.html" class="no-external">TCC novice session</a>
+</h3>
+<div class="listing-categories">
+
+</div>
+<div class="delink listing-description"><a href="./posts/2023-08-09_tcc-novice-session.html" class="no-external">
+To do
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2023-08-09_tcc-novice-session.html" class="no-external">
+<div class="listing-date">
+Aug 9, 2023
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="94" data-listing-date-sort="1690671600000" data-listing-file-modified-sort="1753725043872" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="15">
+<div class="thumbnail"><a href="./posts/2023-07-30_day-9-callanish-stones.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/JNgA9xNDAra5WurITmQNH7Bt9PD4rD84awTT5eFDSRo-768x576.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2023-07-30_day-9-callanish-stones.html" class="no-external">Day 9 Callanish stones</a>
+</h3>
+<div class="delink listing-description"><a href="./posts/2023-07-30_day-9-callanish-stones.html" class="no-external">
+A lovely gentle paddle with Chris to round off the trip
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2023-07-30_day-9-callanish-stones.html" class="no-external">
+<div class="listing-date">
+Jul 30, 2023
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="95" data-listing-date-sort="1690585200000" data-listing-file-modified-sort="1753725043872" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="23">
+<div class="thumbnail"><a href="./posts/2023-07-29_day-8-pabaigh-mòr.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/O1-cwXxSvmuuUkpD5uRuq0Q7wKslq8vyjm8YrnyVbiY-768x576.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2023-07-29_day-8-pabaigh-mòr.html" class="no-external">Day 8 Pabaigh Mòr</a>
+</h3>
+<div class="delink listing-description"><a href="./posts/2023-07-29_day-8-pabaigh-mòr.html" class="no-external">
+The owner of Pabaigh Mòr gave us a tour of the blackhouses she lives in during the summer months
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2023-07-29_day-8-pabaigh-mòr.html" class="no-external">
+<div class="listing-date">
+Jul 29, 2023
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="96" data-listing-date-sort="1690498800000" data-listing-file-modified-sort="1753725043872" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
+<div class="thumbnail"><a href="./posts/2023-07-28_day-7-scarp-loch-rèasort.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/sBimGeNBKAoJ1Oj-tJGnUDwPp1jDx7voTsOfiYbaykc-768x576.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2023-07-28_day-7-scarp-loch-rèasort.html" class="no-external">Day 7 Scarp &amp; Loch Rèasort</a>
+</h3>
+<div class="delink listing-description"><a href="./posts/2023-07-28_day-7-scarp-loch-rèasort.html" class="no-external">
+To do
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2023-07-28_day-7-scarp-loch-rèasort.html" class="no-external">
+<div class="listing-date">
+Jul 28, 2023
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="97" data-listing-date-sort="1690412400000" data-listing-file-modified-sort="1753725043872" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
+<div class="thumbnail"><a href="./posts/2023-07-27_day-6-scalpay.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/W6bZNUmTsyfYaawSLJ9cHry1OQZmhKBm6tn_xS40lnQ-768x258.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2023-07-27_day-6-scalpay.html" class="no-external">Day 6 Scalpay</a>
+</h3>
+<div class="delink listing-description"><a href="./posts/2023-07-27_day-6-scalpay.html" class="no-external">
+To do
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2023-07-27_day-6-scalpay.html" class="no-external">
+<div class="listing-date">
+Jul 27, 2023
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="98" data-listing-date-sort="1690326000000" data-listing-file-modified-sort="1753725043872" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
+<div class="thumbnail"><a href="./posts/2023-07-26_day-5-ronay.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/M_uQGVS5YuADbtkAR2HmeS7eTOsxbCl3xcbE8XxiWcE-768x576.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2023-07-26_day-5-ronay.html" class="no-external">Day 5 Ronay</a>
+</h3>
+<div class="delink listing-description"><a href="./posts/2023-07-26_day-5-ronay.html" class="no-external">
+To do
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2023-07-26_day-5-ronay.html" class="no-external">
+<div class="listing-date">
+Jul 26, 2023
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="99" data-listing-date-sort="1690239600000" data-listing-file-modified-sort="1753725043872" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="32">
+<div class="thumbnail"><a href="./posts/2023-07-25_day-4-around-eriskay.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/CqokW4v9KtF7_Cz6O7gFxgPeFebI51O3Gn5wg1HC-WM-768x477.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2023-07-25_day-4-around-eriskay.html" class="no-external">Day 4 Around Eriskay</a>
+</h3>
+<div class="delink listing-description"><a href="./posts/2023-07-25_day-4-around-eriskay.html" class="no-external">
+Everything from a classic sea kayak day out
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2023-07-25_day-4-around-eriskay.html" class="no-external">
+<div class="listing-date">
+Jul 25, 2023
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="100" data-listing-date-sort="1690153200000" data-listing-file-modified-sort="1753725043872" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
+<div class="thumbnail"><a href="./posts/2023-07-24_day-3-the-blue-lagoon.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/ch0Gn1FEqt5y1rtNsnJOurVq8q-md61DMgtR_PIYgvM-768x576.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2023-07-24_day-3-the-blue-lagoon.html" class="no-external">Day 3 The Blue Lagoon</a>
+</h3>
+<div class="delink listing-description"><a href="./posts/2023-07-24_day-3-the-blue-lagoon.html" class="no-external">
+To do
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2023-07-24_day-3-the-blue-lagoon.html" class="no-external">
+<div class="listing-date">
+Jul 24, 2023
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="101" data-listing-date-sort="1690066800000" data-listing-file-modified-sort="1753725043887" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="25">
+<div class="thumbnail"><a href="./posts/2023-07-23_day-2-windy-northbay.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/GnPOfH67m_d9Wgb30NhFW21p9HblDJWPadtcaql7JLc-576x768.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2023-07-23_day-2-windy-northbay.html" class="no-external">Day 2 Windy Northbay</a>
+</h3>
+<div class="delink listing-description"><a href="./posts/2023-07-23_day-2-windy-northbay.html" class="no-external">
+Force 6+ so only four of us ventured out. Seal colonies and some fun swell. Excellent nap in the sunshine afterwards.
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2023-07-23_day-2-windy-northbay.html" class="no-external">
+<div class="listing-date">
+Jul 23, 2023
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="102" data-listing-date-sort="1689980400000" data-listing-file-modified-sort="1753725043887" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="25">
+<div class="thumbnail"><a href="./posts/2023-07-22_day-1-vatersay-and-mordor.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/1FMxegtk03GVmSCRZDtpwPYeiwd-beNU1Emvq_6oP3w-768x576.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2023-07-22_day-1-vatersay-and-mordor.html" class="no-external">Day 1 Vatersay and Mordor</a>
+</h3>
+<div class="delink listing-description"><a href="./posts/2023-07-22_day-1-vatersay-and-mordor.html" class="no-external">
+The “warm up” paddle involving a completely unnecessary crossing to “Mordor” in force 5 winds, and 12ft CalMac ferry wake 😂
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2023-07-22_day-1-vatersay-and-mordor.html" class="no-external">
+<div class="listing-date">
+Jul 22, 2023
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="103" data-listing-date-sort="1686438000000" data-listing-file-modified-sort="1753725043891" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
+<div class="thumbnail"><a href="./posts/2023-06-11_sea-kayak-trail-day-7.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/vZ5nr5zGs_3hvlxk4fF7ZuuEHrK9xNqptmCqHIG-p6Q-768x576.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2023-06-11_sea-kayak-trail-day-7.html" class="no-external">Sea Kayak Trail Day 7</a>
+</h3>
+<div class="delink listing-description"><a href="./posts/2023-06-11_sea-kayak-trail-day-7.html" class="no-external">
+To do
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2023-06-11_sea-kayak-trail-day-7.html" class="no-external">
+<div class="listing-date">
+Jun 11, 2023
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="104" data-categories="" data-listing-date-sort="1686351600000" data-listing-file-modified-sort="1753725043893" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
+<div class="thumbnail"><a href="./posts/2023-06-10_sea-kayak-trail-day-6.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/vrtqY-Kkd0R1pOUwlMDGbkO2ES2A_HbMcxGbii0jsDw-576x768.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2023-06-10_sea-kayak-trail-day-6.html" class="no-external">Sea Kayak Trail Day 6</a>
+</h3>
+<div class="listing-categories">
+
+</div>
+<div class="delink listing-description"><a href="./posts/2023-06-10_sea-kayak-trail-day-6.html" class="no-external">
+To do
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2023-06-10_sea-kayak-trail-day-6.html" class="no-external">
+<div class="listing-date">
+Jun 10, 2023
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="105" data-listing-date-sort="1686265200000" data-listing-file-modified-sort="1753725043895" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
+<div class="thumbnail"><a href="./posts/2023-06-09_sea-kayak-trail-day-5.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/axBapSMAh9MhqWKI96h81iGB_DiYBg7kd-RdI3Mk110-768x576.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2023-06-09_sea-kayak-trail-day-5.html" class="no-external">Sea Kayak Trail Day 5</a>
+</h3>
+<div class="delink listing-description"><a href="./posts/2023-06-09_sea-kayak-trail-day-5.html" class="no-external">
+To do
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2023-06-09_sea-kayak-trail-day-5.html" class="no-external">
+<div class="listing-date">
+Jun 9, 2023
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="106" data-listing-date-sort="1686178800000" data-listing-file-modified-sort="1753725043897" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
+<div class="thumbnail"><a href="./posts/2023-06-08_sea-kayak-trail-day-4.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/t-DIcYlMMef_K6GxdRvgb7TbihYWG47EA6ZxUyRItPo-768x576.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2023-06-08_sea-kayak-trail-day-4.html" class="no-external">Sea Kayak Trail Day 4</a>
+</h3>
+<div class="delink listing-description"><a href="./posts/2023-06-08_sea-kayak-trail-day-4.html" class="no-external">
+To do
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2023-06-08_sea-kayak-trail-day-4.html" class="no-external">
+<div class="listing-date">
+Jun 8, 2023
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="107" data-listing-date-sort="1686092400000" data-listing-file-modified-sort="1753725043898" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
+<div class="thumbnail"><a href="./posts/2023-06-07_sea-kayak-trail-day-3.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/4ZQw2rx1Lg0CC3vsaI3unsgGoD5aQDUwKiQDLXdowgA-768x576.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2023-06-07_sea-kayak-trail-day-3.html" class="no-external">Sea Kayak Trail Day 3</a>
+</h3>
+<div class="delink listing-description"><a href="./posts/2023-06-07_sea-kayak-trail-day-3.html" class="no-external">
+To do
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2023-06-07_sea-kayak-trail-day-3.html" class="no-external">
+<div class="listing-date">
+Jun 7, 2023
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="108" data-listing-date-sort="1686006000000" data-listing-file-modified-sort="1753725043906" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
+<div class="thumbnail"><a href="./posts/2023-06-06_sea-kayak-trail-day-2.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/9smmbfzTUJptSsJccYwDZig1OCnx94mqpiYhy4FAzOA-768x576.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2023-06-06_sea-kayak-trail-day-2.html" class="no-external">Sea Kayak Trail Day 2</a>
+</h3>
+<div class="delink listing-description"><a href="./posts/2023-06-06_sea-kayak-trail-day-2.html" class="no-external">
+To do
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2023-06-06_sea-kayak-trail-day-2.html" class="no-external">
+<div class="listing-date">
+Jun 6, 2023
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="109" data-categories="" data-listing-date-sort="1685919600000" data-listing-file-modified-sort="1753725043907" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
+<div class="thumbnail"><a href="./posts/2023-06-05_sea-kayak-trail-day-1.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/RyNetXfDAfrtfWW3oTQMH_JJX-EcjEKdqA-qog09AYA-768x576.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2023-06-05_sea-kayak-trail-day-1.html" class="no-external">Sea Kayak Trail Day 1</a>
+</h3>
+<div class="listing-categories">
+
+</div>
+<div class="delink listing-description"><a href="./posts/2023-06-05_sea-kayak-trail-day-1.html" class="no-external">
+To do
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2023-06-05_sea-kayak-trail-day-1.html" class="no-external">
+<div class="listing-date">
+Jun 5, 2023
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="110" data-categories="" data-listing-date-sort="1684882800000" data-listing-file-modified-sort="1753725043909" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
+<div class="thumbnail"><a href="./posts/2023-05-24_evening-marsden.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/PzGWJo1JiWcKHYnbfqM4hYWaLrAb1pj7k4BCKrp0cBk-768x576.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2023-05-24_evening-marsden.html" class="no-external">Evening Marsden</a>
+</h3>
+<div class="listing-categories">
+
+</div>
+<div class="delink listing-description"><a href="./posts/2023-05-24_evening-marsden.html" class="no-external">
+To do
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2023-05-24_evening-marsden.html" class="no-external">
+<div class="listing-date">
+May 24, 2023
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="111" data-categories="" data-listing-date-sort="1684191600000" data-listing-file-modified-sort="1753725043911" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="10">
+<div class="thumbnail"><a href="./posts/2023-05-16_after-work-st-maryss-with-kirstie.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/iQ3KU_aNL4ZW-bn3Y-PV4ZOILO0lGxCgelElEZM0nQs-768x576.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2023-05-16_after-work-st-maryss-with-kirstie.html" class="no-external">After work St Marys’s with Kirstie</a>
+</h3>
+<div class="listing-categories">
+
+</div>
+<div class="delink listing-description"><a href="./posts/2023-05-16_after-work-st-maryss-with-kirstie.html" class="no-external">
+Eider ducks, rainbows and a wreck.
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2023-05-16_after-work-st-maryss-with-kirstie.html" class="no-external">
+<div class="listing-date">
+May 16, 2023
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="112" data-categories="" data-listing-date-sort="1683673200000" data-listing-file-modified-sort="1753725043912" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
+<div class="thumbnail"><a href="./posts/2023-05-10_unplanned-towing-practice-with-tcc.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/1_6SOlv8r01i6JK3XnroK-HScZeGQPAbWUAf7JgAAwg-768x354.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2023-05-10_unplanned-towing-practice-with-tcc.html" class="no-external">Unplanned towing practice with TCC</a>
+</h3>
+<div class="listing-categories">
+
+</div>
+<div class="delink listing-description"><a href="./posts/2023-05-10_unplanned-towing-practice-with-tcc.html" class="no-external">
+To do
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2023-05-10_unplanned-towing-practice-with-tcc.html" class="no-external">
+<div class="listing-date">
+May 10, 2023
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="113" data-listing-date-sort="1683414000000" data-listing-file-modified-sort="1753725043914" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
+<div class="thumbnail"><a href="./posts/2023-05-07_sk-leader-training-day-2.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/Vp1L-15mzpajOpULyr-G-7wbU6mlyQ9v5tgnH1t8aXU-768x576.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2023-05-07_sk-leader-training-day-2.html" class="no-external">SK Leader training day 2</a>
+</h3>
+<div class="delink listing-description"><a href="./posts/2023-05-07_sk-leader-training-day-2.html" class="no-external">
+To do
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2023-05-07_sk-leader-training-day-2.html" class="no-external">
+<div class="listing-date">
+May 7, 2023
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="114" data-listing-date-sort="1683327600000" data-listing-file-modified-sort="1753725043916" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
+<div class="thumbnail"><a href="./posts/2023-05-06_sk-leader-training-day-1.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/uU3TOyAC39jTmg6v7MdGPWhxoyNEaeHNXp2S9x4u09I-768x576.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2023-05-06_sk-leader-training-day-1.html" class="no-external">SK Leader training day 1</a>
+</h3>
+<div class="delink listing-description"><a href="./posts/2023-05-06_sk-leader-training-day-1.html" class="no-external">
+To do
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2023-05-06_sk-leader-training-day-1.html" class="no-external">
+<div class="listing-date">
+May 6, 2023
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="115" data-categories="" data-listing-date-sort="1682809200000" data-listing-file-modified-sort="1753725043918" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
+<div class="thumbnail"><a href="./posts/2023-04-30_grey-skies-rolling-swell-and-a-sleepy-seal.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/yydoAypSRkZnYvb5Kydb34TDv4spoD8X5KGJPgLM1Pw-768x576.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2023-04-30_grey-skies-rolling-swell-and-a-sleepy-seal.html" class="no-external">Grey skies, rolling swell and a sleepy seal</a>
+</h3>
+<div class="listing-categories">
+
+</div>
+<div class="delink listing-description"><a href="./posts/2023-04-30_grey-skies-rolling-swell-and-a-sleepy-seal.html" class="no-external">
+To do
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2023-04-30_grey-skies-rolling-swell-and-a-sleepy-seal.html" class="no-external">
+<div class="listing-date">
+Apr 30, 2023
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="116" data-categories="" data-listing-date-sort="1682722800000" data-listing-file-modified-sort="1753725043919" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="17">
+<div class="thumbnail"><a href="./posts/2023-04-29_coquet-with-tcc.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/vUcg1SkEBHRhe-mfvkOxoQuP3uwxuM2gZsHqH6Aj3aY-768x364.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2023-04-29_coquet-with-tcc.html" class="no-external">Coquet with TCC</a>
+</h3>
+<div class="listing-categories">
+
+</div>
+<div class="delink listing-description"><a href="./posts/2023-04-29_coquet-with-tcc.html" class="no-external">
+A seal followed us up and down river. First terns of the year
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2023-04-29_coquet-with-tcc.html" class="no-external">
+<div class="listing-date">
+Apr 29, 2023
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="117" data-categories="" data-listing-date-sort="1682377200000" data-listing-file-modified-sort="1753725043921" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
+<div class="thumbnail"><a href="./posts/2023-04-25_evening-kayaking.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/Uq1H36-raZVjVs_6-w62MVn11m6DHQ5R__vSP_srckg-768x556.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2023-04-25_evening-kayaking.html" class="no-external">Evening Kayaking</a>
+</h3>
+<div class="listing-categories">
+
+</div>
+<div class="delink listing-description"><a href="./posts/2023-04-25_evening-kayaking.html" class="no-external">
+To do
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2023-04-25_evening-kayaking.html" class="no-external">
+<div class="listing-date">
+Apr 25, 2023
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="118" data-categories="" data-listing-date-sort="1682204400000" data-listing-file-modified-sort="1753725043923" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
+<div class="thumbnail"><a href="./posts/2023-04-23_short-paddle-from-cullercoats.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/LTEqh-S4VBawzH1AFiYVLkiWe4u5mP14P3JaQ62GmbI-768x576.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2023-04-23_short-paddle-from-cullercoats.html" class="no-external">Short paddle from Cullercoats</a>
+</h3>
+<div class="listing-categories">
+
+</div>
+<div class="delink listing-description"><a href="./posts/2023-04-23_short-paddle-from-cullercoats.html" class="no-external">
+To do
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2023-04-23_short-paddle-from-cullercoats.html" class="no-external">
+<div class="listing-date">
+Apr 23, 2023
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="119" data-categories="" data-listing-date-sort="1681513200000" data-listing-file-modified-sort="1753725043923" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
+<div class="thumbnail"><a href="./posts/2023-04-15_loch-ken-with-tcc.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/aAQt2CWTxDzDXLBiiijYuRB_AWmg1fFjx4zgw0W02uI-768x576.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2023-04-15_loch-ken-with-tcc.html" class="no-external">Loch Ken with TCC</a>
+</h3>
+<div class="listing-categories">
+
+</div>
+<div class="delink listing-description"><a href="./posts/2023-04-15_loch-ken-with-tcc.html" class="no-external">
+To do
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2023-04-15_loch-ken-with-tcc.html" class="no-external">
+<div class="listing-date">
+Apr 15, 2023
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="120" data-categories="" data-listing-date-sort="1681426800000" data-listing-file-modified-sort="1753725043923" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
+<div class="thumbnail"><a href="./posts/2023-04-14_evening-paddle-with-sarah-and-josh.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/8XMenCxHpO05-8HqdhhT17-CYP3Zg5-cbuEQCtGkaEY-768x576.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2023-04-14_evening-paddle-with-sarah-and-josh.html" class="no-external">Evening paddle with Sarah and Josh</a>
+</h3>
+<div class="listing-categories">
+
+</div>
+<div class="delink listing-description"><a href="./posts/2023-04-14_evening-paddle-with-sarah-and-josh.html" class="no-external">
+To do
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2023-04-14_evening-paddle-with-sarah-and-josh.html" class="no-external">
+<div class="listing-date">
+Apr 14, 2023
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="121" data-categories="" data-listing-date-sort="1679184000000" data-listing-file-modified-sort="1753725043923" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
+<div class="thumbnail"><a href="./posts/2023-03-19_cullercoats-and-back.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/SPfO5y851oWYKJeCQloMaGbQvMkGGUI0AhnyR9RWpIc-768x587.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2023-03-19_cullercoats-and-back.html" class="no-external">Cullercoats and back</a>
+</h3>
+<div class="listing-categories">
+
+</div>
+<div class="delink listing-description"><a href="./posts/2023-03-19_cullercoats-and-back.html" class="no-external">
+To do
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2023-03-19_cullercoats-and-back.html" class="no-external">
+<div class="listing-date">
+Mar 19, 2023
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="122" data-categories="" data-listing-date-sort="1675036800000" data-listing-file-modified-sort="1753725043923" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="16">
+<div class="thumbnail"><a href="./posts/2023-01-30_tyne-with-lakeland-canoe-club.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/cxEH_feux2Cx4xrUA23JQg9__0oJGVBNzS4ORCntSZw-768x576.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2023-01-30_tyne-with-lakeland-canoe-club.html" class="no-external">Tyne with Lakeland Canoe Club</a>
+</h3>
+<div class="listing-categories">
+
+</div>
+<div class="delink listing-description"><a href="./posts/2023-01-30_tyne-with-lakeland-canoe-club.html" class="no-external">
+Tidal flow, a tailwind and good chat made the kms fly by
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2023-01-30_tyne-with-lakeland-canoe-club.html" class="no-external">
+<div class="listing-date">
+Jan 30, 2023
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="123" data-categories="" data-listing-date-sort="1672617600000" data-listing-file-modified-sort="1753725043923" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="10">
+<div class="thumbnail"><a href="./posts/2023-01-02_haven-to-souter-point.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/jiudhWjynTUfK9Uu0hwzUOpjwt67uJHPesvCN1UJYos-768x576.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2023-01-02_haven-to-souter-point.html" class="no-external">Haven to Souter point</a>
+</h3>
+<div class="listing-categories">
+
+</div>
+<div class="delink listing-description"><a href="./posts/2023-01-02_haven-to-souter-point.html" class="no-external">
+Chatting through the chop. Dolphin 🐬
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2023-01-02_haven-to-souter-point.html" class="no-external">
+<div class="listing-date">
+Jan 2, 2023
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="124" data-categories="" data-listing-date-sort="1672444800000" data-listing-file-modified-sort="1753725043923" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
+<div class="thumbnail"><a href="./posts/2022-12-31_the-haven-to-spanish-city.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/PIl7ebH8nm8lNlDiZcyV3F6CIYSZ3JU3F5r6J9axg4A-768x576.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2022-12-31_the-haven-to-spanish-city.html" class="no-external">The Haven to Spanish City</a>
+</h3>
+<div class="listing-categories">
+
+</div>
+<div class="delink listing-description"><a href="./posts/2022-12-31_the-haven-to-spanish-city.html" class="no-external">
+To do
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2022-12-31_the-haven-to-spanish-city.html" class="no-external">
+<div class="listing-date">
+Dec 31, 2022
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="125" data-categories="" data-listing-date-sort="1671235200000" data-listing-file-modified-sort="1753725043923" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
+<div class="thumbnail"><a href="./posts/2022-12-17_santa-paddle-with-tcc.html" class="no-external">
+
+<img loading="lazy" data-src="https://dgtzuqphqg23d.cloudfront.net/leWgy4WZrJPtLqb6ny1O8LelhXzDvRCyCyW4jhBEB5g-768x576.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2022-12-17_santa-paddle-with-tcc.html" class="no-external">Santa Paddle with TCC</a>
+</h3>
+<div class="listing-categories">
+
+</div>
+<div class="delink listing-description"><a href="./posts/2022-12-17_santa-paddle-with-tcc.html" class="no-external">
+To do
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/2022-12-17_santa-paddle-with-tcc.html" class="no-external">
+<div class="listing-date">
+Dec 17, 2022
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+<nav id="listing-pagination" class="listing-pagination" aria-label="Page Navigation">
+  <ul class="pagination"></ul>
+</nav>
+</div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/rhionthesea\.netlify\.app\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
