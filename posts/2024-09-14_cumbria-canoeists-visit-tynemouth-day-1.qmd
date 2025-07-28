@@ -1,7 +1,7 @@
 ---
 title: "Cumbria Canoeists visit Tynemouth Day 1"
 date: 2024-09-14
-categories: ["CC","sea","leadership","tynemouth"]
+categories: ["cc","sea","leadership","tynemouth"]
 image: https://dgtzuqphqg23d.cloudfront.net/MN2CB_enZncfRW5OKh-34qSjWN82w0JfzT5pfiz9cBo-768x432.jpg
 ---
 

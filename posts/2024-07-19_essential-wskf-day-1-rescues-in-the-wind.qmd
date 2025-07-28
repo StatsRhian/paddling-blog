@@ -1,5 +1,5 @@
 ---
-title: "Essential WSKF day 1: Rescues in the wind"
+title: "Essential WSKF day 1 Rescues in the wind"
 date: 2024-07-19
 categories: []
 image: https://dgtzuqphqg23d.cloudfront.net/Vyp-PBTQtZaeruCn1GeNlDrjdoIaL7UVi_kf20TuXiY-768x433.jpg
@@ -8,7 +8,7 @@ image: https://dgtzuqphqg23d.cloudfront.net/Vyp-PBTQtZaeruCn1GeNlDrjdoIaL7UVi_kf
 - Distance: 9.3 km
 - [Strava](https://www.strava.com/activities/11928137126)
 
-
+To do
 
 ![](https://dgtzuqphqg23d.cloudfront.net/Vyp-PBTQtZaeruCn1GeNlDrjdoIaL7UVi_kf20TuXiY-768x433.jpg)
 

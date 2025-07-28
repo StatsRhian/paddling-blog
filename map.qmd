@@ -15,11 +15,13 @@ paddles |>
                    Distance: {round(distance, 1)}k")) |>
   dplyr::mutate(label = purrr::map(label, htmltools::HTML)) |>
   leaflet::leaflet() |>
-  leaflet::addTiles() |>  
-  leaflet::addPolylines(weight = 5,
-               color = "purple", 
-               opacity = 1, 
-               label = ~label) |>
+  leaflet::addTiles() |>
+  leaflet::addPolylines(
+    weight = 5,
+    color = "purple",
+    opacity = 1,
+    label = ~label
+  ) |>
   leaflet::setView(-2.74978, 54.07527, zoom = 7) |>
   leaflet.extras::addFullscreenControl()
 ```

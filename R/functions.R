@@ -23,7 +23,6 @@ get_categories <- function(activity) {
 
 # Doesn't work currently
 get_map <- function(id) {
-
   activity <- rStrava::get_activity(id = id, strava_token)
 
   activity |>
@@ -39,9 +38,8 @@ get_map <- function(id) {
 
 # update a single activity
 update_activity <- function(id_to_update) {
-
   detailed_paddles <- readRDS("data/paddles.rds")
-  detailed_paddles$detailed[detailed_paddles$id ==  id_to_update] <- list(rStrava::get_activity(id = id_to_update, strava_token))
+  detailed_paddles$detailed[detailed_paddles$id == id_to_update] <- list(rStrava::get_activity(id = id_to_update, strava_token))
 
   saveRDS(detailed_paddles, "data/paddles.rds")
 }
