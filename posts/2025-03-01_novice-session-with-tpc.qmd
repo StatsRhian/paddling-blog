@@ -1,7 +1,7 @@
 ---
 title: "Novice session with TPC"
 date: 2025-03-01
-categories: ["tpc","tynemouth","sea"]
+categories: ["club: tynemouth","tynemouth","sea"]
 image: https://dgtzuqphqg23d.cloudfront.net/KAVVnYegyd9sJe8oDILifZPFd3JFGj6g7GRNOgyUIrY-768x576.jpg
 ---
 

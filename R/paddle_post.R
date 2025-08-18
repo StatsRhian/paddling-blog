@@ -21,7 +21,7 @@ image: {{ image_url }}
   template |>
     jinjar::render(
       name = activity$name,
-      date = activity$date,
+      date = activity$start_date,
       categories = unlist(activity$categories),
       distance = round(activity$distance, 1),
       strava_url = activity$strava_url,

@@ -1,0 +1,16 @@
+---
+title: "LDCC"
+date: 2021-07-08
+categories: []
+image: https://placehold.co/600x400/EEE/31343C
+---
+
+- Distance: 0.6 km
+- [Strava](https://www.strava.com/activities/5596471999)
+
+
+
+![](https://placehold.co/600x400/EEE/31343C)
+
+
+

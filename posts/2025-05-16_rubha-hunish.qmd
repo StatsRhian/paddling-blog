@@ -1,7 +1,7 @@
 ---
 title: "Rubha Hunish"
 date: 2025-05-16
-categories: ["lcc","skye","sea","2025-lcc-skye"]
+categories: ["club: lakeland","skye","sea","2025-lcc-skye"]
 image: https://dgtzuqphqg23d.cloudfront.net/HXqRfDFSTDhP8DngKSaoy8HYpZ7VQk19j_jc3FYh3mA-768x576.jpg
 ---
 

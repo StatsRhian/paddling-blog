@@ -17,18 +17,10 @@ website:
       href: philosophy.html
     - icon: github
       href: https://github.com/statsrhian/paddling-blog
+
 format:
   html:
     theme: cosmo
-    css: theme.css
-
-
-
-
-base_url: https://rhionthesea.netlify.app/
-
-
-
 
 
 

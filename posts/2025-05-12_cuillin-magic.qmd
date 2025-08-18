@@ -1,7 +1,7 @@
 ---
 title: "Cuillin Magic"
 date: 2025-05-12
-categories: ["lcc","skye","sea","2025-lcc-skye"]
+categories: ["club: lakeland","skye","sea","2025-lcc-skye"]
 image: https://dgtzuqphqg23d.cloudfront.net/Sms2YCPVMZPYWxOVs8ZOJ-PjE7gHqaDR-asHFx5E1Hg-768x256.jpg
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "Paul's SKA group"
 date: 2024-07-30
-categories: ["tpc","sea","tynemouth"]
+categories: ["club: tynemouth","sea","tynemouth"]
 image: https://dgtzuqphqg23d.cloudfront.net/UItF-yislp2T9yWdDikOF-F4DubWL3BWiVRNltr1MdY-768x434.jpg
 ---
 

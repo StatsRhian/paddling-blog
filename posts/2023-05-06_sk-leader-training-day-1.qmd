@@ -8,7 +8,7 @@ image: https://dgtzuqphqg23d.cloudfront.net/uU3TOyAC39jTmg6v7MdGPWhxoyNEaeHNXp2S
 - Distance: 5.6 km
 - [Strava](https://www.strava.com/activities/9044487360)
 
-To do
+
 
 ![](https://dgtzuqphqg23d.cloudfront.net/uU3TOyAC39jTmg6v7MdGPWhxoyNEaeHNXp2S9x4u09I-768x576.jpg)
 

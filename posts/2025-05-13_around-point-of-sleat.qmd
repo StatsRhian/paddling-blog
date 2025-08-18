@@ -1,7 +1,7 @@
 ---
 title: "Around Point of Sleat"
 date: 2025-05-13
-categories: ["lcc","skye","sea","2025-lcc-skye"]
+categories: ["club: lakeland","skye","sea","2025-lcc-skye"]
 image: https://dgtzuqphqg23d.cloudfront.net/WziLcQd7X2-_02SGAGE9_M-MfK-58XTSnzSWfpEGBkg-768x576.jpg
 ---
 

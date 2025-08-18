@@ -1,7 +1,7 @@
 ---
 title: "Loch Bracadale"
 date: 2025-05-11
-categories: ["lcc","sea","skye","2025-lcc-skye"]
+categories: ["club: lakeland","sea","skye","2025-lcc-skye"]
 image: https://dgtzuqphqg23d.cloudfront.net/5sGoxj71Vu_j4BeRM9Mt_I4qyBmpNOTxzUjCsyCu8Vg-768x224.jpg
 ---
 
