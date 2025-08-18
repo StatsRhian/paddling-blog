@@ -68,7 +68,6 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="theme.css">
 </head>
 
 <body class="nav-fixed fullcontent quarto-light">
@@ -151,13 +150,14 @@ ul.task-list li input[type="checkbox"] {
 <section id="my-boats" class="level3">
 <h3 data-anchor-id="my-boats">My Boats</h3>
 <ul>
-<li>Red SKUK Romany Classic - Angharad</li>
-<li>Blue SKUK Romany Sportive - Guto</li>
+<li>Red SKUK Romany Classic</li>
+<li>Blue SKUK Romany Sportive</li>
 <li>Yellow Liquid Logic Hefe Chico</li>
 </ul>
 </section>
 <section id="my-qualifications" class="level3">
 <h3 data-anchor-id="my-qualifications">My Qualifications</h3>
+<p>I’m currently working towards my Sea Kayak Leader qualification.</p>
 <ul>
 <li>Sea Kayak Award</li>
 <li>Paddlesport Instuctor (Kayak)</li>
@@ -237,7 +237,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/rhionthesea\.netlify\.app\/");
+        var filterRegex = new RegExp("https:\/\/rhionthesea\.netlify\.app");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

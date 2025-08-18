@@ -1,7 +1,7 @@
 ---
 title: "Around Iona"
 date: 2025-07-21
-categories: ["2025-tpc-mull","tpc","mull","sea"]
+categories: ["2025-tpc-mull","club: tynemouth","mull","sea"]
 image: https://dgtzuqphqg23d.cloudfront.net/dtdIhGpppnQPaJSeqVO4kvWEQFfa4fjSZhuWnAHw0MI-768x576.jpg
 ---
 

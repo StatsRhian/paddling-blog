@@ -1,7 +1,7 @@
 ---
 title: "Fidden to Bunessan"
 date: 2025-07-22
-categories: ["2025-tpc-mull","mull","tpc"]
+categories: ["2025-tpc-mull","mull","club: tynemouth"]
 image: https://dgtzuqphqg23d.cloudfront.net/ajkuhVYz81FFj60cRupgxr8Fkof0LQK4yhtxrrBsGFY-768x576.jpg
 ---
 

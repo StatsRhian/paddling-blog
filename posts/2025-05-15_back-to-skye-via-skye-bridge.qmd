@@ -1,7 +1,7 @@
 ---
 title: "Back to Skye via Skye bridge"
 date: 2025-05-15
-categories: ["lcc","skye","sea","2025-lcc-skye","exped"]
+categories: ["club: lakeland","skye","sea","2025-lcc-skye","exped"]
 image: https://dgtzuqphqg23d.cloudfront.net/eERelZUP4Qgh0jaj39jq16dlo6pOMt8qvRx1i15bwvU-768x206.jpg
 ---
 

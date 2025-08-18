@@ -70,7 +70,6 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="theme.css">
 </head>
 
 <body class="nav-fixed fullcontent quarto-light">
@@ -155,7 +154,6 @@ ul.task-list li input[type="checkbox"] {
 <li>Distance: 11.8 km</li>
 <li><a href="https://www.strava.com/activities/11069142648">Strava</a></li>
 </ul>
-<p>To do</p>
 <p><img src="https://dgtzuqphqg23d.cloudfront.net/VYmIbsMjq46TI1RtxaYv481dQELiZ70rw-DT7DrxprY-768x432.jpg" class="img-fluid"></p>
 
 
@@ -233,7 +231,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/rhionthesea\.netlify\.app\/");
+        var filterRegex = new RegExp("https:\/\/rhionthesea\.netlify\.app");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

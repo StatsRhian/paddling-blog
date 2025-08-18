@@ -8,7 +8,7 @@ image: https://dgtzuqphqg23d.cloudfront.net/PzGWJo1JiWcKHYnbfqM4hYWaLrAb1pj7k4BC
 - Distance: 16.2 km
 - [Strava](https://www.strava.com/activities/9134293901)
 
-To do
+
 
 ![](https://dgtzuqphqg23d.cloudfront.net/PzGWJo1JiWcKHYnbfqM4hYWaLrAb1pj7k4BCKrp0cBk-768x576.jpg)
 

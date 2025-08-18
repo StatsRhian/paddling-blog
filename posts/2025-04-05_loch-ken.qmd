@@ -1,7 +1,7 @@
 ---
 title: "Loch Ken"
 date: 2025-04-05
-categories: ["tpc","loch-ken","lake"]
+categories: ["club: tynemouth","loch-ken","lake"]
 image: https://dgtzuqphqg23d.cloudfront.net/puTDP8zyvC2XikmBedriW5uSzmyOT7QiIl_u4cRiSDc-768x441.jpg
 ---
 

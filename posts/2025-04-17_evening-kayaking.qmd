@@ -1,7 +1,7 @@
 ---
 title: "Evening Kayaking"
 date: 2025-04-17
-categories: ["solo","tpc","tynemouth","sea"]
+categories: ["solo","club: tynemouth","tynemouth","sea"]
 image: https://dgtzuqphqg23d.cloudfront.net/qPkGpL2drYKGDPoYHMP9qFAuJqjPI4OgnlCsS4Is8Pw-768x334.jpg
 ---
 
