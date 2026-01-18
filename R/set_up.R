@@ -43,13 +43,13 @@ purrr::walk(detailed_activities$id, \(x) paddle_post(x, detailed_activities))
 
 # FIX MALFORMED DATES (still an issue)
 
-fix <- readRDS("data/paddles.rds") |>
-  dplyr::mutate(
-    start_date = purrr::map_chr(detailed, \(x) {
-      purrr::pluck(x, "start_date") |>
-        lubridate::ymd_hms() |>
-        format("%Y-%m-%d")
-    })
-  )
+# fix <- readRDS("data/paddles.rds") |>
+#   dplyr::mutate(
+#     start_date = purrr::map_chr(detailed, \(x) {
+#       purrr::pluck(x, "start_date") |>
+#         lubridate::ymd_hms() |>
+#         format("%Y-%m-%d")
+#     })
+#   )
 
 #saveRDS(fix, "data/paddles.rds")
