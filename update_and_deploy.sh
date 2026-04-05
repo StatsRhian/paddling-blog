@@ -9,7 +9,7 @@ YELLOW='\033[1;33m'
 RED='\033[0;31m'
 NC='\033[0m' # No Color
 
-echo -e "${GREEN}=== Website Update Script ===${NC}"
+echo -e "${GREEN}=== Update Paddle Blog ===${NC}"
 echo
 
 # Step 1: Run R script
