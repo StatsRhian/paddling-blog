@@ -14,11 +14,11 @@ echo
 
 # Step 1: Run R script
 echo -e "${YELLOW}Step 1: Running R script...${NC}"
-if [ -f "R/set_up.R" ]; then
-    Rscript R/set_up.R
+if [ -f "R/update.R" ]; then
+    Rscript R/update.R
     echo -e "${GREEN}✓ R script completed${NC}"
 else
-    echo -e "${RED}Error: R/set_up.R not found${NC}"
+    echo -e "${RED}Error: R/update.R not found${NC}"
     exit 1
 fi
 echo
