@@ -12,7 +12,7 @@ Sat in the Turks Head on Friday night, checking surfline I suggested a Saturday 
 
 The swell was a little bigger than I predicted it would be. We surfed the following sea, and just about scraped through the gap in the islands to get to Cullercoats. We poked our heads around the corner at Brown's Bay but decided to turn back.
 
- A short coffee stop at Cullercoats (in between the dippers) and then back into the swell to the piers. We hit the piers at them middle of the tide, and the race was in full flow, which gave a bit of fun (or concentration for me!)
+ A short coffee stop at Cullercoats (in between the dippers) and then back into the swell to the piers. We hit the piers at the middle of the tide and the race was in full flow, which gave a bit of fun (or concentration for me!)
 
 Chips & curry sauce at Marshalls.
 
