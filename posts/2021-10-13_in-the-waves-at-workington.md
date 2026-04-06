@@ -5,7 +5,7 @@ categories: ["club: lakeland","sea","workington"]
 image: https://dgtzuqphqg23d.cloudfront.net/rVaghUm8dp4pgDNXGJSPhOItmQ1nDCH1bgh00FKSA3c-768x575.jpg
 ---
 
-- Distance: 10.6 km
+- Distance: 10.5 km
 - [Strava](https://www.strava.com/activities/6107547422)
 
 A challenging start paddling out through the surf. Enjoyed exploring the estuary.  Force 4, westerly.

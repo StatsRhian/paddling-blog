@@ -18,8 +18,7 @@ library(ggtext)
 ```{r}
 processed <-
   readRDS("data/processed_paddles.rds") |>
-   dplyr::mutate(start_date = lubridate::ymd(start_date)) |>
-  sf::st_drop_geometry()
+   dplyr::mutate(start_date = lubridate::ymd(start_date)) 
 
 monthly_totals <- 
   processed |>
@@ -39,65 +38,59 @@ longest_paddles <- processed |>
 
 ## At a glance
 
-
 ```{r}
-most_kudos <- processed |> dplyr::slice_max(kudos) |> dplyr::select(name, filename, kudos)
+most_kudos <- processed |> dplyr::slice_max(kudos_count) |> dplyr::select(name, filename, kudos_count)
 ```
 
 ```{r}
 longest <- processed |> dplyr::slice_max(distance) |> dplyr::select(name, filename, distance)
 ```
 
-- Total paddles: (sessions since 2018) is `r nrow(processed)`
-- Total distance: `r round(sum(processed$distance))`km
-- Time paddling: `r round(sum(processed$moving_time_minutes) / 60)` hours
-- Longest paddle: "`r longest$name`" which was `r round(longest$distance, 1)`km
-- Most kudos: "`r most_kudos$name`" with `r most_kudos$kudos` kudos
-
-
 ```{r}
-library("ggplot2")
-ggplot(monthly_totals, aes(x = year_month, y = distance)) +
-  geom_area(fill = "#7FCDBB", alpha = 0.6) +
-  geom_line(color = "#2C7FB8", linewidth = 1) +
-  scale_x_date(date_breaks = "3 months", date_labels = "%b %Y") +
-  labs(
-    title = "Paddling Through the Year",
-    subtitle = "Distance per month",
-    x = NULL,
-    y = "Distance (km)"
-  ) +
-  theme_minimal(base_size = 12) +
-  theme(
-    panel.grid.minor = element_blank(),
-    plot.title = element_text(face = "bold"),
-    axis.text.x = element_text(angle = 90, hjust = 1)
-  )
+bslib::layout_columns(
+  fill = FALSE,
+  col_widths = 4,
+  bslib::value_box(
+    title = "Total Paddles",
+    value = nrow(processed),
+    showcase = bsicons::bs_icon("water"),
+    theme = "primary"
+  ),
+  bslib::value_box(
+    title = "Distance paddled",
+    value = glue::glue("{round(sum(processed$distance))} km"),
+    showcase = bsicons::bs_icon("pin-map-fill"),
+    theme = "primary"
+  ),
+  bslib::value_box(
+    title = "Time on the water",
+    value = glue::glue("{round(sum(processed$moving_time_minutes) / 60)} hours"),
+    showcase = bsicons::bs_icon("clock-fill"),
+    theme = "primary"
+  ),
+  bslib::value_box(
+    title = "Longest Paddle",
+    value = paste0(round(longest$distance, 1), "km"),
+    htmltools::p(longest$name),
+    showcase = bsicons::bs_icon("trophy-fill"),
+    theme = "primary"
+  ),
+  bslib::value_box(
+    title = "Most Kudos",
+    value = paste0(most_kudos$kudos_count, " kudos"),
+    htmltools::p(most_kudos$name),
+    showcase = bsicons::bs_icon("hand-thumbs-up-fill"),
+    theme = "primary"
+  ),
+  bslib::value_box(
+  title = "Years Paddling",
+  value = dplyr::n_distinct(lubridate::year(processed$start_date)),
+  htmltools::p(paste(min(lubridate::year(processed$start_date)), "–", max(lubridate::year(processed$start_date)))),
+  showcase = bsicons::bs_icon("calendar-range"),
+  theme = "primary"
+)
+)
 ```
-
-```{r}
-monthly_totals |>
-  dplyr::mutate(
-    year = lubridate::year(year_month),
-    month = lubridate::month(year_month, label = TRUE)
-  ) |>
-  ggplot(aes(x = month, y = factor(year), fill = distance)) +
-  geom_tile(color = "white") +
-  scale_fill_gradient(low = "#EDF8FB", high = "#08589E") +
-  labs(
-    title = "Did I paddle this month?",
-    subtitle = "Darker = more distance",
-    x = NULL,
-    y = NULL,
-    fill = "km"
-  ) +
-  theme_minimal(base_size = 12) +
-  theme(
-    panel.grid = element_blank(),
-    plot.title = element_text(face = "bold")
-  )
-```
-
 
 
 ## Year by year
@@ -183,7 +176,7 @@ month_count <- processed |>
 
 ```{r}
 processed |>
-  ggplot(aes(x = start_date, y = distance, size = kudos)) +
+  ggplot(aes(x = start_date, y = distance, size = kudos_count)) +
   geom_point(colour = "skyblue", alpha = 0.3) +
   labs(x = NULL, y = NULL) + 
   scale_y_continuous(labels = function(x) paste0(x, " km")) +
@@ -198,7 +191,7 @@ processed |>
   labs(title = "All paddles over time")
 ```
 
-## Longest paddles
+## Top ten longest paddles
 
 ```{r}
 library(reactable)
@@ -258,4 +251,50 @@ reactable(
   )
 )
 ```
+
+```{r}
+#| eval: false
+ggplot(monthly_totals, aes(x = year_month, y = distance)) +
+  geom_area(fill = "#7FCDBB", alpha = 0.6) +
+  geom_line(color = "#2C7FB8", linewidth = 1) +
+  scale_x_date(date_breaks = "3 months", date_labels = "%b %Y") +
+  labs(
+    title = "Paddling Through the Year",
+    subtitle = "Distance per month",
+    x = NULL,
+    y = "Distance (km)"
+  ) +
+  theme_minimal(base_size = 12) +
+  theme(
+    panel.grid.minor = element_blank(),
+    plot.title = element_text(face = "bold"),
+    axis.text.x = element_text(angle = 90, hjust = 1)
+  )
+```
+
+```{r}
+#| eval: false
+monthly_totals |>
+  dplyr::mutate(
+    year = lubridate::year(year_month),
+    month = lubridate::month(year_month, label = TRUE)
+  ) |>
+  ggplot(aes(x = month, y = factor(year), fill = distance)) +
+  geom_tile(color = "white") +
+  scale_fill_gradient(low = "#EDF8FB", high = "#08589E") +
+  labs(
+    title = "Did I paddle this month?",
+    subtitle = "Darker = more distance",
+    x = NULL,
+    y = NULL,
+    fill = "km"
+  ) +
+  theme_minimal(base_size = 12) +
+  theme(
+    panel.grid = element_blank(),
+    plot.title = element_text(face = "bold")
+  )
+```
+
+
 

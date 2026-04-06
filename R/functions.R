@@ -11,6 +11,13 @@ slugify <- function(x) {
   x
 }
 
+# "2019-09-21T09:52:23Z"
+sanitise_date <- function(start_date) {
+  start_date |>
+  lubridate::ymd_hms() |>
+    format("%Y-%m-%d")
+}
+
 get_club <- function(x) {
   dplyr::case_when(
     any(grepl("^club:", x)) ~ x[grepl("^club:", x)][1],
@@ -94,17 +101,6 @@ get_raw <- function() {
   cli::cli_alert_success("Writing raw paddles to RDS")
 }
 
-# get_paddles <- function() {
-#   readRDS("data/raw_activities.rds") |>
-#     dplyr::filter(!is.na(map.summary_polyline) & map.summary_polyline != "") |>
-#     dplyr::mutate(geom = gpoly_to_sfpoly(map.summary_polyline)) |>
-#     dplyr::mutate(id = as.numeric(id)) |>
-#     dplyr::select(id, name, start_date, distance, geom) |>
-#     sf::st_as_sf() |>
-#     sf::st_set_crs(4326) |>
-#     sf::st_write("data/paddles.geojson", driver = "GeoJSON", delete_dsn = TRUE)
-# }
-
 get_detail <- function(all_paddles, n = 1) {
   all_paddles |>
     dplyr::arrange(desc(start_date)) |>
@@ -117,22 +113,6 @@ get_detail <- function(all_paddles, n = 1) {
     )
 }
 
-
-# Fix MALFORMED DATES (still an issue)
-# Can I fix this when they come in at RAW?
-# Is the issue coming in during RAW or DETAILED?
-
-fix_dates <- function(detailed_paddles) {
-  detailed_paddles |>
-    dplyr::mutate(
-      start_date = purrr::map_chr(detailed, \(x) {
-        purrr::pluck(x, "start_date") |>
-          lubridate::ymd_hms() |>
-          format("%Y-%m-%d")
-      })
-    )
-}
-
 sanitise_name <- function(name) {
   name |>
     stringr::str_remove_all('[":]')
@@ -141,20 +121,19 @@ sanitise_name <- function(name) {
 get_latest <- function() {
   # Compare against RDS
   all_paddles <- readRDS("data/raw_paddles.rds") |>
-    dplyr::filter(!is.na(map.summary_polyline) & map.summary_polyline != "") |> # Remove ones without a map
-    dplyr::select(id, name, start_date, distance) # For legacy reasons
+    dplyr::filter(!is.na(map.summary_polyline) & map.summary_polyline != "") # Remove ones without a map
+
   detailed_paddles <- readRDS("data/detailed_paddles.rds")
 
-  missing_activities <- all_paddles$id[which(
+  missing_paddles <- all_paddles$id[which(
     !(all_paddles$id %in% detailed_paddles$id)
   )]
 
-  if (length(missing_activities > 0)) {
-    activities_to_import <- missing_activities[1]
+  if (length(missing_paddles > 0)) {
+    paddles_to_import <- missing_paddles[1] # Can be bumped if need
 
     new_detailed <-
-      all_paddles |>
-      dplyr::filter(id %in% activities_to_import) |>
+      tibble::tibble(id = paddles_to_import) |>
       dplyr::mutate(
         detailed = purrr::map(id, \(x) {
           rStrava::get_activity(id = as.character(x), strava_token)
@@ -165,12 +144,51 @@ get_latest <- function() {
 
     # Ensure unique
     updated_detailed <- dplyr::distinct(updated_detailed, id, .keep_all = TRUE)
-
     saveRDS(updated_detailed, "data/detailed_paddles.rds")
+
     cli::cli_alert_success(glue::glue(
       "Updated database. {nrow(updated_detailed)} paddles imported"
     ))
   } else {
     cli::cli_alert_info("No paddles to update")
   }
+}
+
+  process_paddles <- function() {
+  raw_paddles <- readRDS("data/raw_paddles.rds")
+  detailed_paddles <- readRDS("data/detailed_paddles.rds")
+  paddles <- dplyr::inner_join(raw_paddles, detailed_paddles, by = "id")
+
+  processed_paddles <-
+ paddles |>
+  dplyr::mutate(
+    # Basic
+    name = sanitise_name(name),
+    slug = slugify(name),
+    start_date = sanitise_date(start_date),
+    strava_url = glue::glue("https://www.strava.com/activities/{id}"),
+    moving_time_minutes = moving_time / 60,
+
+    # Detailed
+    categories = purrr::map(detailed, get_categories),
+    club = purrr::map_chr(categories, get_club),
+    description = purrr::map_chr(detailed, \(x) {
+      purrr::pluck(x, "description", .default = "TO DO")
+    }),
+    image_url = purrr::map_chr(detailed, \(x) {
+      purrr::pluck(
+        x,
+        "photos",
+        "primary",
+        "urls",
+        "600",
+        .default = "https://placehold.co/600x400/EEE/31343C"
+      )
+    }),
+    filename = glue::glue("posts/{start_date}_{slug}.md")
+  ) |>
+   dplyr::select(id, name, start_date, distance, categories,  moving_time_minutes, club, strava_url, kudos_count, description, image_url, filename)
+ # Keep only new columns + kudos + distance. Don't need slug.
+
+saveRDS(processed_paddles, "data/processed_paddles.rds")
 }

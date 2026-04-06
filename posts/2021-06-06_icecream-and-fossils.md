@@ -5,7 +5,7 @@ categories: ["club: cumbria","sea","staithes","yorkshire"]
 image: https://dgtzuqphqg23d.cloudfront.net/Ed9H8a9VwUku9Yj9nxK2i-dx7UZLrosvyYu5zKA57hU-768x576.jpg
 ---
 
-- Distance: 19.3 km
+- Distance: 18.8 km
 - [Strava](https://www.strava.com/activities/5428742998)
 
 Cumbria Canoeists Day 2

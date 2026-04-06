@@ -1,4 +1,4 @@
-paddle_post <- function(selected_id, detailed_activities) {
+paddle_post <- function(selected_id, detailed_paddles) {
   template <- '---
 title: "{{ name }}"
 date: {{ date }}
@@ -14,19 +14,18 @@ image: {{ image_url }}
 ![]({{ image_url }})
 
 '
-  activity <- detailed_activities |>
+  paddle <- detailed_paddles |>
     dplyr::filter(id == selected_id)
 
   template |>
     jinjar::render(
-      name = activity$name,
-      date = activity$start_date,
-      categories = unlist(activity$categories),
-      distance = round(activity$distance, 1),
-      strava_url = activity$strava_url,
-      description = activity$description,
-      image_url = activity$image_url
+      name = paddle$name,
+      date = paddle$start_date,
+      categories = unlist(paddle$categories),
+      distance = round(paddle$distance, 1),
+      strava_url = paddle$strava_url,
+      description = paddle$description,
+      image_url = paddle$image_url
     ) |>
-    writeLines(activity$filename)
-
+    writeLines(paddle$filename)
 }
