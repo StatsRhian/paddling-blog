@@ -1,0 +1,19 @@
+---
+title: "Catching eddies"
+date: 2021-03-27
+categories: ["halton-rapids","club: lancaster","whitewater"]
+image: https://dgtzuqphqg23d.cloudfront.net/bMfJOP_DVYOSOKwPylst-OREpzNNMerC1Pa_-cLRe7Y-768x511.jpg
+---
+
+- Distance: 4.8 km
+- [Strava](https://www.strava.com/activities/5019810663)
+
+Halton rapids on a low (0.7m)
+
+At the islands with Molly and Paul. Practising tapping rocks and getting into eddies properly.
+
+Our final (daylight) session of the Halton season.
+
+![](https://dgtzuqphqg23d.cloudfront.net/bMfJOP_DVYOSOKwPylst-OREpzNNMerC1Pa_-cLRe7Y-768x511.jpg)
+
+

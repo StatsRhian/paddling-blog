@@ -1,0 +1,15 @@
+---
+title: "Night paddle"
+date: 2022-09-29
+categories: []
+image: https://dgtzuqphqg23d.cloudfront.net/vafuyycLeNygnp6p539WRqpryICbIOBK9Ju4a9kIFOU-768x576.jpg
+---
+
+- Distance: 5.7 km
+- [Strava](https://www.strava.com/activities/7886608220)
+
+
+
+![](https://dgtzuqphqg23d.cloudfront.net/vafuyycLeNygnp6p539WRqpryICbIOBK9Ju4a9kIFOU-768x576.jpg)
+
+

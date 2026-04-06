@@ -1,0 +1,15 @@
+---
+title: "Autumn sunshine on Windermere"
+date: 2022-10-16
+categories: 
+image: https://dgtzuqphqg23d.cloudfront.net/ifXYO0n5_7VRQvBgPNLNDODfHrI2WLqQzH_1XJnWMfw-768x576.jpg
+---
+
+- Distance: 9.6 km
+- [Strava](https://www.strava.com/activities/7974227955)
+
+
+
+![](https://dgtzuqphqg23d.cloudfront.net/ifXYO0n5_7VRQvBgPNLNDODfHrI2WLqQzH_1XJnWMfw-768x576.jpg)
+
+

@@ -1,0 +1,15 @@
+---
+title: "Rhoscolyn to Trearddur Bay for Icecream"
+date: 2022-07-31
+categories: 
+image: https://dgtzuqphqg23d.cloudfront.net/yn_yGo7oTuzUrXthGJRXXM8Q3DIrnTjP4bk4oFiaj4k-768x576.jpg
+---
+
+- Distance: 18.6 km
+- [Strava](https://www.strava.com/activities/7566590293)
+
+
+
+![](https://dgtzuqphqg23d.cloudfront.net/yn_yGo7oTuzUrXthGJRXXM8Q3DIrnTjP4bk4oFiaj4k-768x576.jpg)
+
+

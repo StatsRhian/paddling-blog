@@ -1,0 +1,16 @@
+---
+title: "SKA Intromediate sea kayaking course day 1"
+date: 2019-09-07
+categories: ["course","anglesey"]
+image: https://dgtzuqphqg23d.cloudfront.net/yz08hqebwILNVGwfnY2ipTrrDz1s6CN-j_HA_nYsTiA-768x576.jpg
+---
+
+- Distance: 8.6 km
+- [Strava](https://www.strava.com/activities/2688070335)
+
+Practicing skills at Menai bridge.
+Coached by Phil Clegg from Sea Kayak Anglesey
+
+![](https://dgtzuqphqg23d.cloudfront.net/yz08hqebwILNVGwfnY2ipTrrDz1s6CN-j_HA_nYsTiA-768x576.jpg)
+
+

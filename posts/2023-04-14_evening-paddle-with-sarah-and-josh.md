@@ -1,0 +1,15 @@
+---
+title: "Evening paddle with Sarah and Josh"
+date: 2023-04-14
+categories: []
+image: https://dgtzuqphqg23d.cloudfront.net/8XMenCxHpO05-8HqdhhT17-CYP3Zg5-cbuEQCtGkaEY-768x576.jpg
+---
+
+- Distance: 3.7 km
+- [Strava](https://www.strava.com/activities/8890643938)
+
+
+
+![](https://dgtzuqphqg23d.cloudfront.net/8XMenCxHpO05-8HqdhhT17-CYP3Zg5-cbuEQCtGkaEY-768x576.jpg)
+
+

@@ -1,0 +1,15 @@
+---
+title: "Sea Kayak Trail Day 3"
+date: 2023-06-07
+categories: 
+image: https://dgtzuqphqg23d.cloudfront.net/4ZQw2rx1Lg0CC3vsaI3unsgGoD5aQDUwKiQDLXdowgA-768x576.jpg
+---
+
+- Distance: 23.7 km
+- [Strava](https://www.strava.com/activities/9259531824)
+
+
+
+![](https://dgtzuqphqg23d.cloudfront.net/4ZQw2rx1Lg0CC3vsaI3unsgGoD5aQDUwKiQDLXdowgA-768x576.jpg)
+
+

@@ -1,0 +1,15 @@
+---
+title: "Souter and back"
+date: 2023-08-12
+categories: []
+image: https://dgtzuqphqg23d.cloudfront.net/OXj1_bKdbHSG5_g04II9SmYK4U4Ur9D1_1_cVJEpOjE-768x576.jpg
+---
+
+- Distance: 15.8 km
+- [Strava](https://www.strava.com/activities/9631876277)
+
+
+
+![](https://dgtzuqphqg23d.cloudfront.net/OXj1_bKdbHSG5_g04II9SmYK4U4Ur9D1_1_cVJEpOjE-768x576.jpg)
+
+

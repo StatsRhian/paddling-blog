@@ -1,0 +1,15 @@
+---
+title: "Corryvreckan and grey dogs"
+date: 2025-05-21
+categories: ["exped","jura","peer","sea"]
+image: https://dgtzuqphqg23d.cloudfront.net/dyuhZzMlb05M34JuAuNXvIU7yRnORNYrEFqUc1v5QKg-768x432.jpg
+---
+
+- Distance: 22.2 km
+- [Strava](https://www.strava.com/activities/14551971167)
+
+Corryvrevken was at slack with no swell 😅
+
+![](https://dgtzuqphqg23d.cloudfront.net/dyuhZzMlb05M34JuAuNXvIU7yRnORNYrEFqUc1v5QKg-768x432.jpg)
+
+

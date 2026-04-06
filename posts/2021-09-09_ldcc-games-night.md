@@ -1,0 +1,15 @@
+---
+title: "LDCC games night"
+date: 2021-09-09
+categories: 
+image: https://placehold.co/600x400/EEE/31343C
+---
+
+- Distance: 2.3 km
+- [Strava](https://www.strava.com/activities/5933751295)
+
+Got a bit soggy.
+
+![](https://placehold.co/600x400/EEE/31343C)
+
+

@@ -1,27 +1,43 @@
 ---
 title: "Map"
 freeze: false
+page-layout: full
 ---
 
-## Interactive map
-
-Zoom to see where I've paddled (so far...)
-
 ```{r, echo = FALSE, message = FALSE}
-paddles <- sf::st_read("data/paddles.geojson", quiet = TRUE)
-paddles |>
+raw_paddles <- readRDS("data/raw_paddles.rds")
+
+gpoly_to_sfpoly <- function(gpoly) {
+  coords <- googlePolylines::decode(gpoly)
+  sfg <- lapply(coords, function(x) {
+    sf::st_linestring(x = as.matrix(x[, c(2, 1)]))
+  })
+  sfc <- sf::st_sfc(sfg, crs = 4326)
+  return(sfc)
+}
+
+paddle_geom <-
+  raw_paddles |>
+   dplyr::filter(!is.na(map.summary_polyline) & map.summary_polyline != "") |>
+   dplyr::mutate(geom = gpoly_to_sfpoly(map.summary_polyline)) |>
+    dplyr::mutate(id = as.numeric(id)) |>
+    dplyr::select(id, name, start_date, distance, geom) |>
+    sf::st_as_sf() |>
+    sf::st_set_crs(4326) 
+
+paddle_geom  |>
   dplyr::mutate(label = glue::glue("<b>{name}</b>  <br>
                    Date: {lubridate::date(start_date)} <br>
                    Distance: {round(distance, 1)}k")) |>
   dplyr::mutate(label = purrr::map(label, htmltools::HTML)) |>
-  leaflet::leaflet() |>
-  leaflet::addTiles() |>
+  leaflet::leaflet(width = "100%", height = 700) |>
+  leaflet::addProviderTiles("CartoDB.Voyager") |>
   leaflet::addPolylines(
     weight = 5,
     color = "purple",
     opacity = 1,
     label = ~label
   ) |>
-  leaflet::setView(-2.74978, 54.07527, zoom = 7) |>
+  leaflet::setView(-3, 56, zoom = 7) |>
   leaflet.extras::addFullscreenControl()
 ```

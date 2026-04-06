@@ -1,0 +1,17 @@
+---
+title: "Birding at Bempton cliffs"
+date: 2021-06-05
+categories: ["club: cumbria","sea","flamborough-head","yorkshire"]
+image: https://dgtzuqphqg23d.cloudfront.net/KDRUNNJ8V6om40ZHPRfkj3stdhzLgFvUE4_e_u5DcIw-768x405.jpg
+---
+
+- Distance: 24.7 km
+- [Strava](https://www.strava.com/activities/5418588065)
+
+Kittiwakes, Razorbills, Guillemots, Gannets and Puffins.
+ 
+
+
+![](https://dgtzuqphqg23d.cloudfront.net/KDRUNNJ8V6om40ZHPRfkj3stdhzLgFvUE4_e_u5DcIw-768x405.jpg)
+
+

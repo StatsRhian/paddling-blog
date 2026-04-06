@@ -1,0 +1,57 @@
+---
+title: Data
+execute:
+  echo: FALSE
+  message: FALSE
+  warning: FALSE
+---
+
+```{r}
+processed <- readRDS("data/processed_paddles.rds") |>
+  sf::st_drop_geometry() |>
+  dplyr::select(name, start_date, distance, club, kudos, filename) |>
+  dplyr::mutate(filename = stringr::str_replace(filename, "\\.md", "\\.html"))
+
+library(reactable)
+library(htmltools)
+
+reactable(
+  processed,
+  highlight = TRUE,
+  bordered = TRUE,
+  striped = TRUE,
+  filterable = TRUE,
+  compact = TRUE,
+  defaultPageSize = 25,
+  defaultSorted = list(start_date = "desc"),
+  onClick = JS("function(rowInfo, column) {
+    window.open(rowInfo.values['filename'], '_blank')
+  }"),
+  rowStyle = list(cursor = "pointer"),
+  columns = list(
+    name = colDef(name = "Paddle"),
+    start_date = colDef(name = "Date"),
+    distance = colDef(
+      name = "Distance",
+      align = "left",
+      html = TRUE,
+      cell = JS("function(cellInfo) {
+        const value = cellInfo.value.toFixed(1)
+        const maxVal = 32.3
+        const pct = (cellInfo.value / maxVal * 100) + '%'
+        return `
+          <div style='display:flex; align-items:center; gap:6px;'>
+            <span style='min-width:38px;'>
+              ${value}<span style='font-size:0.8em; color:#999; margin-left:2px;'>km</span>
+            </span>
+            <div style='flex-grow:1; background:#e1e1e1; border-radius:3px; height:0.75rem;'>
+              <div style='width:${pct}; background:#00bfc4; height:100%; border-radius:3px;'></div>
+            </div>
+          </div>
+        `
+      }")
+    ),
+    filename = colDef(show = FALSE)
+  )
+)
+```

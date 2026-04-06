@@ -1,0 +1,261 @@
+---
+title: "Stats"
+description: |
+  Data and graphs
+execute: 
+  echo: false
+  warning: false
+  message: false
+---
+
+```{r}
+library(tidyverse)  
+library(scales)
+library(ggtext) 
+```
+
+
+```{r}
+processed <-
+  readRDS("data/processed_paddles.rds") |>
+   dplyr::mutate(start_date = lubridate::ymd(start_date)) |>
+  sf::st_drop_geometry()
+
+monthly_totals <- 
+  processed |>
+  dplyr::mutate(year_month = lubridate::floor_date(start_date, "month")) |>
+  dplyr::group_by(year_month) |>
+  dplyr::summarise(distance = sum(distance), .groups = "drop") |>
+  tidyr::complete(
+    year_month = seq(min(year_month), max(year_month), by = "1 month"),
+    fill = list(distance = 0)
+    )
+
+longest_paddles <- processed |>
+  dplyr::slice_max(distance, n = 10) |>
+  dplyr::select(name, start_date, distance, filename)
+```
+
+
+## At a glance
+
+
+```{r}
+most_kudos <- processed |> dplyr::slice_max(kudos) |> dplyr::select(name, filename, kudos)
+```
+
+```{r}
+longest <- processed |> dplyr::slice_max(distance) |> dplyr::select(name, filename, distance)
+```
+
+- Total paddles: (sessions since 2018) is `r nrow(processed)`
+- Total distance: `r round(sum(processed$distance))`km
+- Time paddling: `r round(sum(processed$moving_time_minutes) / 60)` hours
+- Longest paddle: "`r longest$name`" which was `r round(longest$distance, 1)`km
+- Most kudos: "`r most_kudos$name`" with `r most_kudos$kudos` kudos
+
+
+```{r}
+library("ggplot2")
+ggplot(monthly_totals, aes(x = year_month, y = distance)) +
+  geom_area(fill = "#7FCDBB", alpha = 0.6) +
+  geom_line(color = "#2C7FB8", linewidth = 1) +
+  scale_x_date(date_breaks = "3 months", date_labels = "%b %Y") +
+  labs(
+    title = "Paddling Through the Year",
+    subtitle = "Distance per month",
+    x = NULL,
+    y = "Distance (km)"
+  ) +
+  theme_minimal(base_size = 12) +
+  theme(
+    panel.grid.minor = element_blank(),
+    plot.title = element_text(face = "bold"),
+    axis.text.x = element_text(angle = 90, hjust = 1)
+  )
+```
+
+```{r}
+monthly_totals |>
+  dplyr::mutate(
+    year = lubridate::year(year_month),
+    month = lubridate::month(year_month, label = TRUE)
+  ) |>
+  ggplot(aes(x = month, y = factor(year), fill = distance)) +
+  geom_tile(color = "white") +
+  scale_fill_gradient(low = "#EDF8FB", high = "#08589E") +
+  labs(
+    title = "Did I paddle this month?",
+    subtitle = "Darker = more distance",
+    x = NULL,
+    y = NULL,
+    fill = "km"
+  ) +
+  theme_minimal(base_size = 12) +
+  theme(
+    panel.grid = element_blank(),
+    plot.title = element_text(face = "bold")
+  )
+```
+
+
+
+## Year by year
+
+```{r}
+year_count <- processed |>
+  dplyr::mutate(year = lubridate::year(start_date)) |>
+  dplyr::group_by(year) |>
+  dplyr::summarise(total_km = sum(distance),
+                   count = n()) |>
+  tidyr::pivot_longer(
+    cols = c(total_km, count),
+    names_to = "metric",
+    values_to = "value"
+  ) |>
+  mutate(metric = factor(metric, levels = c("count", "total_km"))) |>
+  group_by(metric) |>
+  mutate(value_scaled = value / max(value)) |>
+  ungroup() |>
+  dplyr::mutate(value_label = case_when(metric == "total_km" ~ paste0(round(value), "km"),
+                          metric == "count" ~ paste0(round(value), " paddles")
+                          ))
+
+
+
+col_vec <- c(
+  "count" = "#104E8B",
+  "total_km" = "#FF7F50"
+)
+  
+
+ggplot(year_count, aes(y = metric, x = value_scaled, fill = metric)) +
+  # Background "empty" grey bar at 100%
+  geom_col(aes(x = 1), fill = "grey95") +
+  geom_col() +
+  geom_text(aes(label = value_label), x = 1.01, hjust = 0, size = 3) +
+  scale_fill_manual(values = col_vec) +
+  scale_x_continuous(limits = c(0, 1), labels = NULL, expand = c(0, 0)) +
+  coord_cartesian(clip = "off") +
+  facet_wrap(~year, ncol = 1, strip.position = "left") +
+  theme_void() +
+  theme(
+    panel.spacing = unit(0, "lines"),
+    strip.background = element_blank(),
+    strip.placement = "outside",
+    strip.text.y.left = element_text(angle = 0),
+    axis.text.y = element_blank(),
+    axis.ticks.y = element_blank(),
+    plot.margin = margin(1, 4, 1, 1, "lines"),  # large right margin for labels
+    plot.subtitle = element_textbox_simple(),
+    legend.position = "none"
+  ) +
+  labs(y = NULL, x = NULL, fill = "Metric",
+   title =  "Paddles & distance per year",
+       subtitle = glue::glue("Bars show <span style='color:{col_vec[[1]]}'>{names(col_vec)[[1]]}</span> and <span style='color:{col_vec[[2]]}'>{names(col_vec)[[2]]}</span>
+"))
+```
+
+
+```{r}
+month_count <- processed |>
+  dplyr::mutate(month = lubridate::month(start_date, label = TRUE)) |>
+  dplyr::count(month) |>
+  dplyr::mutate(is_max = (n == max(n)))
+
+  ggplot(month_count, aes(x = month, y = n, fill = is_max)) +
+  geom_col() +
+  scale_fill_manual(
+    values = c("TRUE" = "#1D3557",  # dark blue (max)
+               "FALSE" = "#A8DADC") # light blue (others)
+  ) +
+  labs(title =  "Paddling by month",
+       subtitle = "Total sessions across all years") +
+    theme_minimal() +
+    theme(legend.position = "none",
+             axis.ticks.x = element_blank(),
+    axis.ticks.y = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor.y = element_blank(),
+    panel.grid.minor.x = element_blank(), 
+    axis.title = element_blank())
+```
+
+```{r}
+processed |>
+  ggplot(aes(x = start_date, y = distance, size = kudos)) +
+  geom_point(colour = "skyblue", alpha = 0.3) +
+  labs(x = NULL, y = NULL) + 
+  scale_y_continuous(labels = function(x) paste0(x, " km")) +
+  theme_minimal() +
+  theme(
+    axis.ticks.x = element_blank(),
+    axis.ticks.y = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor.y = element_blank(),
+    panel.grid.minor.x = element_blank()
+  ) + 
+  labs(title = "All paddles over time")
+```
+
+## Longest paddles
+
+```{r}
+library(reactable)
+library(htmltools)
+
+# Add a rank column to the data
+longest_paddles_ranked <- longest_paddles |>
+  dplyr::mutate(
+    rank = dplyr::row_number(),
+    .before = name
+  ) |>
+  dplyr::mutate(filename = stringr::str_replace(filename, "\\.md", "\\.html")) # TODO replace
+
+reactable(
+  longest_paddles_ranked,
+  highlight = TRUE,
+  bordered = TRUE,
+  striped = TRUE,
+  compact = TRUE,
+  onClick = JS("function(rowInfo, column) {
+    window.open(rowInfo.values['filename'], '_blank')
+  }"),
+  rowStyle = list(cursor = "pointer"),
+  columns = list(
+    rank = colDef(
+      name = "#",
+      width = 45,
+      align = "center",
+      cell = JS("function(cellInfo) {
+        const medals = { 1: '🥇', 2: '🥈', 3: '🥉' }
+        return medals[cellInfo.value] || cellInfo.value
+      }")
+    ),
+    name = colDef(name = "Paddle"),
+    start_date = colDef(name = "Date", width = 100),
+    distance = colDef(
+      name = "Distance",
+      align = "left",
+      html = TRUE,
+      cell = JS("function(cellInfo) {
+        const value = cellInfo.value.toFixed(1)
+        const maxVal = 32.3
+        const pct = (cellInfo.value / maxVal * 100) + '%'
+        return `
+          <div style='display:flex; align-items:center; gap:6px;'>
+            <span style='min-width:38px;'>
+              ${value}<span style='font-size:0.8em; color:#999; margin-left:2px;'>km</span>
+            </span>
+            <div style='flex-grow:1; background:#e1e1e1; border-radius:3px; height:0.75rem;'>
+              <div style='width:${pct}; background:#00bfc4; height:100%; border-radius:3px;'></div>
+            </div>
+          </div>
+        `
+      }")
+    ),
+    filename = colDef(show = FALSE)
+  )
+)
+```
+

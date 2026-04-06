@@ -1,0 +1,28 @@
+---
+title: "Rhoscolyn rock hopping"
+date: 2025-10-18
+categories: ["club: tynemouth","anglesey","course","sea"]
+image: https://dgtzuqphqg23d.cloudfront.net/XoPe2HJfbiWssMQ5TF1vygvOf7VWVExfGicwZ__nFVo-768x576.jpg
+---
+
+- Distance: 12.5 km
+- [Strava](https://www.strava.com/activities/16193557105)
+
+Day 1 of training with SKUK adventures. A totally different day from yesterday's calm sea. Strong South Easterly had made some fairly spicy conditions. The novice group went North to seek some shelter and the other groups headed to Rhoscolyn.
+
+Craig led my group, with Kev, Cath, Claire, Gordon and Kevin. I radioed Rhoscolyn NCI to let them know our plans.
+
+We started with a recap of turning in the wind, experimenting with different techniques, and closing our eyes to work out what effect each had. Then we put it into practice doing some little loops around the small island. 
+
+Stu's group had been out in the big tide race off Rhoscolyn and we met up at lunch on the little bay. Stu & Craig were enjoying having Geordie banter including an infamous story about a pink swim tow float. 
+
+After lunch we checked out the tide race but it had died away and wasn't great for play so we did some skills along the cliffs. The challenge was to paddle in the swell right along the wall and try and touch it. Craig then had us practicing rescues along the cliffs. I popped a tow on when a rescue was taking a little too long due to a paddle getting blown out of reach.
+Afterwards Craig said I was always where he needed me. I can't seem to turn off playing back-stop even when I'm on a training course.
+
+Really great day. I maybe felt slightly under-challenged as the conditions were very comfortable for me, but I think if I had joined Stu's group - I would have been very uncomfortable!
+
+Afterwards we headed to the paddlers return for a few pints with Stu & Craig.
+
+![](https://dgtzuqphqg23d.cloudfront.net/XoPe2HJfbiWssMQ5TF1vygvOf7VWVExfGicwZ__nFVo-768x576.jpg)
+
+

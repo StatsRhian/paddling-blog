@@ -11,16 +11,16 @@ website:
       href: index.html
     - text: "About"
       href: about.html
-    - text: "Maps"
+    - text: "Map"
       href: map.html
-    - text: "Philosophy"
-      href: philosophy.html
+    - text: "Stats"
+      href: stats.html
+    - text: "Table"
+      href: table.html
     - icon: github
       href: https://github.com/statsrhian/paddling-blog
 
 format:
   html:
-    theme: cosmo
-
-
+    theme: yeti
 

@@ -11,8 +11,7 @@ image: {{ image_url }}
 
 {{description}}
 
-![]({{ default(image_url, "https://dgalywyr863hv.cloudfront.net/pictures/athletes/5412155/9785737/5/large.jpg") }})
-
+![]({{ image_url }})
 
 '
   activity <- detailed_activities |>
@@ -29,4 +28,5 @@ image: {{ image_url }}
       image_url = activity$image_url
     ) |>
     writeLines(activity$filename)
+
 }

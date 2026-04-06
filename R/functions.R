@@ -11,6 +11,16 @@ slugify <- function(x) {
   x
 }
 
+get_club <- function(x) {
+  dplyr::case_when(
+    any(grepl("^club:", x)) ~ x[grepl("^club:", x)][1],
+    "peer" %in% x ~ "peer",
+    "solo" %in% x ~ "solo",
+    "course" %in% x ~ "course",
+    "race" %in% x ~ "race",
+    TRUE ~ NA_character_
+  )
+}
 
 get_categories <- function(activity) {
   activity |>
@@ -26,6 +36,7 @@ get_categories <- function(activity) {
         .x %in% c("ldcc") ~ "club: lancaster",
         .x %in% c("ucc") ~ "club: ulverston",
         .x %in% c("tpc") ~ "club: tynemouth",
+        .x %in% c("tcc") ~ "club: tynemouth",
         .x %in% c("cc") ~ "club: cumbria",
         TRUE ~ .x
       )
@@ -33,23 +44,23 @@ get_categories <- function(activity) {
 }
 
 # Doesn't work currently
-get_map <- function(id) {
-  activity <- rStrava::get_activity(id = id, strava_token)
-
-  activity |>
-    purrr::pluck("map", "summary_polyline") |>
-    gpoly_to_sfpoly() |>
-    sf::st_as_sf() |>
-    sf::st_set_crs(4326) |>
-    leaflet::leaflet() |>
-    leaflet::addProviderTiles(provider = "Stadia.StamenWatercolor") |>
-    leaflet::addPolylines(
-      color = "purple",
-      opacity = 1,
-      dashArray = 5,
-      weight = 2
-    )
-}
+# get_map <- function(id) {
+#   activity <- rStrava::get_activity(id = id, strava_token)
+#
+#   activity |>
+#     purrr::pluck("map", "summary_polyline") |>
+#     gpoly_to_sfpoly() |>
+#     sf::st_as_sf() |>
+#     sf::st_set_crs(4326) |>
+#     leaflet::leaflet() |>
+#     leaflet::addTiles() |>
+#     leaflet::addPolylines(
+#       color = "purple",
+#       opacity = 1,
+#       dashArray = 5,
+#       weight = 2
+#     )
+# }
 
 
 # update a single activity
@@ -72,36 +83,27 @@ strava_token <- httr::config(
   )
 )
 
-gpoly_to_sfpoly <- function(gpoly) {
-  coords <- googlePolylines::decode(gpoly)
-  sfg <- lapply(coords, function(x) {
-    sf::st_linestring(x = as.matrix(x[, c(2, 1)]))
-  })
-  sfc <- sf::st_sfc(sfg, crs = 4326)
-  return(sfc)
-}
-
 get_raw <- function() {
   rStrava::get_activity_list(strava_token) |>
     rStrava::compile_activities() |>
     tibble::as_tibble() |>
-    saveRDS("data/raw_activities.rds")
-  cli::cli_alert_success("Writing raw activities to RDS")
-}
-
-get_paddles <- function() {
-  readRDS("data/raw_activities.rds") |>
     dplyr::filter(
       type %in% c("Kayaking", "Canoeing", "StandUpPaddling", "WaterSport")
     ) |>
-    dplyr::filter(!is.na(map.summary_polyline) & map.summary_polyline != "") |>
-    dplyr::mutate(geom = gpoly_to_sfpoly(map.summary_polyline)) |>
-    dplyr::mutate(id = as.numeric(id)) |>
-    dplyr::select(id, name, start_date, distance, geom) |>
-    sf::st_as_sf() |>
-    sf::st_set_crs(4326) |>
-    sf::st_write("data/paddles.geojson", driver = "GeoJSON", delete_dsn = TRUE)
+    saveRDS("data/raw_paddles.rds")
+  cli::cli_alert_success("Writing raw paddles to RDS")
 }
+
+# get_paddles <- function() {
+#   readRDS("data/raw_activities.rds") |>
+#     dplyr::filter(!is.na(map.summary_polyline) & map.summary_polyline != "") |>
+#     dplyr::mutate(geom = gpoly_to_sfpoly(map.summary_polyline)) |>
+#     dplyr::mutate(id = as.numeric(id)) |>
+#     dplyr::select(id, name, start_date, distance, geom) |>
+#     sf::st_as_sf() |>
+#     sf::st_set_crs(4326) |>
+#     sf::st_write("data/paddles.geojson", driver = "GeoJSON", delete_dsn = TRUE)
+# }
 
 get_detail <- function(all_paddles, n = 1) {
   all_paddles |>
@@ -115,6 +117,22 @@ get_detail <- function(all_paddles, n = 1) {
     )
 }
 
+
+# Fix MALFORMED DATES (still an issue)
+# Can I fix this when they come in at RAW?
+# Is the issue coming in during RAW or DETAILED?
+
+fix_dates <- function(detailed_paddles) {
+  detailed_paddles |>
+    dplyr::mutate(
+      start_date = purrr::map_chr(detailed, \(x) {
+        purrr::pluck(x, "start_date") |>
+          lubridate::ymd_hms() |>
+          format("%Y-%m-%d")
+      })
+    )
+}
+
 sanitise_name <- function(name) {
   name |>
     stringr::str_remove_all('[":]')
@@ -122,8 +140,11 @@ sanitise_name <- function(name) {
 
 get_latest <- function() {
   # Compare against RDS
-  all_paddles <- sf::st_read("data/paddles.geojson", quiet = TRUE)
-  detailed_paddles <- readRDS("data/paddles.rds") # What if this is empty?
+  all_paddles <- readRDS("data/raw_paddles.rds") |>
+    dplyr::filter(!is.na(map.summary_polyline) & map.summary_polyline != "") |> # Remove ones without a map
+    dplyr::select(id, name, start_date, distance) # For legacy reasons
+  detailed_paddles <- readRDS("data/detailed_paddles.rds")
+
   missing_activities <- all_paddles$id[which(
     !(all_paddles$id %in% detailed_paddles$id)
   )]
@@ -145,7 +166,7 @@ get_latest <- function() {
     # Ensure unique
     updated_detailed <- dplyr::distinct(updated_detailed, id, .keep_all = TRUE)
 
-    saveRDS(updated_detailed, "data/paddles.rds")
+    saveRDS(updated_detailed, "data/detailed_paddles.rds")
     cli::cli_alert_success(glue::glue(
       "Updated database. {nrow(updated_detailed)} paddles imported"
     ))

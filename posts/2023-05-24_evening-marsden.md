@@ -1,0 +1,15 @@
+---
+title: "Evening Marsden"
+date: 2023-05-24
+categories: []
+image: https://dgtzuqphqg23d.cloudfront.net/PzGWJo1JiWcKHYnbfqM4hYWaLrAb1pj7k4BCKrp0cBk-768x576.jpg
+---
+
+- Distance: 16.2 km
+- [Strava](https://www.strava.com/activities/9134293901)
+
+
+
+![](https://dgtzuqphqg23d.cloudfront.net/PzGWJo1JiWcKHYnbfqM4hYWaLrAb1pj7k4BCKrp0cBk-768x576.jpg)
+
+

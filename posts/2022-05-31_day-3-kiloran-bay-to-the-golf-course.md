@@ -1,0 +1,15 @@
+---
+title: "Day 3 Kiloran Bay to the Golf Course"
+date: 2022-05-31
+categories: 
+image: https://dgtzuqphqg23d.cloudfront.net/xz3ScjA-GwVtcWMDXfNk7G3KHdgfAKo9pvupERscaF8-768x576.jpg
+---
+
+- Distance: 12.3 km
+- [Strava](https://www.strava.com/activities/7233496634)
+
+
+
+![](https://dgtzuqphqg23d.cloudfront.net/xz3ScjA-GwVtcWMDXfNk7G3KHdgfAKo9pvupERscaF8-768x576.jpg)
+
+

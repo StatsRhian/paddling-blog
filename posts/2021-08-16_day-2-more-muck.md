@@ -1,0 +1,15 @@
+---
+title: "Day 2 More Muck"
+date: 2021-08-16
+categories: ["club: cumbria","expedition","muck","sea"]
+image: https://placehold.co/600x400/EEE/31343C
+---
+
+- Distance: 16.1 km
+- [Strava](https://www.strava.com/activities/5803304005)
+
+
+
+![](https://placehold.co/600x400/EEE/31343C)
+
+
