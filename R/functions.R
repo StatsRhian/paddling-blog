@@ -65,12 +65,12 @@ get_categories <- function(activity) {
 
 # update a single activity
 update_activity <- function(id_to_update) {
-  detailed_paddles <- readRDS("data/paddles.rds")
+  detailed_paddles <- readRDS("data/detailed_paddles.rds")
   detailed_paddles$detailed[
     detailed_paddles$id == id_to_update
   ] <- list(rStrava::get_activity(id = id_to_update, strava_token))
 
-  saveRDS(detailed_paddles, "data/paddles.rds")
+  saveRDS(detailed_paddles, "data/detailed_paddles.rds")
 }
 
 strava_token <- httr::config(
