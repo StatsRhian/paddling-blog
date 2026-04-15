@@ -8,9 +8,9 @@ image: https://dgtzuqphqg23d.cloudfront.net/6pqfUqBiC1lBHer5EJpUSMcOcLiOZsslEqW7
 - Distance: 10.1 km
 - [Strava](https://www.strava.com/activities/13832930666)
 
-First Coquet island trip of the year. The seals came out to play and we were surrounded whilst they played with our toggles. Ann & Pauline headed back after lap one whilst Kirstie and I went around for a second time.
-
-Afterwards we got chips at Amble and watched the eider ducks dive for their lunch. Saw some curlews and avocets in the estuary too.
+First Coquet island trip of the year. The seals came out to play and we were surrounded whilst they played with our toggles. Ann & Pauline headed back after lap one whilst Kirstie and I went around for a second time.
+
+Afterwards we got chips at Amble and watched the eider ducks dive for their lunch. Saw some curlews and avocets in the estuary too.
 📸 @kmacventures
 
 ![](https://dgtzuqphqg23d.cloudfront.net/6pqfUqBiC1lBHer5EJpUSMcOcLiOZsslEqW77RvOVx4-768x576.jpg)

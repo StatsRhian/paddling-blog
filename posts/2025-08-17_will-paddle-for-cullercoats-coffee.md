@@ -8,10 +8,10 @@ image: https://dgtzuqphqg23d.cloudfront.net/EIkzggFzW08lDLBB83K78Hc-rGCAC9RPju2p
 - Distance: 12 km
 - [Strava](https://www.strava.com/activities/15489582804)
 
-A relaxed paddle to Whitley Bay and back with Paul, Sarah, Cath, Claire & Kev. We stopped at Cullercoats for a coffee & breakfast rolls.
-
-There was some nice surf at Longsands. I didn't feel up to playing but everyone else got stuck in. Some impressive rolls in the surf, unfortunatley resulting in a lost pair of glasses.
-
+A relaxed paddle to Whitley Bay and back with Paul, Sarah, Cath, Claire & Kev. We stopped at Cullercoats for a coffee & breakfast rolls.
+
+There was some nice surf at Longsands. I didn't feel up to playing but everyone else got stuck in. Some impressive rolls in the surf, unfortunatley resulting in a lost pair of glasses.
+
 I did one successfully roll on the way back in. No one in a rush to head off, we sat in the sun for an hour whilst our gear dried. It's always good to get out.
 
 ![](https://dgtzuqphqg23d.cloudfront.net/EIkzggFzW08lDLBB83K78Hc-rGCAC9RPju2p7hPgtss-768x576.jpg)

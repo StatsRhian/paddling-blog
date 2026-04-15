@@ -8,7 +8,7 @@ image: https://dgtzuqphqg23d.cloudfront.net/HnDzhLIzwH9euvpVU4AhNji7PxypUzTWIfuf
 - Distance: 3.9 km
 - [Strava](https://www.strava.com/activities/6220271653)
 
-I went out both days. Saturday (0.7m) was a good confidence builder for me. Chose a line for Amy to follow through the rapids.
+I went out both days. Saturday (0.7m) was a good confidence builder for me. Chose a line for Amy to follow through the rapids.
 
 
 ![](https://dgtzuqphqg23d.cloudfront.net/HnDzhLIzwH9euvpVU4AhNji7PxypUzTWIfuf8ePnZPc-768x576.jpg)

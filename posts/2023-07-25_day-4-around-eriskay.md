@@ -8,13 +8,13 @@ image: https://dgtzuqphqg23d.cloudfront.net/CqokW4v9KtF7_Cz6O7gFxgPeFebI51O3Gn5w
 - Distance: 23 km
 - [Strava](https://www.strava.com/activities/9550634712)
 
-Everything from a classic sea kayak day out
-
-- Circumnavigating an island
-- Little islands to hop around
-- Seals
-- Caves
-- A standing wave under the bridge
+Everything from a classic sea kayak day out
+
+- Circumnavigating an island
+- Little islands to hop around
+- Seals
+- Caves
+- A standing wave under the bridge
 - Pub at the finish
 
 ![](https://dgtzuqphqg23d.cloudfront.net/CqokW4v9KtF7_Cz6O7gFxgPeFebI51O3Gn5wg1HC-WM-768x477.jpg)

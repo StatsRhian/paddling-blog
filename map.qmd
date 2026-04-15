@@ -1,11 +1,12 @@
 ---
-title: "Map"
+title: "Places I've paddled"
 freeze: false
 page-layout: full
 ---
 
 ```{r, echo = FALSE, message = FALSE}
 raw_paddles <- readRDS("data/raw_paddles.rds")
+processed_paddles <- readRDS("data/processed_paddles.rds")
 
 gpoly_to_sfpoly <- function(gpoly) {
   coords <- googlePolylines::decode(gpoly)
@@ -25,10 +26,19 @@ paddle_geom <-
     sf::st_as_sf() |>
     sf::st_set_crs(4326) 
 
-paddle_geom  |>
-  dplyr::mutate(label = glue::glue("<b>{name}</b>  <br>
-                   Date: {lubridate::date(start_date)} <br>
-                   Distance: {round(distance, 1)}k")) |>
+post_links <- processed_paddles |>
+  dplyr::select(id, filename) |>
+   dplyr::mutate(filename = stringr::str_replace(filename, "\\.md", "\\.html")) # TODO: Not DRY
+
+paddle_geom |>
+  dplyr::left_join(post_links) |>
+  dplyr::mutate(label = glue::glue(
+      "<span style='font-size:16px'>
+         <b>{name}</b><br>
+         Date: {lubridate::date(start_date)}<br>
+         Distance: {round(distance, 1)}k
+       </span>"
+    )) |>
   dplyr::mutate(label = purrr::map(label, htmltools::HTML)) |>
   leaflet::leaflet(width = "100%", height = 700) |>
   leaflet::addProviderTiles("CartoDB.Voyager") |>
@@ -36,8 +46,26 @@ paddle_geom  |>
     weight = 5,
     color = "purple",
     opacity = 1,
-    label = ~label
-  ) |>
+    label = ~label,
+    layerId = ~filename, 
+     highlightOptions = leaflet::highlightOptions(
+      color = "orange",
+      weight = 8,
+      opacity = 1,
+      bringToFront = TRUE
+  )) |>
   leaflet::setView(-3, 56, zoom = 7) |>
-  leaflet.extras::addFullscreenControl()
+  leaflet.extras::addFullscreenControl() |>
+    htmlwidgets::onRender("
+    function(el, x) {
+      this.eachLayer(function(layer) {
+        if (layer.on) {
+          layer.on('click', function(e) {
+            var url = e.target.options.layerId;
+            if (url) { window.location.href = url; }
+          });
+        }
+      });
+    }
+  ")
 ```

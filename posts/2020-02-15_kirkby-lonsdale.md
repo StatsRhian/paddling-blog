@@ -8,7 +8,7 @@ image: https://dgtzuqphqg23d.cloudfront.net/nG0iJwTD6doDkgKxAkpwv-p7wYiXC_OKnTBX
 - Distance: 2.8 km
 - [Strava](https://www.strava.com/activities/3102186901)
 
-Strong winds and plenty of rain. Waters faster than I would choose! Swam after trying to follow Simon down a feature. Alec looked after me. Had another hairy moment later down the river, but stayed upright. Practiced ferry gliding under the bridge. Stopped for a pint at the Fenwick.
+Strong winds and plenty of rain. Waters faster than I would choose! Swam after trying to follow Simon down a feature. Alec looked after me. Had another hairy moment later down the river, but stayed upright. Practiced ferry gliding under the bridge. Stopped for a pint at the Fenwick.
 
 
 ![](https://dgtzuqphqg23d.cloudfront.net/nG0iJwTD6doDkgKxAkpwv-p7wYiXC_OKnTBXgI6hW5M-768x604.jpg)

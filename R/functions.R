@@ -35,6 +35,7 @@ get_categories <- function(activity) {
     stringr::str_split(",") |>
     purrr::pluck(1) |>
     stringr::str_trim() |>
+    stringr::str_squish() |>
     stringr::str_replace_all(" ", "-") |>
     stringr::str_to_lower() |>
     purrr::map_chr(
@@ -49,26 +50,6 @@ get_categories <- function(activity) {
       )
     )
 }
-
-# Doesn't work currently
-# get_map <- function(id) {
-#   activity <- rStrava::get_activity(id = id, strava_token)
-#
-#   activity |>
-#     purrr::pluck("map", "summary_polyline") |>
-#     gpoly_to_sfpoly() |>
-#     sf::st_as_sf() |>
-#     sf::st_set_crs(4326) |>
-#     leaflet::leaflet() |>
-#     leaflet::addTiles() |>
-#     leaflet::addPolylines(
-#       color = "purple",
-#       opacity = 1,
-#       dashArray = 5,
-#       weight = 2
-#     )
-# }
-
 
 # update a single activity
 update_activity <- function(id_to_update) {
@@ -154,7 +135,7 @@ get_latest <- function() {
   }
 }
 
-  process_paddles <- function() {
+process_paddles <- function() {
   raw_paddles <- readRDS("data/raw_paddles.rds")
   detailed_paddles <- readRDS("data/detailed_paddles.rds")
   paddles <- dplyr::inner_join(raw_paddles, detailed_paddles, by = "id")

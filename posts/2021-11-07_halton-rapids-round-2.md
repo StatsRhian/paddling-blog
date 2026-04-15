@@ -8,7 +8,7 @@ image: https://dgtzuqphqg23d.cloudfront.net/cLw2QymqSDCHc5uWQXCMbuESKdxLRo1diKl3
 - Distance: 6.1 km
 - [Strava](https://www.strava.com/activities/6225656977)
 
-Higher level than yesterday (1m)
+Higher level than yesterday (1m)
 On Sunday level was a little more challenging (1m). I didn't feel I was paddling as well, maybe tiredness but it was sloppy.Not using sweep strokes, not paddling aggressively. Might be worth considering a slightly smaller boat at some point?
 
 ![](https://dgtzuqphqg23d.cloudfront.net/cLw2QymqSDCHc5uWQXCMbuESKdxLRo1diKl3-hcNXwg-768x576.jpg)

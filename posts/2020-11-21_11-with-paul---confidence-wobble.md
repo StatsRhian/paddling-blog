@@ -8,9 +8,9 @@ image: https://dgtzuqphqg23d.cloudfront.net/2oLpVwljNjYZ3bRdL-KqxRHlqRgv4xbmN7jF
 - Distance: 2.8 km
 - [Strava](https://www.strava.com/activities/4369216614)
 
-Forgot to log the morning sessions. Halton on a huge (1.3m)
-
-
+Forgot to log the morning sessions. Halton on a huge (1.3m)
+
+
 1:1 session with Paul. Practised ferrying, surfing, bow rudders and draw strokes. Was feeling unconfident today and kept things easy. Need to remember to keep looking and high strong strokes. 
 
 ![](https://dgtzuqphqg23d.cloudfront.net/2oLpVwljNjYZ3bRdL-KqxRHlqRgv4xbmN7jFqZwjuys-768x430.jpg)

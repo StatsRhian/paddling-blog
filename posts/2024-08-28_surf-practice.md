@@ -8,8 +8,8 @@ image: https://dgtzuqphqg23d.cloudfront.net/dCeFFv1d0vm_3sfzsjLUYgzYg6wHTH5laObJ
 - Distance: 11.8 km
 - [Strava](https://www.strava.com/activities/12266925497)
 
-Quite a low tide. Did some surf practice at Longsands. Watched the MS Ambition leave port.
-
+Quite a low tide. Did some surf practice at Longsands. Watched the MS Ambition leave port.
+
 With Sarah & Paul
 
 ![](https://dgtzuqphqg23d.cloudfront.net/dCeFFv1d0vm_3sfzsjLUYgzYg6wHTH5laObJc1S-x-I-768x578.jpg)
