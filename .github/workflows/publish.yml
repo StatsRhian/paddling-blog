@@ -9,10 +9,10 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - name: Set up Python
-        uses: astral-sh/setup-uv@v3
+        uses: astral-sh/setup-uv@v8
 
       - name: Generate paddle traces
         run: uv run generate_paddle_traces.py
@@ -50,7 +50,7 @@ jobs:
           file_pattern: "data/paddle_traces.geojson data/processed_paddles.rds"
 
       - name: Deploy to Netlify
-        uses: nwtgck/actions-netlify@v4.0
+        uses: nwtgck/actions-netlify@v4
         with:
           publish-dir: "./_site"
           production-branch: main
