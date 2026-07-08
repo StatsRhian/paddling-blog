@@ -46,8 +46,8 @@ jobs:
       - name: Commit generated files
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: ":card_file_box: Update geojson and posts [skip ci]"
-          file_pattern: "data/paddle_traces.geojson data/processed_paddles.rds"
+          commit_message: ":card_file_box: Update geojson [skip ci]"
+          file_pattern: "data/paddle_traces.geojson"
 
       - name: Deploy to Netlify
         uses: nwtgck/actions-netlify@v2.1
