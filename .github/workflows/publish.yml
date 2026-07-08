@@ -23,7 +23,7 @@ jobs:
       - name: Install system dependencies for sf
         run: |
           sudo apt-get update
-          sudo apt-get install -y libgdal-dev libproj-dev libgeos-dev
+          sudo apt-get install -y libgdal-dev libproj-dev libgeos-dev libudunits2-dev
 
       - name: Install R packages
         run: |
