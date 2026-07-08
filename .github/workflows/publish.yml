@@ -44,13 +44,13 @@ jobs:
       - run: quarto render
 
       - name: Commit generated files
-        uses: stefanzweifel/git-auto-commit-action@v5
+        uses: stefanzweifel/git-auto-commit-action@v7
         with:
           commit_message: ":card_file_box: Update geojson and posts [skip ci]"
           file_pattern: "data/paddle_traces.geojson data/processed_paddles.rds"
 
       - name: Deploy to Netlify
-        uses: nwtgck/actions-netlify@v2.1
+        uses: nwtgck/actions-netlify@v4.0
         with:
           publish-dir: "./_site"
           production-branch: main
