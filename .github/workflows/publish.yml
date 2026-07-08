@@ -27,7 +27,7 @@ jobs:
 
       - name: Install R packages
         run: |
-          Rscript -e 'install.packages(c("dplyr","stringr","purrr","glue","readr","sf","lubridate","cli","jinjar"))'
+          Rscript -e 'install.packages(c("dplyr","stringr","purrr","glue","readr","sf","lubridate","cli","jinjar","knitr","rmarkdown"))'
 
       - name: Generate posts
         run: Rscript update.R
