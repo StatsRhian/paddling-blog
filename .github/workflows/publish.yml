@@ -1,0 +1,38 @@
+name: Publish
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: astral-sh/setup-uv@v3
+
+      - name: Generate paddle traces
+        run: uv run generate_paddle_traces.py
+
+      - name: Set up R
+        uses: r-lib/actions/setup-r@v2
+
+      - name: Install system dependencies for sf
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libgdal-dev libproj-dev libgeos-dev
+
+      - name: Install R packages
+        run: |
+          Rscript -e 'install.packages(c("dplyr","stringr","purrr","glue","readr","sf","lubridate","cli","jinjar"))'
+
+      - name: Generate posts
+        run: Rscript update.R
+
+      - name: Commit generated files
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "regenerate traces and posts [skip ci]"
+          file_pattern: "data/paddle_traces.geojson data/processed_paddles.rds"

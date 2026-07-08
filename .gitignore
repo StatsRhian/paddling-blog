@@ -6,5 +6,7 @@
 .DS_Store
 
 /.quarto/
+/posts/
+/_site/
 
 **/*.quarto_ipynb
