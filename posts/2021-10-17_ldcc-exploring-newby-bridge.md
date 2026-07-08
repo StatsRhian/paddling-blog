@@ -2,11 +2,10 @@
 title: "LDCC exploring Newby Bridge"
 date: 2021-10-17
 categories: ["club: lancaster","leadership","leven","whitewater","windermere"]
-image: https://dgtzuqphqg23d.cloudfront.net/BNHK01kMRCava9k5lM4voSulekjSEemnSx66pzwFSr8-768x576.jpg
+image: https://placehold.co/600x400/EEE/31343C
 ---
 
-- Distance: 5 km
-- [Strava](https://www.strava.com/activities/6126381482)
+- Distance: 5.3 km
 
 River Leven level at Newby Bridge 0.8m (Low)
 
@@ -24,6 +23,6 @@ I spent some 1:1 time with Eva. She started off quite tired so I chatted with he
 We travelled back to the car, nobody worry, David was dropped off on a nice rock next to the lake. After, I practiced some rescues with Rhi's boat, don't panic she wasn't in it, it was empty, and it was really fun and it helped me alot
 There was a nice mix of flat and moving water and it was good for the people not so confident on the white water...yeah... really smashing day! (Eva Kelly aged 11)
 
-![](https://dgtzuqphqg23d.cloudfront.net/BNHK01kMRCava9k5lM4voSulekjSEemnSx66pzwFSr8-768x576.jpg)
+![](https://placehold.co/600x400/EEE/31343C)
 
 

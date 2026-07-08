@@ -133,7 +133,12 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">To the yellow buoy</h1>
-</div>
+  <div class="quarto-categories">
+    <div class="quarto-category">peer</div>
+    <div class="quarto-category">tynemouth</div>
+    <div class="quarto-category">sea</div>
+  </div>
+  </div>
 
 
 
@@ -157,10 +162,9 @@ ul.task-list li input[type="checkbox"] {
 
 <ul>
 <li>Distance: 14.5 km</li>
-<li><a href="https://www.strava.com/activities/11683873214">Strava</a></li>
 </ul>
 <p>Good dose of Vitamin Sea. Dolphins on the way back 🐬</p>
-<p><img src="https://dgtzuqphqg23d.cloudfront.net/NceuOSr2_t0YD-dGbIYDxIjR1MNUX6YPA49bVN0T-pA-768x576.jpg" class="img-fluid"></p>
+<p><img src="https://placehold.co/600x400/EEE/31343C.png" class="img-fluid"></p>
 
 
 
@@ -238,7 +242,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/rhionthesea\.netlify\.app");
+        var filterRegex = new RegExp("https:\/\/rhionthesea\.netlify\.app\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

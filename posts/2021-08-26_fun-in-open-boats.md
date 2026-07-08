@@ -1,15 +1,14 @@
 ---
 title: "Fun in open boats"
 date: 2021-08-26
-categories: []
-image: https://dgtzuqphqg23d.cloudfront.net/VGFUaHDwgAes9RGkgV4H2qAq-JeW8tZYm9A5VmglwFY-768x576.jpg
+categories: 
+image: ../data/paddle_activities/2021-08-26_fun-in-open-boats/c5ba3ac3-c43f-4c65-9b20-747c72042421.jpg
 ---
 
 - Distance: 2.3 km
-- [Strava](https://www.strava.com/activities/5858165660)
 
-TO DO
 
-![](https://dgtzuqphqg23d.cloudfront.net/VGFUaHDwgAes9RGkgV4H2qAq-JeW8tZYm9A5VmglwFY-768x576.jpg)
+
+![](../data/paddle_activities/2021-08-26_fun-in-open-boats/c5ba3ac3-c43f-4c65-9b20-747c72042421.jpg)
 
 

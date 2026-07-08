@@ -2,11 +2,10 @@
 title: "Tràigh Gheal"
 date: 2025-07-25
 categories: ["peer","mull","sea"]
-image: https://dgtzuqphqg23d.cloudfront.net/1tooooqLtXEroiMK4KDXtkGYhTBCkq6ma5pv28FknAc-768x431.jpg
+image: ../data/paddle_activities/2025-07-25_tràigh-gheal/2e781c1d-f2b3-4647-b690-4f9a8497bacc.jpg
 ---
 
 - Distance: 8.3 km
-- [Strava](https://www.strava.com/activities/15231564338)
 
 A slow start and an easy paddle around to this beautiful beach.
 
@@ -16,6 +15,6 @@ We did a bit of micro-nav practice to locate the beach. Much easier on the 1:250
 
 Paul, Sarah, Cath, Claire and Mark all practiced rolls and rescues. I wanted to stay dry so I floated and watched.
 
-![](https://dgtzuqphqg23d.cloudfront.net/1tooooqLtXEroiMK4KDXtkGYhTBCkq6ma5pv28FknAc-768x431.jpg)
+![](../data/paddle_activities/2025-07-25_tràigh-gheal/2e781c1d-f2b3-4647-b690-4f9a8497bacc.jpg)
 
 

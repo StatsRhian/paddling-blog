@@ -2,14 +2,13 @@
 title: "Sea Kayak Trail Day 5"
 date: 2023-06-09
 categories: 
-image: https://dgtzuqphqg23d.cloudfront.net/axBapSMAh9MhqWKI96h81iGB_DiYBg7kd-RdI3Mk110-768x576.jpg
+image: ../data/paddle_activities/2023-06-09_sea-kayak-trail-day-5/19f2aa8e-59bc-497f-8352-1d0e0a2c0aa7.jpg
 ---
 
-- Distance: 20.7 km
-- [Strava](https://www.strava.com/activities/9262577583)
+- Distance: NA km
 
 
 
-![](https://dgtzuqphqg23d.cloudfront.net/axBapSMAh9MhqWKI96h81iGB_DiYBg7kd-RdI3Mk110-768x576.jpg)
+![](../data/paddle_activities/2023-06-09_sea-kayak-trail-day-5/19f2aa8e-59bc-497f-8352-1d0e0a2c0aa7.jpg)
 
 

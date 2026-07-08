@@ -1,15 +1,14 @@
 ---
 title: "Evening paddle to Marsden"
 date: 2024-05-20
-categories: []
-image: https://dgtzuqphqg23d.cloudfront.net/kAb4-PqaQRmqUOa3xYkhXOixdYa74IkC9EPxohvrndA-768x433.jpg
+categories: ["peer","sea","south-shields"]
+image: ../data/paddle_activities/2024-05-20_evening-paddle-to-marsden/38d6b5ef-bb98-4939-be11-f7b96ac24910.jpg
 ---
 
 - Distance: 13.7 km
-- [Strava](https://www.strava.com/activities/11458361785)
 
 With Kirstie, Dave and Penny
 
-![](https://dgtzuqphqg23d.cloudfront.net/kAb4-PqaQRmqUOa3xYkhXOixdYa74IkC9EPxohvrndA-768x433.jpg)
+![](../data/paddle_activities/2024-05-20_evening-paddle-to-marsden/38d6b5ef-bb98-4939-be11-f7b96ac24910.jpg)
 
 

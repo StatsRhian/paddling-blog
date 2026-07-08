@@ -2,14 +2,13 @@
 title: "Long play on the rapids"
 date: 2020-02-08
 categories: ["halton-rapids","club: lancaster","whitewater"]
-image: https://dgtzuqphqg23d.cloudfront.net/DWV9KIBIRw-S6t1zQ0KceFpLi1u75SuA41nbhe5T1Ik-768x511.jpg
+image: https://placehold.co/600x400/EEE/31343C
 ---
 
 - Distance: 5 km
-- [Strava](https://www.strava.com/activities/3083140677)
 
 Paul, Gibbi and me. One long play and then a quick blast straight down.
 
-![](https://dgtzuqphqg23d.cloudfront.net/DWV9KIBIRw-S6t1zQ0KceFpLi1u75SuA41nbhe5T1Ik-768x511.jpg)
+![](https://placehold.co/600x400/EEE/31343C)
 
 

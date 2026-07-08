@@ -1,12 +1,11 @@
 ---
 title: "Fidden to Bunessan"
 date: 2025-07-22
-categories: ["2025-tpc-mull","mull","club: tynemouth"]
-image: https://dgtzuqphqg23d.cloudfront.net/ajkuhVYz81FFj60cRupgxr8Fkof0LQK4yhtxrrBsGFY-768x576.jpg
+categories: ["2025-tpc-mull","mull","club: tynemouth","sea"]
+image: ../data/paddle_activities/2025-07-22_fidden-to-bunessan/7efdd93f-ab6e-405f-8d22-da29c04f369f.jpg
 ---
 
 - Distance: 15.4 km
-- [Strava](https://www.strava.com/activities/15199625836)
 
 The wind was forecast to be F4+ and gusting so we planned a downwind run along to Bunessan. A slow start OTW 13:30 to avoid stronger winds in the morning. There was quite a bit of clapotis in the Sound of Iona, but much less action off the north west corner than we were expecting.
 
@@ -18,6 +17,6 @@ Paddling across Loch na Lathaich into Bunessan the group split up a bit, with pa
 
 Had a pint and chips at Bunessan whilst we waited for the shuttle.
 
-![](https://dgtzuqphqg23d.cloudfront.net/ajkuhVYz81FFj60cRupgxr8Fkof0LQK4yhtxrrBsGFY-768x576.jpg)
+![](../data/paddle_activities/2025-07-22_fidden-to-bunessan/7efdd93f-ab6e-405f-8d22-da29c04f369f.jpg)
 
 

@@ -1,15 +1,14 @@
 ---
 title: "To the dome and back"
 date: 2023-12-10
-categories: []
-image: https://dgtzuqphqg23d.cloudfront.net/q9OhlVNwy1SWiKZogK4L_M1nMs0wSNEDBEfpOlM_ix0-576x768.jpg
+categories: 
+image: ../data/paddle_activities/2023-12-10_to-the-dome-and-back/3a853224-e49b-478c-895a-85810bde8c8a.jpg
 ---
 
 - Distance: 11.8 km
-- [Strava](https://www.strava.com/activities/10358200769)
 
-Nice swell 
+Nice swell
 
-![](https://dgtzuqphqg23d.cloudfront.net/q9OhlVNwy1SWiKZogK4L_M1nMs0wSNEDBEfpOlM_ix0-576x768.jpg)
+![](../data/paddle_activities/2023-12-10_to-the-dome-and-back/3a853224-e49b-478c-895a-85810bde8c8a.jpg)
 
 

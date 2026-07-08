@@ -2,11 +2,10 @@
 title: "North to table rocks"
 date: 2024-09-03
 categories: ["peer","tynemouth","sea"]
-image: https://dgtzuqphqg23d.cloudfront.net/6nBcwGyWI-crymJOuZaEpW1DLe6yxdJvtlSLQt2J04E-768x418.jpg
+image: ../data/paddle_activities/2024-09-03_north-to-table-rocks/9e5d6314-d870-45ee-a859-7fa09541baf1.jpg
 ---
 
 - Distance: 11.9 km
-- [Strava](https://www.strava.com/activities/12317795674)
 
 Paul, Kev, Claire, Cath, Mark and Gordon 
 Dave setting off a little late and meeting us on the water. 
@@ -20,6 +19,6 @@ We put a little speed on for the sprint along the wall and into the Haven
 
 📸: Kev Thompson
 
-![](https://dgtzuqphqg23d.cloudfront.net/6nBcwGyWI-crymJOuZaEpW1DLe6yxdJvtlSLQt2J04E-768x418.jpg)
+![](../data/paddle_activities/2024-09-03_north-to-table-rocks/9e5d6314-d870-45ee-a859-7fa09541baf1.jpg)
 
 

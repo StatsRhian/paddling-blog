@@ -2,14 +2,13 @@
 title: "SK Leader training day 2"
 date: 2023-05-07
 categories: 
-image: https://dgtzuqphqg23d.cloudfront.net/Vp1L-15mzpajOpULyr-G-7wbU6mlyQ9v5tgnH1t8aXU-768x576.jpg
+image: ../data/paddle_activities/2023-05-07_sk-leader-training-day-2/09af2b11-d1c9-45f0-83df-d132519e6ead.jpg
 ---
 
 - Distance: 11.9 km
-- [Strava](https://www.strava.com/activities/9044488722)
 
 
 
-![](https://dgtzuqphqg23d.cloudfront.net/Vp1L-15mzpajOpULyr-G-7wbU6mlyQ9v5tgnH1t8aXU-768x576.jpg)
+![](../data/paddle_activities/2023-05-07_sk-leader-training-day-2/09af2b11-d1c9-45f0-83df-d132519e6ead.jpg)
 
 

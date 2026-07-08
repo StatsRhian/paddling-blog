@@ -2,14 +2,13 @@
 title: "Day 5 Wild camp at Seal Cottage"
 date: 2022-06-02
 categories: 
-image: https://dgtzuqphqg23d.cloudfront.net/x13WG8jlLHLRmoZ1H_uydZM--5yABCTu2NVbA7im1hs-768x576.jpg
+image: ../data/paddle_activities/2022-06-02_day-5-wild-camp-at-seal-cottage/4c46459f-d2ee-4e6e-a5f2-b80bb98e5674.jpg
 ---
 
-- Distance: 15.2 km
-- [Strava](https://www.strava.com/activities/7258165406)
+- Distance: NA km
 
 
 
-![](https://dgtzuqphqg23d.cloudfront.net/x13WG8jlLHLRmoZ1H_uydZM--5yABCTu2NVbA7im1hs-768x576.jpg)
+![](../data/paddle_activities/2022-06-02_day-5-wild-camp-at-seal-cottage/4c46459f-d2ee-4e6e-a5f2-b80bb98e5674.jpg)
 
 

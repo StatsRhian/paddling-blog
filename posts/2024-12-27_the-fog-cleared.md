@@ -2,11 +2,10 @@
 title: "The fog cleared"
 date: 2024-12-27
 categories: ["peer","south-shields","sea"]
-image: https://dgtzuqphqg23d.cloudfront.net/BV5rpabh4IHD0bmHfUMWz37L8sr3oNaFnMC0eqz6HZ8-768x345.jpg
+image: ../data/paddle_activities/2024-12-27_the-fog-cleared/52e23f1c-e82b-4a5b-a8db-6092f6656b0e.jpg
 ---
 
 - Distance: 18.1 km
-- [Strava](https://www.strava.com/activities/13200973602)
 
 Initially the fog was heavy, and we considered just paddling North, rather than cross the channel in the fog. However, by the time we were getting on the water, the fog burnt off. 
  
@@ -14,6 +13,6 @@ We stopped for lunch at Souter point. On the paddle back a mega wave broke near 
 
 With Paul, Sarah, Dave, Gail, Tim, Tony, Mark, Pauline.
 
-![](https://dgtzuqphqg23d.cloudfront.net/BV5rpabh4IHD0bmHfUMWz37L8sr3oNaFnMC0eqz6HZ8-768x345.jpg)
+![](../data/paddle_activities/2024-12-27_the-fog-cleared/52e23f1c-e82b-4a5b-a8db-6092f6656b0e.jpg)
 
 

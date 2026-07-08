@@ -2,14 +2,13 @@
 title: "Day 6 Wild Camp at Kilchattan"
 date: 2022-06-03
 categories: 
-image: https://dgtzuqphqg23d.cloudfront.net/j8HL2wni9PpEr3XY1HBq96fQl-RQ0oct8yiNEZ5Jnvk-768x576.jpg
+image: ../data/paddle_activities/2022-06-03_day-6-wild-camp-at-kilchattan/6f3eb650-17f8-4072-b232-04a63543ab8b.jpg
 ---
 
 - Distance: 17.6 km
-- [Strava](https://www.strava.com/activities/7257864335)
 
 
 
-![](https://dgtzuqphqg23d.cloudfront.net/j8HL2wni9PpEr3XY1HBq96fQl-RQ0oct8yiNEZ5Jnvk-768x576.jpg)
+![](../data/paddle_activities/2022-06-03_day-6-wild-camp-at-kilchattan/6f3eb650-17f8-4072-b232-04a63543ab8b.jpg)
 
 

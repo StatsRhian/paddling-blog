@@ -1,18 +1,17 @@
 ---
 title: "Little evening paddle to Coquet"
 date: 2024-04-21
-categories: []
-image: https://dgtzuqphqg23d.cloudfront.net/FktlsJuwvHcUh6liCHJndURSM397G50nx4HBEGQz3RM-768x578.jpg
+categories: 
+image: ../data/paddle_activities/2024-04-21_little-evening-paddle-to-coquet/33ba47c4-29af-4e59-8f6b-c121bee0cd88.jpg
 ---
 
 - Distance: 7.7 km
-- [Strava](https://www.strava.com/activities/11233510707)
 
-After a fabulous two day boat repair course. 
-Surfing in between the piers in an unfamiliar boat 😀
+After a fabulous two day boat repair course. 
+Surfing in between the piers in an unfamiliar boat 😀
+
+(Thanks for the boat borrow [strava://athletes/24233607/12]Sarah Thomas ☺️)
 
-(Thanks for the boat borrow Sarah Thomas ☺️)
-
-![](https://dgtzuqphqg23d.cloudfront.net/FktlsJuwvHcUh6liCHJndURSM397G50nx4HBEGQz3RM-768x578.jpg)
+![](../data/paddle_activities/2024-04-21_little-evening-paddle-to-coquet/33ba47c4-29af-4e59-8f6b-c121bee0cd88.jpg)
 
 

@@ -1,15 +1,14 @@
 ---
 title: "Paddle to Scotland"
 date: 2023-09-09
-categories: []
-image: https://dgtzuqphqg23d.cloudfront.net/L8tlNsq7NvUF9dv-5jZqtZJiOn8ny-jm9Pbq8wkBThw-768x576.jpg
+categories: 
+image: ../data/paddle_activities/2023-09-09_paddle-to-scotland/65c8725d-d32e-434f-b8b9-0b4947e10a7a.jpg
 ---
 
 - Distance: 25.5 km
-- [Strava](https://www.strava.com/activities/9817184085)
 
 
 
-![](https://dgtzuqphqg23d.cloudfront.net/L8tlNsq7NvUF9dv-5jZqtZJiOn8ny-jm9Pbq8wkBThw-768x576.jpg)
+![](../data/paddle_activities/2023-09-09_paddle-to-scotland/65c8725d-d32e-434f-b8b9-0b4947e10a7a.jpg)
 
 

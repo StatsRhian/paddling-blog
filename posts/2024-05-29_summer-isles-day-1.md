@@ -1,15 +1,14 @@
 ---
 title: "Summer Isles Day 1"
 date: 2024-05-29
-categories: 
-image: https://dgtzuqphqg23d.cloudfront.net/onOrboRDtN8p0GKhbJrd7RDcjTWMxiLgRD4OKPraf_Q-768x363.jpg
+categories: ["club: tynemouth","sea","summer-isles-2024-tpc-summer-isles"]
+image: ../data/paddle_activities/2024-05-29_summer-isles-day-1/4e8e4ea3-9eb0-4c98-8a3d-1fdd79ed9a5c.jpg
 ---
 
 - Distance: 21.3 km
-- [Strava](https://www.strava.com/activities/11528043608)
 
 Exploring islands in the sunshine, a chorus of happy birthday in a cave, cake around a bonfire and lovely company. Fabulous way to spend a birthday 💙🚣🏻‍♀️🍰
 
-![](https://dgtzuqphqg23d.cloudfront.net/onOrboRDtN8p0GKhbJrd7RDcjTWMxiLgRD4OKPraf_Q-768x363.jpg)
+![](../data/paddle_activities/2024-05-29_summer-isles-day-1/4e8e4ea3-9eb0-4c98-8a3d-1fdd79ed9a5c.jpg)
 
 

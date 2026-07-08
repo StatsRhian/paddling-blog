@@ -1,15 +1,14 @@
 ---
 title: "Sea Kayak Trail Day 6"
 date: 2023-06-10
-categories: []
-image: https://dgtzuqphqg23d.cloudfront.net/vrtqY-Kkd0R1pOUwlMDGbkO2ES2A_HbMcxGbii0jsDw-576x768.jpg
+categories: 
+image: ../data/paddle_activities/2023-06-10_sea-kayak-trail-day-6/a2b9384d-e1be-4ec4-a86b-82c78d936021.jpg
 ---
 
 - Distance: 21.4 km
-- [Strava](https://www.strava.com/activities/9259548410)
 
 
 
-![](https://dgtzuqphqg23d.cloudfront.net/vrtqY-Kkd0R1pOUwlMDGbkO2ES2A_HbMcxGbii0jsDw-576x768.jpg)
+![](../data/paddle_activities/2023-06-10_sea-kayak-trail-day-6/a2b9384d-e1be-4ec4-a86b-82c78d936021.jpg)
 
 

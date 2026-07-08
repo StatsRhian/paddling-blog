@@ -1,15 +1,14 @@
 ---
 title: "Practicing rescues in the sea fog"
 date: 2024-05-12
-categories: []
-image: https://dgtzuqphqg23d.cloudfront.net/jSiXzmI7nD55VjtSE1tCzMHBecgNroCCEkje4GNSK-g-768x461.jpg
+categories: ["peer","sea","south-shields"]
+image: ../data/paddle_activities/2024-05-12_practicing-rescues-in-the-sea-fog/7cb05ab4-5339-4c0d-9c0d-539d6ee5ef17.jpg
 ---
 
 - Distance: 10.9 km
-- [Strava](https://www.strava.com/activities/11393712782)
 
 
 
-![](https://dgtzuqphqg23d.cloudfront.net/jSiXzmI7nD55VjtSE1tCzMHBecgNroCCEkje4GNSK-g-768x461.jpg)
+![](../data/paddle_activities/2024-05-12_practicing-rescues-in-the-sea-fog/7cb05ab4-5339-4c0d-9c0d-539d6ee5ef17.jpg)
 
 

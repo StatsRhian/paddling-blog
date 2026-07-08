@@ -8,7 +8,7 @@ execute:
 
 ```{r}
 processed <- readRDS("data/processed_paddles.rds") |>
-  dplyr::select(name, start_date, distance, club, kudos_count, filename) |>
+  dplyr::select(name, start_date, distance, club, filename) |>
   dplyr::mutate(filename = stringr::str_replace(filename, "\\.md", "\\.html"))
 
 library(reactable)

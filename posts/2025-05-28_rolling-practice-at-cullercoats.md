@@ -2,11 +2,10 @@
 title: "Rolling practice at Cullercoats"
 date: 2025-05-28
 categories: ["peer","sea","tynemouth"]
-image: https://dgtzuqphqg23d.cloudfront.net/Cg_XrwjnkaigM0Dht0DPTkwqkbnJ9dLGJjj8ObD-lpM-768x511.jpg
+image: ../data/paddle_activities/2025-05-28_rolling-practice-at-cullercoats/6e2bda9c-cea2-4fb1-9e78-dbdb760bc130.jpg
 ---
 
 - Distance: 7.7 km
-- [Strava](https://www.strava.com/activities/14623889661)
 
 Quick after work paddle with Sarah, Kev & Mark. Quite choppy around the piers.
 
@@ -18,6 +17,6 @@ Also I noticed that I enjoy lumpier conditions more when I smile :D
 
 📸 Kev Thompson
 
-![](https://dgtzuqphqg23d.cloudfront.net/Cg_XrwjnkaigM0Dht0DPTkwqkbnJ9dLGJjj8ObD-lpM-768x511.jpg)
+![](../data/paddle_activities/2025-05-28_rolling-practice-at-cullercoats/6e2bda9c-cea2-4fb1-9e78-dbdb760bc130.jpg)
 
 

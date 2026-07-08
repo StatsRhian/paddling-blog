@@ -1,15 +1,14 @@
 ---
 title: "Grey skies, rolling swell and a sleepy seal"
 date: 2023-04-30
-categories: []
-image: https://dgtzuqphqg23d.cloudfront.net/yydoAypSRkZnYvb5Kydb34TDv4spoD8X5KGJPgLM1Pw-768x576.jpg
+categories: 
+image: ../data/paddle_activities/2023-04-30_grey-skies-rolling-swell-and-a-sleepy-seal/64aee299-2540-4239-8638-11cb31c80189.jpg
 ---
 
 - Distance: 8.9 km
-- [Strava](https://www.strava.com/activities/8983057480)
 
 
 
-![](https://dgtzuqphqg23d.cloudfront.net/yydoAypSRkZnYvb5Kydb34TDv4spoD8X5KGJPgLM1Pw-768x576.jpg)
+![](../data/paddle_activities/2023-04-30_grey-skies-rolling-swell-and-a-sleepy-seal/64aee299-2540-4239-8638-11cb31c80189.jpg)
 
 

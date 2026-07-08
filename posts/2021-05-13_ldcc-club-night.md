@@ -1,15 +1,14 @@
 ---
 title: "LDCC club night"
 date: 2021-05-13
-categories: []
-image: https://dgtzuqphqg23d.cloudfront.net/YoAifZWxqQk3oIl43XgTaUYaXuXYGpKKQNUWGtBBDsE-768x576.jpg
+categories: 
+image: ../data/paddle_activities/2021-05-13_ldcc-club-night/821ad9f2-4a6d-4d40-81ca-522e3b4c8dd2.jpg
 ---
 
 - Distance: 5.3 km
-- [Strava](https://www.strava.com/activities/5291909992)
 
 
 
-![](https://dgtzuqphqg23d.cloudfront.net/YoAifZWxqQk3oIl43XgTaUYaXuXYGpKKQNUWGtBBDsE-768x576.jpg)
+![](../data/paddle_activities/2021-05-13_ldcc-club-night/821ad9f2-4a6d-4d40-81ca-522e3b4c8dd2.jpg)
 
 

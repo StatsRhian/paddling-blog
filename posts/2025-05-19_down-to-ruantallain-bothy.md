@@ -2,14 +2,13 @@
 title: "Down to Ruantallain bothy"
 date: 2025-05-19
 categories: ["exped","jura","peer","sea"]
-image: https://dgtzuqphqg23d.cloudfront.net/gJNMQNe0cuxhmBbwQ4h94rwj8AIE5E9KjsKIQ-4A52Q-768x576.jpg
+image: ../data/paddle_activities/2025-05-19_down-to-ruantallain-bothy/175207b9-843b-4aa7-a8fe-d7a39488acf8.jpg
 ---
 
 - Distance: 15.1 km
-- [Strava](https://www.strava.com/activities/14529834191)
 
-Stopping to explore the dry caves 
+Stopping to explore the dry caves
 
-![](https://dgtzuqphqg23d.cloudfront.net/gJNMQNe0cuxhmBbwQ4h94rwj8AIE5E9KjsKIQ-4A52Q-768x576.jpg)
+![](../data/paddle_activities/2025-05-19_down-to-ruantallain-bothy/175207b9-843b-4aa7-a8fe-d7a39488acf8.jpg)
 
 

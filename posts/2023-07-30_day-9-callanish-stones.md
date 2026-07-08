@@ -2,14 +2,13 @@
 title: "Day 9 Callanish stones"
 date: 2023-07-30
 categories: 
-image: https://dgtzuqphqg23d.cloudfront.net/JNgA9xNDAra5WurITmQNH7Bt9PD4rD84awTT5eFDSRo-768x576.jpg
+image: ../data/paddle_activities/2023-07-30_day-9-callanish-stones/f89b521d-3f3d-49c2-bdc0-64d64ce91629.jpg
 ---
 
 - Distance: 10.9 km
-- [Strava](https://www.strava.com/activities/9550677653)
 
 A lovely gentle paddle with Chris to round off the trip
 
-![](https://dgtzuqphqg23d.cloudfront.net/JNgA9xNDAra5WurITmQNH7Bt9PD4rD84awTT5eFDSRo-768x576.jpg)
+![](../data/paddle_activities/2023-07-30_day-9-callanish-stones/f89b521d-3f3d-49c2-bdc0-64d64ce91629.jpg)
 
 

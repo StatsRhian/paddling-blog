@@ -2,11 +2,10 @@
 title: "South Shields before Storm Dave"
 date: 2026-04-04
 categories: ["sea","peer","south-shields"]
-image: https://dgtzuqphqg23d.cloudfront.net/uGm-LMEJsKWtmxSVP4GKsxlJeEdpLozYuViLSa9xXjI-768x576.jpg
+image: ../data/paddle_activities/2026-04-04_south-shields-before-storm-dave/4f0b78d6-3ac6-452c-80c4-7d1e64efe3d5.jpg
 ---
 
 - Distance: 11.9 km
-- [Strava](https://www.strava.com/activities/17974302701)
 
 Storm Dave meant no big Easter adventures. However, we managed to get a little South Shields jolly in on Saturday morning before Storm Dave hit. 
 
@@ -16,6 +15,6 @@ Out to play was Paul, Sarah, Mark, Kev P, Felix, Colin and Steven. The tidal hei
 
 Just as we were leaving the bay and heading around the rocks I thought I spotted a funny looking seal. It turned out to be two wetsuit clad swimmers miles out getting in some training.
 
-![](https://dgtzuqphqg23d.cloudfront.net/uGm-LMEJsKWtmxSVP4GKsxlJeEdpLozYuViLSa9xXjI-768x576.jpg)
+![](../data/paddle_activities/2026-04-04_south-shields-before-storm-dave/4f0b78d6-3ac6-452c-80c4-7d1e64efe3d5.jpg)
 
 

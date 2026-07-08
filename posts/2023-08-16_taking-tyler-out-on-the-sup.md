@@ -1,15 +1,14 @@
 ---
 title: "Taking Tyler out on the SUP"
 date: 2023-08-16
-categories: []
-image: https://dgtzuqphqg23d.cloudfront.net/ateYIb-Q_OvPDTg02i9Yc6vVaDXuIE3fR-tSkneeSuQ-768x576.jpg
+categories: 
+image: ../data/paddle_activities/2023-08-16_taking-tyler-out-on-the-sup/1c4c4a83-bf40-4868-808c-e3c8d9fc2b62.jpg
 ---
 
 - Distance: 1.8 km
-- [Strava](https://www.strava.com/activities/9664323804)
 
-And a bit of play in the surf. Nice to play in my lil whitewater boat for a change 
+And a bit of play in the surf. Nice to play in my lil whitewater boat for a change
 
-![](https://dgtzuqphqg23d.cloudfront.net/ateYIb-Q_OvPDTg02i9Yc6vVaDXuIE3fR-tSkneeSuQ-768x576.jpg)
+![](../data/paddle_activities/2023-08-16_taking-tyler-out-on-the-sup/1c4c4a83-bf40-4868-808c-e3c8d9fc2b62.jpg)
 
 

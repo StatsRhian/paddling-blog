@@ -2,14 +2,13 @@
 title: "Autumn sunshine on Windermere"
 date: 2022-10-16
 categories: 
-image: https://dgtzuqphqg23d.cloudfront.net/ifXYO0n5_7VRQvBgPNLNDODfHrI2WLqQzH_1XJnWMfw-768x576.jpg
+image: ../data/paddle_activities/2022-10-16_autumn-sunshine-on-windermere/0e2a46eb-a432-43ae-9859-d3acc561e97e.jpg
 ---
 
 - Distance: 9.6 km
-- [Strava](https://www.strava.com/activities/7974227955)
 
 
 
-![](https://dgtzuqphqg23d.cloudfront.net/ifXYO0n5_7VRQvBgPNLNDODfHrI2WLqQzH_1XJnWMfw-768x576.jpg)
+![](../data/paddle_activities/2022-10-16_autumn-sunshine-on-windermere/0e2a46eb-a432-43ae-9859-d3acc561e97e.jpg)
 
 

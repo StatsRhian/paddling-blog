@@ -1,15 +1,14 @@
 ---
 title: "Great Cumbrae day 1"
 date: 2024-05-03
-categories: 
-image: https://dgtzuqphqg23d.cloudfront.net/_dhIwH9LYFmxMwjajJofhZKpvYfzb1b_bZxkD5nuATo-768x432.jpg
+categories: ["cumbrae","sea","peer","exped","leadership"]
+image: ../data/paddle_activities/2024-05-03_great-cumbrae-day-1/12abc0f2-a9a3-4e54-9b47-cc207b75c198.jpg
 ---
 
 - Distance: 7.5 km
-- [Strava](https://www.strava.com/activities/11324364178)
 
 
 
-![](https://dgtzuqphqg23d.cloudfront.net/_dhIwH9LYFmxMwjajJofhZKpvYfzb1b_bZxkD5nuATo-768x432.jpg)
+![](../data/paddle_activities/2024-05-03_great-cumbrae-day-1/12abc0f2-a9a3-4e54-9b47-cc207b75c198.jpg)
 
 

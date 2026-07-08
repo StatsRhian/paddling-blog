@@ -2,11 +2,10 @@
 title: "The Lancaster Round"
 date: 2021-04-07
 categories: ["canal","lune","sea","club: ulverston"]
-image: https://dgtzuqphqg23d.cloudfront.net/nZLGWGzK5BTlqCuSs2akkhPSek1fee7p6Luh9DhM198-484x768.jpg
+image: ../data/paddle_activities/2021-04-07_the-lancaster-round/17094e7a-dcb3-422f-9e41-700a147bdfe2.jpg
 ---
 
 - Distance: 29 km
-- [Strava](https://www.strava.com/activities/5088933754)
 
 A 5am alarm, six degrees below freezing, not-quite dawn start from Glasson, the Coniston Fells and Ingleborough, portages up Skerton weir, 60-odd feet up from the Lune to the Lancaster Canal, Rennie's aqueduct, monuments and a castle, multiple bridges and a wonky house, 6 sets of locks (unless you find the cheeky troglodyte bypass option!) a rather amorous cob swan with a strong desire to "integrate", sunshine, blue sky and an unexpected, fierce headwind for the last 6 of 27kms... Top company and excellent brews and burgers back at Glasson - what's not to like about the Lancaster Loop? 
 
@@ -15,6 +14,6 @@ I didn't find the distance too challenging, and felt OK the day after. I struggl
 
 HT 08:56 7.63m
 
-![](https://dgtzuqphqg23d.cloudfront.net/nZLGWGzK5BTlqCuSs2akkhPSek1fee7p6Luh9DhM198-484x768.jpg)
+![](../data/paddle_activities/2021-04-07_the-lancaster-round/17094e7a-dcb3-422f-9e41-700a147bdfe2.jpg)
 
 

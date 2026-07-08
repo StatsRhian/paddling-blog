@@ -2,14 +2,13 @@
 title: "Edging, rescues, and more ice cream"
 date: 2022-08-01
 categories: 
-image: https://dgtzuqphqg23d.cloudfront.net/DoYGPWKUJ_72pi1JFg-Jl4r8X0Xx9vbvn1qYi7AWWUw-432x768.jpg
+image: ../data/paddle_activities/2022-08-01_edging-rescues-and-more-ice-cream/034b3466-7c8c-4e1c-8b78-d11b0d3880d0.jpg
 ---
 
 - Distance: 6.1 km
-- [Strava](https://www.strava.com/activities/7564113051)
 
 Marie leading the session
 
-![](https://dgtzuqphqg23d.cloudfront.net/DoYGPWKUJ_72pi1JFg-Jl4r8X0Xx9vbvn1qYi7AWWUw-432x768.jpg)
+![](../data/paddle_activities/2022-08-01_edging-rescues-and-more-ice-cream/034b3466-7c8c-4e1c-8b78-d11b0d3880d0.jpg)
 
 

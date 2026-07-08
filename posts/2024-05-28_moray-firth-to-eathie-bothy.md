@@ -1,15 +1,14 @@
 ---
 title: "Moray Firth to Eathie bothy"
 date: 2024-05-28
-categories: []
-image: https://dgtzuqphqg23d.cloudfront.net/-CzzRc5ApwGceXs9-QDc_qLqCjtOqZXbTEpqcBCT-lI-768x432.jpg
+categories: ["peer","moray-firth","sea"]
+image: ../data/paddle_activities/2024-05-28_moray-firth-to-eathie-bothy/30b5203a-9c7f-4213-9be3-721fa15f0c8f.jpg
 ---
 
-- Distance: 15.2 km
-- [Strava](https://www.strava.com/activities/11528044158)
+- Distance: 28.5 km
 
 
 
-![](https://dgtzuqphqg23d.cloudfront.net/-CzzRc5ApwGceXs9-QDc_qLqCjtOqZXbTEpqcBCT-lI-768x432.jpg)
+![](../data/paddle_activities/2024-05-28_moray-firth-to-eathie-bothy/30b5203a-9c7f-4213-9be3-721fa15f0c8f.jpg)
 
 

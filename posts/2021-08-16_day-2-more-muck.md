@@ -6,7 +6,6 @@ image: https://placehold.co/600x400/EEE/31343C
 ---
 
 - Distance: 16.1 km
-- [Strava](https://www.strava.com/activities/5803304005)
 
 
 

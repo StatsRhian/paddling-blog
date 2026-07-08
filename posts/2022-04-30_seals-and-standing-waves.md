@@ -1,15 +1,14 @@
 ---
-title: "Seals and standing waves "
+title: "Seals and standing waves"
 date: 2022-04-30
 categories: 
-image: https://dgtzuqphqg23d.cloudfront.net/tSTv4DZp0vRdx8sT5EnbuW8GS0RLX9-l7PVvtltqmOE-768x459.jpg
+image: ../data/paddle_activities/2022-04-30_seals-and-standing-waves/011a9549-acb8-4abb-a02e-c326b28006ef.jpg
 ---
 
 - Distance: 8.3 km
-- [Strava](https://www.strava.com/activities/7064506832)
 
 https://youtu.be/ajD0XbKXF_M
 
-![](https://dgtzuqphqg23d.cloudfront.net/tSTv4DZp0vRdx8sT5EnbuW8GS0RLX9-l7PVvtltqmOE-768x459.jpg)
+![](../data/paddle_activities/2022-04-30_seals-and-standing-waves/011a9549-acb8-4abb-a02e-c326b28006ef.jpg)
 
 

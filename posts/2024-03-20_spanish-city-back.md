@@ -1,15 +1,14 @@
 ---
 title: "Spanish City & back"
 date: 2024-03-20
-categories: []
-image: https://dgtzuqphqg23d.cloudfront.net/D9Miy47sVZwArhG-AnYkXLM0PRxshZ2OLNzlQ_mUyCo-768x576.jpg
+categories: 
+image: ../data/paddle_activities/2024-03-20_spanish-city-back/4f8602ef-1041-4ed6-a73a-03192273e3e1.jpg
 ---
 
 - Distance: 12.7 km
-- [Strava](https://www.strava.com/activities/11001736245)
 
 
 
-![](https://dgtzuqphqg23d.cloudfront.net/D9Miy47sVZwArhG-AnYkXLM0PRxshZ2OLNzlQ_mUyCo-768x576.jpg)
+![](../data/paddle_activities/2024-03-20_spanish-city-back/4f8602ef-1041-4ed6-a73a-03192273e3e1.jpg)
 
 

@@ -1,15 +1,14 @@
 ---
 title: "SeaTrek Sea Kayaking"
 date: 2020-02-01
-categories: []
-image: https://dgtzuqphqg23d.cloudfront.net/g16AvIv6Zv5i3Q3Gye5h7AueIoFyI0iKPfRmLgaqW3E-768x576.jpg
+categories: 
+image: ../data/paddle_activities/2020-02-01_seatrek-sea-kayaking/6582b848-464c-451e-b146-705109cffcfe.jpg
 ---
 
 - Distance: 8.3 km
-- [Strava](https://www.strava.com/activities/3070884763)
 
 
 
-![](https://dgtzuqphqg23d.cloudfront.net/g16AvIv6Zv5i3Q3Gye5h7AueIoFyI0iKPfRmLgaqW3E-768x576.jpg)
+![](../data/paddle_activities/2020-02-01_seatrek-sea-kayaking/6582b848-464c-451e-b146-705109cffcfe.jpg)
 
 

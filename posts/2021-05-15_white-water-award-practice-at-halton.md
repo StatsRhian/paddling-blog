@@ -2,11 +2,10 @@
 title: "White Water Award Practice at Halton"
 date: 2021-05-15
 categories: ["halton-rapids","club: lancaster","whitewater"]
-image: https://dgtzuqphqg23d.cloudfront.net/V0sW4JuDgSY04fEiU2wHqNjqyA60vfp_TevkqeVEotQ-768x576.jpg
+image: https://placehold.co/600x400/EEE/31343C
 ---
 
 - Distance: 4.9 km
-- [Strava](https://www.strava.com/activities/5310986635)
 
 Last one until the fishing season finishes.
 
@@ -16,6 +15,6 @@ I had one swim coming past the final baffle, I tried to high brace on a wave, mi
 
 A good reminder that I definitely need more low and high brace practice - something for Thursday nights on the flat water.
 
-![](https://dgtzuqphqg23d.cloudfront.net/V0sW4JuDgSY04fEiU2wHqNjqyA60vfp_TevkqeVEotQ-768x576.jpg)
+![](https://placehold.co/600x400/EEE/31343C)
 
 

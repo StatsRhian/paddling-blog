@@ -1,15 +1,14 @@
 ---
 title: "Short paddle from Cullercoats"
 date: 2023-04-23
-categories: []
-image: https://dgtzuqphqg23d.cloudfront.net/LTEqh-S4VBawzH1AFiYVLkiWe4u5mP14P3JaQ62GmbI-768x576.jpg
+categories: 
+image: ../data/paddle_activities/2023-04-23_short-paddle-from-cullercoats/14e8133d-9a47-455f-a364-5832c90aeba6.jpg
 ---
 
 - Distance: 4.6 km
-- [Strava](https://www.strava.com/activities/8942909001)
 
 
 
-![](https://dgtzuqphqg23d.cloudfront.net/LTEqh-S4VBawzH1AFiYVLkiWe4u5mP14P3JaQ62GmbI-768x576.jpg)
+![](../data/paddle_activities/2023-04-23_short-paddle-from-cullercoats/14e8133d-9a47-455f-a364-5832c90aeba6.jpg)
 
 

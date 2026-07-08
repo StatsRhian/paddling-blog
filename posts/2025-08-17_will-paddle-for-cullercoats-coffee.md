@@ -2,11 +2,10 @@
 title: "Will paddle for Cullercoats Coffee"
 date: 2025-08-17
 categories: ["peer","sea","tynemouth"]
-image: https://dgtzuqphqg23d.cloudfront.net/EIkzggFzW08lDLBB83K78Hc-rGCAC9RPju2p7hPgtss-768x576.jpg
+image: ../data/paddle_activities/2025-08-17_will-paddle-for-cullercoats-coffee/21f6923c-51c8-4504-a610-e94f4a865e42.jpg
 ---
 
 - Distance: 12 km
-- [Strava](https://www.strava.com/activities/15489582804)
 
 A relaxed paddle to Whitley Bay and back with Paul, Sarah, Cath, Claire & Kev. We stopped at Cullercoats for a coffee & breakfast rolls.
 
@@ -14,6 +13,6 @@ There was some nice surf at Longsands. I didn't feel up to playing but everyone 
 
 I did one successfully roll on the way back in. No one in a rush to head off, we sat in the sun for an hour whilst our gear dried. It's always good to get out.
 
-![](https://dgtzuqphqg23d.cloudfront.net/EIkzggFzW08lDLBB83K78Hc-rGCAC9RPju2p7hPgtss-768x576.jpg)
+![](../data/paddle_activities/2025-08-17_will-paddle-for-cullercoats-coffee/21f6923c-51c8-4504-a610-e94f4a865e42.jpg)
 
 

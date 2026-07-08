@@ -1,15 +1,14 @@
 ---
-title: "Haven to Souter point "
+title: "Haven to Souter point"
 date: 2023-01-02
-categories: []
-image: https://dgtzuqphqg23d.cloudfront.net/jiudhWjynTUfK9Uu0hwzUOpjwt67uJHPesvCN1UJYos-768x576.jpg
+categories: 
+image: ../data/paddle_activities/2023-01-02_haven-to-souter-point/8a72ad9a-4654-45cd-9e89-998d41f4a05f.jpg
 ---
 
 - Distance: 18.9 km
-- [Strava](https://www.strava.com/activities/8325726782)
 
 Chatting through the chop. Dolphin 🐬
 
-![](https://dgtzuqphqg23d.cloudfront.net/jiudhWjynTUfK9Uu0hwzUOpjwt67uJHPesvCN1UJYos-768x576.jpg)
+![](../data/paddle_activities/2023-01-02_haven-to-souter-point/8a72ad9a-4654-45cd-9e89-998d41f4a05f.jpg)
 
 

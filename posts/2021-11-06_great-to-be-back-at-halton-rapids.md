@@ -2,15 +2,13 @@
 title: "Great to be back at Halton Rapids )"
 date: 2021-11-06
 categories: ["halton-rapids","club: lancaster","whitewater"]
-image: https://dgtzuqphqg23d.cloudfront.net/HnDzhLIzwH9euvpVU4AhNji7PxypUzTWIfuf8ePnZPc-768x576.jpg
+image: https://placehold.co/600x400/EEE/31343C
 ---
 
-- Distance: 3.9 km
-- [Strava](https://www.strava.com/activities/6220271653)
+- Distance: NA km
 
-I went out both days. Saturday (0.7m) was a good confidence builder for me. Chose a line for Amy to follow through the rapids.
+I went out both days. Saturday (0.7m) was a good confidence builder for me. Chose a line for Amy to follow through the rapids.
 
-
-![](https://dgtzuqphqg23d.cloudfront.net/HnDzhLIzwH9euvpVU4AhNji7PxypUzTWIfuf8ePnZPc-768x576.jpg)
+![](https://placehold.co/600x400/EEE/31343C)
 
 

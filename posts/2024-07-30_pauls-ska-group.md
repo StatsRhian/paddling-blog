@@ -2,14 +2,13 @@
 title: "Paul's SKA group"
 date: 2024-07-30
 categories: ["club: tynemouth","sea","tynemouth"]
-image: https://dgtzuqphqg23d.cloudfront.net/UItF-yislp2T9yWdDikOF-F4DubWL3BWiVRNltr1MdY-768x434.jpg
+image: https://placehold.co/600x400/EEE/31343C
 ---
 
 - Distance: 10.6 km
-- [Strava](https://www.strava.com/activities/12021786501)
 
-Towing and rescues 
+Towing and rescues
 
-![](https://dgtzuqphqg23d.cloudfront.net/UItF-yislp2T9yWdDikOF-F4DubWL3BWiVRNltr1MdY-768x434.jpg)
+![](https://placehold.co/600x400/EEE/31343C)
 
 

@@ -1,15 +1,14 @@
 ---
 title: "High tide fun with Kirstie and Mick"
 date: 2023-10-01
-categories: []
-image: https://dgtzuqphqg23d.cloudfront.net/Tg1qD-_czTYAgpPHkTUasIzRAN8Pxr771Gy3tzXyRJU-768x576.jpg
+categories: 
+image: ../data/paddle_activities/2023-10-01_high-tide-fun-with-kirstie-and-mick/05daa3fc-e57f-487c-bf0c-804faabb5c70.jpg
 ---
 
 - Distance: 11.9 km
-- [Strava](https://www.strava.com/activities/9958085527)
 
 
 
-![](https://dgtzuqphqg23d.cloudfront.net/Tg1qD-_czTYAgpPHkTUasIzRAN8Pxr771Gy3tzXyRJU-768x576.jpg)
+![](../data/paddle_activities/2023-10-01_high-tide-fun-with-kirstie-and-mick/05daa3fc-e57f-487c-bf0c-804faabb5c70.jpg)
 
 

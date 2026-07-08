@@ -2,11 +2,10 @@
 title: "Confluence of the Brathay and the Rothay"
 date: 2021-10-03
 categories: ["brathay","club: lancaster","rothay","whitewater"]
-image: https://dgtzuqphqg23d.cloudfront.net/LqTLG2Q7VEAe0uUMjoeLXKWSOsDAsmAYN8EdVSAniY4-768x576.jpg
+image: https://placehold.co/600x400/EEE/31343C
 ---
 
 - Distance: 6.7 km
-- [Strava](https://www.strava.com/activities/6057789239)
 
 Sunday 3rd October. Looking out the window this morning I wasn’t feeling too optimistic about today’s paddle. The Lune had doubled overnight, meaning Kirkby Lonsdale was out. And the prospect of paddling on Windermere in the drizzle and wind was not too appealing. Even the Halton Rapids demon Eva didn't want to get off the sofa this morning.
  
@@ -16,8 +15,8 @@ We paddled from Waterhead pier, past the Brathay Hall boathouse to Brathay Bay, 
 
 Alec took Darren, Arne and Simon to run the Clappersgate section, whilst the rest of us practised our ferry gliding and break ins. Eva was determined to paddle up the Brathay a little higher, and succeeded in powering up a fast moving section and a play wave, shortly followed by Dale (not to be out done!). The rest of us modestly decided to watch on from below. 
 
-A great first taste of moving water for Dean, Emma and Jenny, and Simon’s first river paddle in a white water boat. Arne also got to try out his shiny new boat and paddle, and Paul was strutting his stuff in a new fluorescent orange dry suit! Great to be out and about again :) 
+A great first taste of moving water for Dean, Emma and Jenny, and Simon’s first river paddle in a white water boat. Arne also got to try out his shiny new boat and paddle, and Paul was strutting his stuff in a new fluorescent orange dry suit! Great to be out and about again :)
 
-![](https://dgtzuqphqg23d.cloudfront.net/LqTLG2Q7VEAe0uUMjoeLXKWSOsDAsmAYN8EdVSAniY4-768x576.jpg)
+![](https://placehold.co/600x400/EEE/31343C)
 
 

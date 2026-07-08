@@ -1,12 +1,11 @@
 ---
 title: "Swallows, house martins & sand martins"
 date: 2021-05-20
-categories: []
+categories: 
 image: https://placehold.co/600x400/EEE/31343C
 ---
 
 - Distance: 5.4 km
-- [Strava](https://www.strava.com/activities/5330507341)
 
 
 

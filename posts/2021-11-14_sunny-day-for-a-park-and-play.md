@@ -2,11 +2,10 @@
 title: "Sunny day for a park and play"
 date: 2021-11-14
 categories: ["halton-rapids","club: lancaster","whitewater"]
-image: https://dgtzuqphqg23d.cloudfront.net/X8xc_6OaEkG9gn1SRwOIJQw4xHk3lo5aonnFfSbEtWo-768x576.jpg
+image: https://placehold.co/600x400/EEE/31343C
 ---
 
 - Distance: 5.5 km
-- [Strava](https://www.strava.com/activities/6257933552)
 
 I wasn't feeling 100% on Saturday, so skipped the river trip to the Brathay and instead did a day of park and play at Halton (0.84m). The playground at Halton is such a comfort for me. We're really lucky to have it so close.
 I do wonder if I should push myself to do the river trips more - but today was a day for playing it safe.
@@ -24,6 +23,6 @@ Nathan Andrews and Alec Feuillade which was a delight. David Horn gave a lesson 
 I'm shattered! Have an ace week. 
 Your boiiii, $t333√°0o
 
-![](https://dgtzuqphqg23d.cloudfront.net/X8xc_6OaEkG9gn1SRwOIJQw4xHk3lo5aonnFfSbEtWo-768x576.jpg)
+![](https://placehold.co/600x400/EEE/31343C)
 
 

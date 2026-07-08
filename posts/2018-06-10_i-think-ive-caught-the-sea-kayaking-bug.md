@@ -2,11 +2,10 @@
 title: "I think I've caught the sea kayaking bug"
 date: 2018-06-10
 categories: ["course","anglesey","sea"]
-image: https://dgtzuqphqg23d.cloudfront.net/qmQAWQ3mLoS08OQ-p9H6UY5XEwlCACKuZDsV1-OlF-w-768x768.jpg
+image: ../data/paddle_activities/2018-06-10_i-think-ive-caught-the-sea-kayaking-bug/64fb87d8-cbf4-4d6f-a079-6dd9b8a38924.jpg
 ---
 
-- Distance: 9.1 km
-- [Strava](https://www.strava.com/activities/1632449098)
+- Distance: NA km
 
 Day 2 of Sea Kayak Anglesey Intromediate course with Stu Leslie.
 
@@ -16,6 +15,6 @@ We finished with some theory on tides (springs/neaps) back at Anglesey Outdoors 
 
 I drove home realising I wanted to do a lot more of this sea kayaking thing, and vowed to look up Lancaster Canoe Club when I got home.
 
-![](https://dgtzuqphqg23d.cloudfront.net/qmQAWQ3mLoS08OQ-p9H6UY5XEwlCACKuZDsV1-OlF-w-768x768.jpg)
+![](../data/paddle_activities/2018-06-10_i-think-ive-caught-the-sea-kayaking-bug/64fb87d8-cbf4-4d6f-a079-6dd9b8a38924.jpg)
 
 

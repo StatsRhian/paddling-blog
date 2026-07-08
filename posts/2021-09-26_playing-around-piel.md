@@ -2,11 +2,10 @@
 title: "Playing around Piel"
 date: 2021-09-26
 categories: ["barrow","club: cumbria","leadership","sea"]
-image: https://dgtzuqphqg23d.cloudfront.net/8ALF6Farr1zGLBTsHskg4_hr-eszZv_9-k7qwMC2IhM-768x576.jpg
+image: ../data/paddle_activities/2021-09-26_playing-around-piel/8dcbb60b-8e14-4bfc-8f40-b27e2f2890d8.jpg
 ---
 
 - Distance: 6 km
-- [Strava](https://www.strava.com/activities/6024348869)
 
 Supporting Cumbria Canoeists Introduction to Sea weekend
 
@@ -15,6 +14,6 @@ On Sunday, the weather was overcast, and the winds were higher, meaning we had l
 
 I really enjoyed the opportunity to assist leading a group over two days. On the first day I was enjoying helping Annika with her handling skills. It was interesting to see how giving her a better set of paddles helped her paddling. On the second day I spent more time with her younger brother Henry, trying to keep him motivated when he got tired.
 
-![](https://dgtzuqphqg23d.cloudfront.net/8ALF6Farr1zGLBTsHskg4_hr-eszZv_9-k7qwMC2IhM-768x576.jpg)
+![](../data/paddle_activities/2021-09-26_playing-around-piel/8dcbb60b-8e14-4bfc-8f40-b27e2f2890d8.jpg)
 
 

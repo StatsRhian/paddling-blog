@@ -2,11 +2,10 @@
 title: "Shipwrecks, surfing and seagulls"
 date: 2025-09-30
 categories: ["peer","tynemouth","sea"]
-image: https://dgtzuqphqg23d.cloudfront.net/USikJV7RX6oLGT-d3sf8WPdHQdZJm6_OhlAFQTtmrnU-768x575.jpg
+image: ../data/paddle_activities/2025-09-30_shipwrecks-surfing-and-seagulls/1898d802-e28e-4712-81b5-4eafd1ce4c7b.jpg
 ---
 
 - Distance: 9 km
-- [Strava](https://www.strava.com/activities/15991929713)
 
 A quick after-work paddle, catching the last of the evening light.
 
@@ -18,6 +17,6 @@ On the way back we found ourselves surrounded by hundreds of birds, diving frant
 
 We rounded the piers and slipped back into the Haven just as dusk settled, the first lights of the Tyne flickering to life around us.
 
-![](https://dgtzuqphqg23d.cloudfront.net/USikJV7RX6oLGT-d3sf8WPdHQdZJm6_OhlAFQTtmrnU-768x575.jpg)
+![](../data/paddle_activities/2025-09-30_shipwrecks-surfing-and-seagulls/1898d802-e28e-4712-81b5-4eafd1ce4c7b.jpg)
 
 

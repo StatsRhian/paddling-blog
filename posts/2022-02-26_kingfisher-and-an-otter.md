@@ -1,15 +1,14 @@
 ---
 title: "Kingfisher and an otter"
 date: 2022-02-26
-categories: []
-image: https://dgtzuqphqg23d.cloudfront.net/Bqu_DxMAymvmlXIjHXR0EkMpVLKY7BCIVMnSR29SDMI-768x576.jpg
+categories: 
+image: ../data/paddle_activities/2022-02-26_kingfisher-and-an-otter/8964d320-b10d-42b6-8a8d-f624a4a652bc.jpg
 ---
 
 - Distance: 9.7 km
-- [Strava](https://www.strava.com/activities/6740861167)
 
-TO DO
 
-![](https://dgtzuqphqg23d.cloudfront.net/Bqu_DxMAymvmlXIjHXR0EkMpVLKY7BCIVMnSR29SDMI-768x576.jpg)
+
+![](../data/paddle_activities/2022-02-26_kingfisher-and-an-otter/8964d320-b10d-42b6-8a8d-f624a4a652bc.jpg)
 
 

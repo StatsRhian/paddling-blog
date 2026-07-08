@@ -1,15 +1,14 @@
 ---
 title: "After work St Marys's with Kirstie"
 date: 2023-05-16
-categories: []
-image: https://dgtzuqphqg23d.cloudfront.net/iQ3KU_aNL4ZW-bn3Y-PV4ZOILO0lGxCgelElEZM0nQs-768x576.jpg
+categories: 
+image: ../data/paddle_activities/2023-05-16_after-work-st-maryss-with-kirstie/2a992ba0-dda6-4495-bd7d-d12aa2c3a83d.jpg
 ---
 
 - Distance: 16.8 km
-- [Strava](https://www.strava.com/activities/9083852766)
 
 Eider ducks, rainbows and a wreck.
 
-![](https://dgtzuqphqg23d.cloudfront.net/iQ3KU_aNL4ZW-bn3Y-PV4ZOILO0lGxCgelElEZM0nQs-768x576.jpg)
+![](../data/paddle_activities/2023-05-16_after-work-st-maryss-with-kirstie/2a992ba0-dda6-4495-bd7d-d12aa2c3a83d.jpg)
 
 

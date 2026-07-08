@@ -18,7 +18,7 @@ library(ggtext)
 ```{r}
 processed <-
   readRDS("data/processed_paddles.rds") |>
-   dplyr::mutate(start_date = lubridate::ymd(start_date)) 
+   sf::st_drop_geometry()
 
 monthly_totals <- 
   processed |>
@@ -37,10 +37,6 @@ longest_paddles <- processed |>
 
 
 ## At a glance
-
-```{r}
-most_kudos <- processed |> dplyr::slice_max(kudos_count) |> dplyr::select(name, filename, kudos_count)
-```
 
 ```{r}
 longest <- processed |> dplyr::slice_max(distance) |> dplyr::select(name, filename, distance)
@@ -73,13 +69,6 @@ bslib::layout_columns(
     value = paste0(round(longest$distance, 1), "km"),
     htmltools::p(longest$name),
     showcase = bsicons::bs_icon("trophy-fill"),
-    theme = "primary"
-  ),
-  bslib::value_box(
-    title = "Most Kudos",
-    value = paste0(most_kudos$kudos_count, " kudos"),
-    htmltools::p(most_kudos$name),
-    showcase = bsicons::bs_icon("hand-thumbs-up-fill"),
     theme = "primary"
   ),
   bslib::value_box(
@@ -176,7 +165,7 @@ month_count <- processed |>
 
 ```{r}
 processed |>
-  ggplot(aes(x = start_date, y = distance, size = kudos_count)) +
+  ggplot(aes(x = start_date, y = distance)) +
   geom_point(colour = "skyblue", alpha = 0.3) +
   labs(x = NULL, y = NULL) + 
   scale_y_continuous(labels = function(x) paste0(x, " km")) +

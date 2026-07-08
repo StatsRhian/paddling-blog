@@ -1,12 +1,11 @@
 ---
 title: "Sunset paddle up the Coquet"
 date: 2024-11-17
-categories: ["peer","coquet","amble","sea"]
-image: https://dgtzuqphqg23d.cloudfront.net/xNbHStoYJ9QHCgjyHzHN9ySqsJqzlOU22XulpzEqfxg-768x432.jpg
+categories: ["peer","coquet","sea"]
+image: ../data/paddle_activities/2024-11-17_sunset-paddle-up-the-coquet/24096007-54ab-4325-9b59-728c31237180.jpg
 ---
 
 - Distance: 10.2 km
-- [Strava](https://www.strava.com/activities/12923564372)
 
 A very autumnal afternoon 🍂
 Pootle up to the weir and back. Saw a sleepy heron. And lots of lapwings.
@@ -15,6 +14,6 @@ Got chips and curry sauce before 😋
 
 With Kirstie, Sarah, Paul, Ann, Pauline, Julian, Chris & Dave F
 
-![](https://dgtzuqphqg23d.cloudfront.net/xNbHStoYJ9QHCgjyHzHN9ySqsJqzlOU22XulpzEqfxg-768x432.jpg)
+![](../data/paddle_activities/2024-11-17_sunset-paddle-up-the-coquet/24096007-54ab-4325-9b59-728c31237180.jpg)
 
 

@@ -2,14 +2,13 @@
 title: "Morning Kayaking"
 date: 2024-01-01
 categories: 
-image: https://dgtzuqphqg23d.cloudfront.net/rdXnwbyx_bFDMI9q72mYhXvIZnTgQznVv00gG-e7g9A-768x433.jpg
+image: ../data/paddle_activities/2024-01-01_morning-kayaking/23053769-3103-4fc1-b4fd-f0f0b17320f0.jpg
 ---
 
 - Distance: 12.5 km
-- [Strava](https://www.strava.com/activities/10473207417)
 
 
 
-![](https://dgtzuqphqg23d.cloudfront.net/rdXnwbyx_bFDMI9q72mYhXvIZnTgQznVv00gG-e7g9A-768x433.jpg)
+![](../data/paddle_activities/2024-01-01_morning-kayaking/23053769-3103-4fc1-b4fd-f0f0b17320f0.jpg)
 
 

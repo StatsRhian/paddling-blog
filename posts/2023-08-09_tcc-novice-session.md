@@ -1,15 +1,14 @@
 ---
 title: "TCC novice session"
 date: 2023-08-09
-categories: []
-image: https://dgtzuqphqg23d.cloudfront.net/-2uD6xdoFk-99Gqv4RhxA4jApONFZBA2H5_ZQOs1Jpk-768x483.jpg
+categories: 
+image: ../data/paddle_activities/2023-08-09_tcc-novice-session/e210b94c-7be0-4bbe-bdf6-ef029ecf144c.jpg
 ---
 
 - Distance: 5.2 km
-- [Strava](https://www.strava.com/activities/9619350814)
 
 
 
-![](https://dgtzuqphqg23d.cloudfront.net/-2uD6xdoFk-99Gqv4RhxA4jApONFZBA2H5_ZQOs1Jpk-768x483.jpg)
+![](../data/paddle_activities/2023-08-09_tcc-novice-session/e210b94c-7be0-4bbe-bdf6-ef029ecf144c.jpg)
 
 

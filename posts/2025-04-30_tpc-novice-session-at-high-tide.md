@@ -2,11 +2,10 @@
 title: "TPC Novice session at high tide"
 date: 2025-04-30
 categories: ["club: tynemouth","sea","tynemouth"]
-image: https://dgtzuqphqg23d.cloudfront.net/ZYp_MUWA5yppWtVNMnMDsRRJaOxqQHuQRiuObvyTP8g-768x432.jpg
+image: ../data/paddle_activities/2025-04-30_tpc-novice-session-at-high-tide/4dd6f958-785e-48cb-ae27-4af6d1aa6720.jpg
 ---
 
 - Distance: 11 km
-- [Strava](https://www.strava.com/activities/14336262924)
 
 Three novice paddlers joined us at Longsands.
 We took them to Cullercoats arch to practice draw strokes. It was a big springs (5.3m) at high tide so the arch was quite small.
@@ -14,6 +13,6 @@ One capsize quickly resolved once Stephen had been contact towed away from the r
 
 Saw the RNLI practicing landing in the tractor cage. First shorty cag of the season ☀️
 
-![](https://dgtzuqphqg23d.cloudfront.net/ZYp_MUWA5yppWtVNMnMDsRRJaOxqQHuQRiuObvyTP8g-768x432.jpg)
+![](../data/paddle_activities/2025-04-30_tpc-novice-session-at-high-tide/4dd6f958-785e-48cb-ae27-4af6d1aa6720.jpg)
 
 

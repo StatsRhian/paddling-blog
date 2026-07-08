@@ -2,14 +2,13 @@
 title: "Day 2 Around Oronsay and up the Strand"
 date: 2022-05-30
 categories: 
-image: https://dgtzuqphqg23d.cloudfront.net/zP5U9TbVExwrmwxChq1vdqZIJrzk1z8a-as6fX_sDs8-768x576.jpg
+image: ../data/paddle_activities/2022-05-30_day-2-around-oronsay-and-up-the-strand/28c6b709-139f-4e51-8273-0ff35f6de3e4.jpg
 ---
 
 - Distance: 21.8 km
-- [Strava](https://www.strava.com/activities/7227740165)
 
 
 
-![](https://dgtzuqphqg23d.cloudfront.net/zP5U9TbVExwrmwxChq1vdqZIJrzk1z8a-as6fX_sDs8-768x576.jpg)
+![](../data/paddle_activities/2022-05-30_day-2-around-oronsay-and-up-the-strand/28c6b709-139f-4e51-8273-0ff35f6de3e4.jpg)
 
 

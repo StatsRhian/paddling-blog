@@ -2,11 +2,10 @@
 title: "Pier pressure at the pub"
 date: 2026-01-17
 categories: ["peer","tynemouth","sea"]
-image: https://dgtzuqphqg23d.cloudfront.net/WFgVGfBInHgN2eQYt90acAyW-fSDzKYd-3US6sGYUoI-576x768.jpg
+image: ../data/paddle_activities/2026-01-17_pier-pressure-at-the-pub/fcfa606e-ea2c-4272-a03e-5b3687cacb1d.jpg
 ---
 
 - Distance: 9.6 km
-- [Strava](https://www.strava.com/activities/17080537607)
 
 Sat in the Turks Head on Friday night, checking surfline I suggested a Saturday morning paddle. 12 hours later and Kev, Paul, Dave, Tim, Tony and I were ready to get on the water on a grey January morning. 
 
@@ -16,6 +15,6 @@ The swell was a little bigger than I predicted it would be. We surfed the follow
 
 Chips & curry sauce at Marshalls.
 
-![](https://dgtzuqphqg23d.cloudfront.net/WFgVGfBInHgN2eQYt90acAyW-fSDzKYd-3US6sGYUoI-576x768.jpg)
+![](../data/paddle_activities/2026-01-17_pier-pressure-at-the-pub/fcfa606e-ea2c-4272-a03e-5b3687cacb1d.jpg)
 
 

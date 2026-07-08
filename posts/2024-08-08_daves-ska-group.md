@@ -2,16 +2,15 @@
 title: "Dave's SKA group"
 date: 2024-08-08
 categories: ["club: tynemouth","south-shields","sea"]
-image: https://dgtzuqphqg23d.cloudfront.net/m6giEFvgZSG_vujOjBVspKkN2XlP389dChvux7am-0Q-768x345.jpg
+image: https://placehold.co/600x400/EEE/31343C
 ---
 
 - Distance: 3.5 km
-- [Strava](https://www.strava.com/activities/12097950826)
 
 Bow rudders and rescues 
 
-📸: Kevin Thompson 
+📸: Kevin Thompson
 
-![](https://dgtzuqphqg23d.cloudfront.net/m6giEFvgZSG_vujOjBVspKkN2XlP389dChvux7am-0Q-768x345.jpg)
+![](https://placehold.co/600x400/EEE/31343C)
 
 

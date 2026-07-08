@@ -1,15 +1,14 @@
 ---
 title: "Fabulous day for Farnes"
 date: 2024-06-15
-categories: 
-image: https://dgtzuqphqg23d.cloudfront.net/7Py5oWOHvHzPrt2RWmjUut8bKcRbAr4z6Z5pInL2FjE-768x433.jpg
+categories: ["peer","farnes","sea"]
+image: ../data/paddle_activities/2024-06-15_fabulous-day-for-farnes/9bed04c4-3e88-4f41-89d9-79dbca72eabe.jpg
 ---
 
-- Distance: 20.2 km
-- [Strava](https://www.strava.com/activities/11661152170)
+- Distance: NA km
 
 With Kirstie, Josh & Felix
 
-![](https://dgtzuqphqg23d.cloudfront.net/7Py5oWOHvHzPrt2RWmjUut8bKcRbAr4z6Z5pInL2FjE-768x433.jpg)
+![](../data/paddle_activities/2024-06-15_fabulous-day-for-farnes/9bed04c4-3e88-4f41-89d9-79dbca72eabe.jpg)
 
 

@@ -2,14 +2,13 @@
 title: "Morning Kayaking"
 date: 2024-01-05
 categories: 
-image: https://dgtzuqphqg23d.cloudfront.net/78uF-N3dGk97KSIA_oplQ87pGgsLfzHPAQrXrkDpTjw-768x578.jpg
+image: ../data/paddle_activities/2024-01-05_morning-kayaking/8938a7e0-e97a-47bd-8112-9ec7cb963c36.jpg
 ---
 
 - Distance: 11.9 km
-- [Strava](https://www.strava.com/activities/10498306513)
 
 Rolling swell
 
-![](https://dgtzuqphqg23d.cloudfront.net/78uF-N3dGk97KSIA_oplQ87pGgsLfzHPAQrXrkDpTjw-768x578.jpg)
+![](../data/paddle_activities/2024-01-05_morning-kayaking/8938a7e0-e97a-47bd-8112-9ec7cb963c36.jpg)
 
 

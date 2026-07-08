@@ -5,33 +5,16 @@ page-layout: full
 ---
 
 ```{r, echo = FALSE, message = FALSE}
-raw_paddles <- readRDS("data/raw_paddles.rds")
 processed_paddles <- readRDS("data/processed_paddles.rds")
 
-gpoly_to_sfpoly <- function(gpoly) {
-  coords <- googlePolylines::decode(gpoly)
-  sfg <- lapply(coords, function(x) {
-    sf::st_linestring(x = as.matrix(x[, c(2, 1)]))
-  })
-  sfc <- sf::st_sfc(sfg, crs = 4326)
-  return(sfc)
-}
-
 paddle_geom <-
-  raw_paddles |>
-   dplyr::filter(!is.na(map.summary_polyline) & map.summary_polyline != "") |>
-   dplyr::mutate(geom = gpoly_to_sfpoly(map.summary_polyline)) |>
-    dplyr::mutate(id = as.numeric(id)) |>
-    dplyr::select(id, name, start_date, distance, geom) |>
+  processed_paddles |>
+    dplyr::mutate(filename = stringr::str_replace(filename, "\\.md", "\\.html")) |># TODO: Not DRY
+    dplyr::select(id, name, start_date, distance, filename, geometry) |>
     sf::st_as_sf() |>
     sf::st_set_crs(4326) 
 
-post_links <- processed_paddles |>
-  dplyr::select(id, filename) |>
-   dplyr::mutate(filename = stringr::str_replace(filename, "\\.md", "\\.html")) # TODO: Not DRY
-
 paddle_geom |>
-  dplyr::left_join(post_links) |>
   dplyr::mutate(label = glue::glue(
       "<span style='font-size:16px'>
          <b>{name}</b><br>

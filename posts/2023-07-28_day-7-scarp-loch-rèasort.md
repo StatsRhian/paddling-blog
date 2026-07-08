@@ -1,15 +1,14 @@
 ---
-title: "Day 7 Scarp & Loch Rèasort"
+title: "Day 7 Scarp & Loch Reasort"
 date: 2023-07-28
 categories: 
-image: https://dgtzuqphqg23d.cloudfront.net/sBimGeNBKAoJ1Oj-tJGnUDwPp1jDx7voTsOfiYbaykc-768x576.jpg
+image: ../data/paddle_activities/2023-07-28_day-7-scarp-loch-rèasort/0f04e046-9401-46e7-b7f1-6fd1f132df73.jpg
 ---
 
 - Distance: 18.6 km
-- [Strava](https://www.strava.com/activities/9550666320)
 
 
 
-![](https://dgtzuqphqg23d.cloudfront.net/sBimGeNBKAoJ1Oj-tJGnUDwPp1jDx7voTsOfiYbaykc-768x576.jpg)
+![](../data/paddle_activities/2023-07-28_day-7-scarp-loch-rèasort/0f04e046-9401-46e7-b7f1-6fd1f132df73.jpg)
 
 

@@ -1,12 +1,11 @@
 ---
 title: "Last Thursday paddling until Spring"
 date: 2020-09-10
-categories: []
+categories: 
 image: https://placehold.co/600x400/EEE/31343C
 ---
 
 - Distance: 1.6 km
-- [Strava](https://www.strava.com/activities/4040928226)
 
 
 

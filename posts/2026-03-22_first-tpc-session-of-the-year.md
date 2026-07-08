@@ -2,11 +2,10 @@
 title: "First TPC session of the year"
 date: 2026-03-22
 categories: ["club: tynemouth","tynemouth","sea"]
-image: https://dgtzuqphqg23d.cloudfront.net/j1XT_DP97p5nCQ8C-lfJAjddL973piOu340Uj9zonEM-768x432.jpg
+image: ../data/paddle_activities/2026-03-22_first-tpc-session-of-the-year/2c121935-3c3f-4b69-a1a6-d360c0032f54.jpg
 ---
 
 - Distance: 12.2 km
-- [Strava](https://www.strava.com/activities/17816636924)
 
 Calm seas and sunshine made for a perfect start to the year with Tynemouth’s first club paddle. With newly qualified leader Mark and Paul guiding the trip, we (Clare, Kev and I) headed around to Longsands to meet Kane, Gary and Anne.
 
@@ -16,6 +15,6 @@ I spent some time practising in the surf at Longsands and noticed how much more 
 
 The tide race was just starting to form as we rounded the North pier lighthouse.
 
-![](https://dgtzuqphqg23d.cloudfront.net/j1XT_DP97p5nCQ8C-lfJAjddL973piOu340Uj9zonEM-768x432.jpg)
+![](../data/paddle_activities/2026-03-22_first-tpc-session-of-the-year/2c121935-3c3f-4b69-a1a6-d360c0032f54.jpg)
 
 

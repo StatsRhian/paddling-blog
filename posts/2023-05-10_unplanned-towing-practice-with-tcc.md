@@ -1,15 +1,14 @@
 ---
 title: "Unplanned towing practice with TCC"
 date: 2023-05-10
-categories: []
-image: https://dgtzuqphqg23d.cloudfront.net/1_6SOlv8r01i6JK3XnroK-HScZeGQPAbWUAf7JgAAwg-768x354.jpg
+categories: 
+image: ../data/paddle_activities/2023-05-10_unplanned-towing-practice-with-tcc/dbdda34d-4ed8-4474-92c7-63641eb0b749.jpg
 ---
 
 - Distance: 8 km
-- [Strava](https://www.strava.com/activities/9048093117)
 
 
 
-![](https://dgtzuqphqg23d.cloudfront.net/1_6SOlv8r01i6JK3XnroK-HScZeGQPAbWUAf7JgAAwg-768x354.jpg)
+![](../data/paddle_activities/2023-05-10_unplanned-towing-practice-with-tcc/dbdda34d-4ed8-4474-92c7-63641eb0b749.jpg)
 
 

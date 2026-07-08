@@ -2,14 +2,13 @@
 title: "Evening Paddle"
 date: 2022-09-07
 categories: 
-image: https://dgtzuqphqg23d.cloudfront.net/85LPYigVpnMiiFzdVIY3ZpNhSmMp7cNJPn_qaoJFHcs-768x432.jpg
+image: ../data/paddle_activities/2022-09-07_evening-paddle/e79ce20b-40cb-440b-b22c-ba50cfb71fc4.jpg
 ---
 
 - Distance: 3.5 km
-- [Strava](https://www.strava.com/activities/7771205253)
 
 
 
-![](https://dgtzuqphqg23d.cloudfront.net/85LPYigVpnMiiFzdVIY3ZpNhSmMp7cNJPn_qaoJFHcs-768x432.jpg)
+![](../data/paddle_activities/2022-09-07_evening-paddle/e79ce20b-40cb-440b-b22c-ba50cfb71fc4.jpg)
 
 

@@ -2,14 +2,13 @@
 title: "Canal paddle with Anna"
 date: 2021-03-21
 categories: ["canal","peer","lancaster"]
-image: https://dgtzuqphqg23d.cloudfront.net/0vocpcXGKnhmis2nUVokYe282Euagr-kMw1DgMqhAG8-768x568.jpg
+image: https://placehold.co/600x400/EEE/31343C
 ---
 
 - Distance: 10.6 km
-- [Strava](https://www.strava.com/activities/4984426542)
 
 Chatty paddle with Anna getting on at the Aquaduct. Turned around at Hesk Bank.
 
-![](https://dgtzuqphqg23d.cloudfront.net/0vocpcXGKnhmis2nUVokYe282Euagr-kMw1DgMqhAG8-768x568.jpg)
+![](https://placehold.co/600x400/EEE/31343C)
 
 

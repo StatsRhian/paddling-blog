@@ -1,15 +1,14 @@
 ---
 title: "Loch Ken with TCC"
 date: 2023-04-15
-categories: []
-image: https://dgtzuqphqg23d.cloudfront.net/aAQt2CWTxDzDXLBiiijYuRB_AWmg1fFjx4zgw0W02uI-768x576.jpg
+categories: 
+image: ../data/paddle_activities/2023-04-15_loch-ken-with-tcc/012d088f-55c0-426d-8833-fa1f1216cbab.jpg
 ---
 
 - Distance: 15.4 km
-- [Strava](https://www.strava.com/activities/8896239827)
 
 
 
-![](https://dgtzuqphqg23d.cloudfront.net/aAQt2CWTxDzDXLBiiijYuRB_AWmg1fFjx4zgw0W02uI-768x576.jpg)
+![](../data/paddle_activities/2023-04-15_loch-ken-with-tcc/012d088f-55c0-426d-8833-fa1f1216cbab.jpg)
 
 

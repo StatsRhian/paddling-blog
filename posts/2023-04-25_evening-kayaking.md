@@ -1,15 +1,14 @@
 ---
 title: "Evening Kayaking"
 date: 2023-04-25
-categories: []
-image: https://dgtzuqphqg23d.cloudfront.net/Uq1H36-raZVjVs_6-w62MVn11m6DHQ5R__vSP_srckg-768x556.jpg
+categories: 
+image: ../data/paddle_activities/2023-04-25_evening-kayaking/1b9945bf-3e41-41dc-a242-ef19235a6177.jpg
 ---
 
 - Distance: 12.6 km
-- [Strava](https://www.strava.com/activities/8956530924)
 
 
 
-![](https://dgtzuqphqg23d.cloudfront.net/Uq1H36-raZVjVs_6-w62MVn11m6DHQ5R__vSP_srckg-768x556.jpg)
+![](../data/paddle_activities/2023-04-25_evening-kayaking/1b9945bf-3e41-41dc-a242-ef19235a6177.jpg)
 
 

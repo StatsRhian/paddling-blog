@@ -1,15 +1,14 @@
 ---
 title: "Tidied the store then went for a paddle"
 date: 2022-03-06
-categories: []
-image: https://dgtzuqphqg23d.cloudfront.net/e2-CbZYaSZ1Z0izPlVuWct_6SWAvx8Y_rQHSSESji1Y-768x576.jpg
+categories: 
+image: ../data/paddle_activities/2022-03-06_tidied-the-store-then-went-for-a-paddle/3ad22e87-7574-4ff5-9d12-3c3ebbbc58d3.jpg
 ---
 
 - Distance: 10.5 km
-- [Strava](https://www.strava.com/activities/6782975396)
 
-TO DO
 
-![](https://dgtzuqphqg23d.cloudfront.net/e2-CbZYaSZ1Z0izPlVuWct_6SWAvx8Y_rQHSSESji1Y-768x576.jpg)
+
+![](../data/paddle_activities/2022-03-06_tidied-the-store-then-went-for-a-paddle/3ad22e87-7574-4ff5-9d12-3c3ebbbc58d3.jpg)
 
 

@@ -2,14 +2,13 @@
 title: "Raasay Exped Day 2 Exploring Rona"
 date: 2022-09-03
 categories: 
-image: https://dgtzuqphqg23d.cloudfront.net/CZJNPwnkPXWCCQHw5nipy5Ot3bOOuKhhZparJV49aP8-768x576.jpg
+image: ../data/paddle_activities/2022-09-03_raasay-exped-day-2-exploring-rona/70a4ce1d-36f7-4951-a74d-5f2bfdd058b8.jpg
 ---
 
 - Distance: 13.2 km
-- [Strava](https://www.strava.com/activities/7755813860)
 
 
 
-![](https://dgtzuqphqg23d.cloudfront.net/CZJNPwnkPXWCCQHw5nipy5Ot3bOOuKhhZparJV49aP8-768x576.jpg)
+![](../data/paddle_activities/2022-09-03_raasay-exped-day-2-exploring-rona/70a4ce1d-36f7-4951-a74d-5f2bfdd058b8.jpg)
 
 

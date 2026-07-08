@@ -1,17 +1,16 @@
 ---
 title: "Tide races on the west coast of Anglesey"
 date: 2024-10-29
-categories: ["course","anglesey","tide-races","sea"]
-image: https://dgtzuqphqg23d.cloudfront.net/DIoumFlCJcI2D3RMbwnOy0WDP2LuwA77vjyQRph3SVk-578x768.jpg
+categories: ["course","anglesey","sea"]
+image: ../data/paddle_activities/2024-10-29_tide-races-on-the-west-coast-of-anglesey/09da5ae9-304a-45bb-ad70-2b721a7b4ac6.jpg
 ---
 
 - Distance: 23.6 km
-- [Strava](https://www.strava.com/activities/12775520301)
 
 Led by Paul Williams
 North Stack, South Stack and Penrhyn mawr
-With Paul & Sarah 
+With Paul & Sarah
 
-![](https://dgtzuqphqg23d.cloudfront.net/DIoumFlCJcI2D3RMbwnOy0WDP2LuwA77vjyQRph3SVk-578x768.jpg)
+![](../data/paddle_activities/2024-10-29_tide-races-on-the-west-coast-of-anglesey/09da5ae9-304a-45bb-ad70-2b721a7b4ac6.jpg)
 
 

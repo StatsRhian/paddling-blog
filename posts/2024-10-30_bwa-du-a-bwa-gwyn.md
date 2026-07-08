@@ -1,12 +1,11 @@
 ---
 title: "Bwa Du a Bwa Gwyn"
 date: 2024-10-30
-categories: ["anglesey","sea","peer","sea"]
-image: https://dgtzuqphqg23d.cloudfront.net/hP3vx7u30fmyQzA1luxStSy-RPg6iTa2rE60dSDDoF4-432x768.jpg
+categories: ["anglesey","sea","peer"]
+image: ../data/paddle_activities/2024-10-30_bwa-du-a-bwa-gwyn/0a0f92cd-89bd-4138-a746-d42701af19f3.jpg
 ---
 
 - Distance: 12.1 km
-- [Strava](https://www.strava.com/activities/12781440458)
 
 The day after our tidal race course, Paul, Sarah and I did a short paddle from Porch Dafach.
 
@@ -14,6 +13,6 @@ Paul Williams suggested that the arches Bwa Du & Bwa Gwyn were worth a look.
 
 I practised my navigation skills on the way home as Porth Dafarch isn't obvious to spot.
 
-![](https://dgtzuqphqg23d.cloudfront.net/hP3vx7u30fmyQzA1luxStSy-RPg6iTa2rE60dSDDoF4-432x768.jpg)
+![](../data/paddle_activities/2024-10-30_bwa-du-a-bwa-gwyn/0a0f92cd-89bd-4138-a746-d42701af19f3.jpg)
 
 

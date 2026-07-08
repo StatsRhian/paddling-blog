@@ -1,12 +1,11 @@
 ---
 title: "LDCC Sea kayakers"
 date: 2022-08-11
-categories: []
+categories: 
 image: https://placehold.co/600x400/EEE/31343C
 ---
 
-- Distance: 7.2 km
-- [Strava](https://www.strava.com/activities/7622533682)
+- Distance: 13.6 km
 
 Up to Halton rapids and back.
 

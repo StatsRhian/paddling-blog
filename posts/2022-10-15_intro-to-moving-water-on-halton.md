@@ -1,15 +1,14 @@
 ---
 title: "Intro to moving water on Halton"
 date: 2022-10-15
-categories: []
-image: https://dgtzuqphqg23d.cloudfront.net/ilCPc2ZxRwqHnD0ivWyfXUPz286wp0iyIEg6avG4spI-768x576.jpg
+categories: 
+image: ../data/paddle_activities/2022-10-15_intro-to-moving-water-on-halton/4c9fe69c-8013-4110-ae36-2f19aa994f52.jpg
 ---
 
 - Distance: 4.4 km
-- [Strava](https://www.strava.com/activities/7966585853)
 
 
 
-![](https://dgtzuqphqg23d.cloudfront.net/ilCPc2ZxRwqHnD0ivWyfXUPz286wp0iyIEg6avG4spI-768x576.jpg)
+![](../data/paddle_activities/2022-10-15_intro-to-moving-water-on-halton/4c9fe69c-8013-4110-ae36-2f19aa994f52.jpg)
 
 

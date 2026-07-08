@@ -2,11 +2,10 @@
 title: "Lovely evening down to Marsden and back"
 date: 2025-08-12
 categories: ["sea","peer","south-shields"]
-image: https://dgtzuqphqg23d.cloudfront.net/cvtkJSxumRlBdyT5Q3VmyTqdlZdPHvKY-uCy5piKxFY-768x431.jpg
+image: ../data/paddle_activities/2025-08-12_lovely-evening-down-to-marsden-and-back/06c5c3e5-2ff4-4eb7-85af-3475107c13e8.jpg
 ---
 
 - Distance: 12.3 km
-- [Strava](https://www.strava.com/activities/15441354179)
 
 Paul, Sarah, Cath, Claire, Josh and I set off from Haven. We met Kirstie and Gayle at the South pier. 
 
@@ -14,6 +13,6 @@ It was quite choppy once we got around the pier (wind against tide). The water l
 
 Pretty sunset as we came back to the Haven. Sat around in the evening to watch the moon rise. Feel lucky to be able to have this as a local evening paddle.
 
-![](https://dgtzuqphqg23d.cloudfront.net/cvtkJSxumRlBdyT5Q3VmyTqdlZdPHvKY-uCy5piKxFY-768x431.jpg)
+![](../data/paddle_activities/2025-08-12_lovely-evening-down-to-marsden-and-back/06c5c3e5-2ff4-4eb7-85af-3475107c13e8.jpg)
 
 

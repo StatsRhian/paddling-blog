@@ -2,11 +2,10 @@
 title: "Back to Skye via Skye bridge"
 date: 2025-05-15
 categories: ["club: lakeland","skye","sea","2025-lcc-skye","exped"]
-image: https://dgtzuqphqg23d.cloudfront.net/eERelZUP4Qgh0jaj39jq16dlo6pOMt8qvRx1i15bwvU-768x206.jpg
+image: ../data/paddle_activities/2025-05-15_back-to-skye-via-skye-bridge/18b2e2b9-b050-4c2a-ba63-fcb43f49cf79.jpg
 ---
 
 - Distance: 18.7 km
-- [Strava](https://www.strava.com/activities/14488750624)
 
 The next day dawned sunny and ominously still. We were woken at about 04:30 by the local cuckoo but returned to snoozing until the inevitable could be delayed no longer, and battle with the midges commenced. A rout ensued, with most party members having mislaid some piece of kit (sunglasses, sun hat, sandals) by the time we congregated out of range, 50m off shore, at about 08:45.
 
@@ -14,6 +13,6 @@ We paddled east along the south shore of the Applecross peninsular with flat wat
 
 Refuelled and refreshed by some sunbathing we continued through the Black Islands and past Eilean Ban to dodge the sightseeing boats as we shot under the main span of the Skye Bridge (it was actually close to low tide so there was relatively little shooting but quite a lot of dodging!). The get out at Kyleakin was straightforward with plenty of parking space and proved to be a suitable location for the launch of the LCC No Shit campaign. Having posed with our poo pots, we headed back to Sligachan campsite for a trip the bar and then the shower.
 
-![](https://dgtzuqphqg23d.cloudfront.net/eERelZUP4Qgh0jaj39jq16dlo6pOMt8qvRx1i15bwvU-768x206.jpg)
+![](../data/paddle_activities/2025-05-15_back-to-skye-via-skye-bridge/18b2e2b9-b050-4c2a-ba63-fcb43f49cf79.jpg)
 
 

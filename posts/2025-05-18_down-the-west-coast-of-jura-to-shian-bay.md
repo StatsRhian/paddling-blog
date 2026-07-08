@@ -2,14 +2,13 @@
 title: "Down the west coast of Jura to Shian bay"
 date: 2025-05-18
 categories: ["exped","jura","peer","sea"]
-image: https://dgtzuqphqg23d.cloudfront.net/5vIs2SeCN7DiymLcZTqIygeBFYgczvJJLIXHcIV-n4Y-768x432.jpg
+image: ../data/paddle_activities/2025-05-18_down-the-west-coast-of-jura-to-shian-bay/2cead69e-01c8-4f5e-b2d1-d16501954369.jpg
 ---
 
 - Distance: 23.9 km
-- [Strava](https://www.strava.com/activities/14520498622)
 
 
 
-![](https://dgtzuqphqg23d.cloudfront.net/5vIs2SeCN7DiymLcZTqIygeBFYgczvJJLIXHcIV-n4Y-768x432.jpg)
+![](../data/paddle_activities/2025-05-18_down-the-west-coast-of-jura-to-shian-bay/2cead69e-01c8-4f5e-b2d1-d16501954369.jpg)
 
 

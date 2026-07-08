@@ -2,14 +2,13 @@
 title: "Day 1 Vatersay and Mordor"
 date: 2023-07-22
 categories: 
-image: https://dgtzuqphqg23d.cloudfront.net/1FMxegtk03GVmSCRZDtpwPYeiwd-beNU1Emvq_6oP3w-768x576.jpg
+image: ../data/paddle_activities/2023-07-22_day-1-vatersay-and-mordor/a5ba139b-f121-442c-82d5-230103bfb128.jpg
 ---
 
 - Distance: 24.8 km
-- [Strava](https://www.strava.com/activities/9502804864)
 
 The "warm up" paddle involving a completely unnecessary crossing to "Mordor" in force 5 winds, and 12ft CalMac ferry wake 😂
 
-![](https://dgtzuqphqg23d.cloudfront.net/1FMxegtk03GVmSCRZDtpwPYeiwd-beNU1Emvq_6oP3w-768x576.jpg)
+![](../data/paddle_activities/2023-07-22_day-1-vatersay-and-mordor/a5ba139b-f121-442c-82d5-230103bfb128.jpg)
 
 

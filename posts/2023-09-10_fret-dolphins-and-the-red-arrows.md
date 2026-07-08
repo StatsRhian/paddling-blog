@@ -1,15 +1,14 @@
 ---
 title: "Fret, dolphins and the red arrows"
 date: 2023-09-10
-categories: []
-image: https://dgtzuqphqg23d.cloudfront.net/hUFJ9nJc6AM7xqnttPFAeMmax1sxGVFDpQF_ZmAQNX8-587x768.jpg
+categories: 
+image: ../data/paddle_activities/2023-09-10_fret-dolphins-and-the-red-arrows/0251ad90-ee07-4f73-a62a-5beabce5fb73.jpg
 ---
 
 - Distance: 14.3 km
-- [Strava](https://www.strava.com/activities/9821715146)
 
 
 
-![](https://dgtzuqphqg23d.cloudfront.net/hUFJ9nJc6AM7xqnttPFAeMmax1sxGVFDpQF_ZmAQNX8-587x768.jpg)
+![](../data/paddle_activities/2023-09-10_fret-dolphins-and-the-red-arrows/0251ad90-ee07-4f73-a62a-5beabce5fb73.jpg)
 
 

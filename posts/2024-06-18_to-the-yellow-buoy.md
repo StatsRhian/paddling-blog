@@ -1,15 +1,14 @@
 ---
 title: "To the yellow buoy"
 date: 2024-06-18
-categories: []
-image: https://dgtzuqphqg23d.cloudfront.net/NceuOSr2_t0YD-dGbIYDxIjR1MNUX6YPA49bVN0T-pA-768x576.jpg
+categories: ["peer","tynemouth","sea"]
+image: https://placehold.co/600x400/EEE/31343C
 ---
 
 - Distance: 14.5 km
-- [Strava](https://www.strava.com/activities/11683873214)
 
-Good dose of Vitamin Sea. Dolphins on the way back 🐬 
+Good dose of Vitamin Sea. Dolphins on the way back 🐬
 
-![](https://dgtzuqphqg23d.cloudfront.net/NceuOSr2_t0YD-dGbIYDxIjR1MNUX6YPA49bVN0T-pA-768x576.jpg)
+![](https://placehold.co/600x400/EEE/31343C)
 
 

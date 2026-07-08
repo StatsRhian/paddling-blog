@@ -1,15 +1,14 @@
 ---
 title: "Will paddle for icecream"
 date: 2023-09-03
-categories: []
-image: https://dgtzuqphqg23d.cloudfront.net/Dk57KngDFBc8WlaWdHrZVqERg0z_wk8X0encIil21mU-768x346.jpg
+categories: 
+image: ../data/paddle_activities/2023-09-03_will-paddle-for-icecream/1475eadf-2af6-4f1d-a4ac-63484ae9cc06.jpg
 ---
 
 - Distance: 13.6 km
-- [Strava](https://www.strava.com/activities/9775230135)
 
-Dolphins, ice cream, and messing around in boats 
+Dolphins, ice cream, and messing around in boats
 
-![](https://dgtzuqphqg23d.cloudfront.net/Dk57KngDFBc8WlaWdHrZVqERg0z_wk8X0encIil21mU-768x346.jpg)
+![](../data/paddle_activities/2023-09-03_will-paddle-for-icecream/1475eadf-2af6-4f1d-a4ac-63484ae9cc06.jpg)
 
 

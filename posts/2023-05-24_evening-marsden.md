@@ -1,15 +1,14 @@
 ---
 title: "Evening Marsden"
 date: 2023-05-24
-categories: []
-image: https://dgtzuqphqg23d.cloudfront.net/PzGWJo1JiWcKHYnbfqM4hYWaLrAb1pj7k4BCKrp0cBk-768x576.jpg
+categories: 
+image: ../data/paddle_activities/2023-05-24_evening-marsden/740fd86f-9446-4c54-8959-f93378257811.jpg
 ---
 
 - Distance: 16.2 km
-- [Strava](https://www.strava.com/activities/9134293901)
 
 
 
-![](https://dgtzuqphqg23d.cloudfront.net/PzGWJo1JiWcKHYnbfqM4hYWaLrAb1pj7k4BCKrp0cBk-768x576.jpg)
+![](../data/paddle_activities/2023-05-24_evening-marsden/740fd86f-9446-4c54-8959-f93378257811.jpg)
 
 

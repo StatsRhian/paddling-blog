@@ -2,11 +2,10 @@
 title: "WSKF day 3 Playing at Penmon"
 date: 2024-07-21
 categories: ["course","anglesey","sea"]
-image: https://dgtzuqphqg23d.cloudfront.net/FSg9Kdt8kMoQFo40IK2ZKKN9Xc3ZzNvV47XxbtMB26g-768x768.jpg
+image: ../data/paddle_activities/2024-07-21_wskf-day-3-playing-at-penmon/ad1a3f6b-4e92-4b87-b4cd-51efc8cc2bab.jpg
 ---
 
 - Distance: 14.8 km
-- [Strava](https://www.strava.com/activities/11945197821)
 
 The final day of our course. I was in Anita's group with Kirstie and two other sea kayak leaders. I practised leading the group around Puffin Island (Ynys Seiriol). We joined the others for lunch on the beach.
 
@@ -16,6 +15,6 @@ The SW wind picked up, making our paddle back to the get-on a bit of a slog.  I 
 
 I really enjoyed this course and it definitely boosted my confidence.
 
-![](https://dgtzuqphqg23d.cloudfront.net/FSg9Kdt8kMoQFo40IK2ZKKN9Xc3ZzNvV47XxbtMB26g-768x768.jpg)
+![](../data/paddle_activities/2024-07-21_wskf-day-3-playing-at-penmon/ad1a3f6b-4e92-4b87-b4cd-51efc8cc2bab.jpg)
 
 

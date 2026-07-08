@@ -2,11 +2,10 @@
 title: "Day 4 Around Eriskay"
 date: 2023-07-25
 categories: 
-image: https://dgtzuqphqg23d.cloudfront.net/CqokW4v9KtF7_Cz6O7gFxgPeFebI51O3Gn5wg1HC-WM-768x477.jpg
+image: ../data/paddle_activities/2023-07-25_day-4-around-eriskay/86cb7973-f9d4-4c96-ba91-c3c3c700ae0a.jpg
 ---
 
 - Distance: 23 km
-- [Strava](https://www.strava.com/activities/9550634712)
 
 Everything from a classic sea kayak day out
 
@@ -17,6 +16,6 @@ Everything from a classic sea kayak day out
 - A standing wave under the bridge
 - Pub at the finish
 
-![](https://dgtzuqphqg23d.cloudfront.net/CqokW4v9KtF7_Cz6O7gFxgPeFebI51O3Gn5wg1HC-WM-768x477.jpg)
+![](../data/paddle_activities/2023-07-25_day-4-around-eriskay/86cb7973-f9d4-4c96-ba91-c3c3c700ae0a.jpg)
 
 

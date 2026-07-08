@@ -2,11 +2,10 @@
 title: "Mystical fog"
 date: 2021-12-19
 categories: ["leven","sea","club: ulverston"]
-image: https://dgtzuqphqg23d.cloudfront.net/V1DUGiHJScxXu5llcl1DPxRxvFAVouu1tWbgdEOMc8E-768x576.jpg
+image: ../data/paddle_activities/2021-12-19_mystical-fog/1748ff16-b5ab-4129-9dc3-48164e6171d4.jpg
 ---
 
 - Distance: 11.9 km
-- [Strava](https://www.strava.com/activities/6403379253)
 
 HT Barrow 11:30am
 - 12k
@@ -22,6 +21,6 @@ Soon the river became an estuary, and the grassy banks became sand banks. As the
 
 Eventually the train bridge came into sight. We took the wide gap, and cut to the right to catch the main flow. A short paddle later and Judith came into sight at Canal Foot, Ulverston. This was where Crayston was planning on leaving us. We were hungry for a late lunch, so we all got out for a break. The fog was still looking thick, and there was no chance of us making Roa Island today. After considering a couple of options, we decided to call it a day here, and vowed to return to finish the rest of the journey on another, hopefully warmer and sunnier day.
 
-![](https://dgtzuqphqg23d.cloudfront.net/V1DUGiHJScxXu5llcl1DPxRxvFAVouu1tWbgdEOMc8E-768x576.jpg)
+![](../data/paddle_activities/2021-12-19_mystical-fog/1748ff16-b5ab-4129-9dc3-48164e6171d4.jpg)
 
 

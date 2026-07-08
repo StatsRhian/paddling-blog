@@ -1,12 +1,11 @@
 ---
 title: "Denny Beck and back with the sea kayak crew"
 date: 2022-06-30
-categories: []
+categories: 
 image: https://placehold.co/600x400/EEE/31343C
 ---
 
-- Distance: 5.3 km
-- [Strava](https://www.strava.com/activities/7394485946)
+- Distance: NA km
 
 
 

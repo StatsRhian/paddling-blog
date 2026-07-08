@@ -1,15 +1,14 @@
 ---
 title: "Porth Wen brickworks"
 date: 2022-07-30
-categories: []
-image: https://dgtzuqphqg23d.cloudfront.net/It0Kvgb0Y7AvEoSda7wfSKO3xhwNjpuHHg6SF3pHPZw-768x432.jpg
+categories: 
+image: ../data/paddle_activities/2022-07-30_porth-wen-brickworks/daf3a0fc-56a4-46d3-be9c-7ba997a054c7.jpg
 ---
 
 - Distance: 19 km
-- [Strava](https://www.strava.com/activities/7554309959)
 
 
 
-![](https://dgtzuqphqg23d.cloudfront.net/It0Kvgb0Y7AvEoSda7wfSKO3xhwNjpuHHg6SF3pHPZw-768x432.jpg)
+![](../data/paddle_activities/2022-07-30_porth-wen-brickworks/daf3a0fc-56a4-46d3-be9c-7ba997a054c7.jpg)
 
 

@@ -2,14 +2,13 @@
 title: "Day 3 The Blue Lagoon"
 date: 2023-07-24
 categories: 
-image: https://dgtzuqphqg23d.cloudfront.net/ch0Gn1FEqt5y1rtNsnJOurVq8q-md61DMgtR_PIYgvM-768x576.jpg
+image: ../data/paddle_activities/2023-07-24_day-3-the-blue-lagoon/208781be-a963-470d-96b9-bcf3c123c3ec.jpg
 ---
 
 - Distance: 21.8 km
-- [Strava](https://www.strava.com/activities/9512875381)
 
 
 
-![](https://dgtzuqphqg23d.cloudfront.net/ch0Gn1FEqt5y1rtNsnJOurVq8q-md61DMgtR_PIYgvM-768x576.jpg)
+![](../data/paddle_activities/2023-07-24_day-3-the-blue-lagoon/208781be-a963-470d-96b9-bcf3c123c3ec.jpg)
 
 

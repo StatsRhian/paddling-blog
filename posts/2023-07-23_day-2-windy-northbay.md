@@ -2,14 +2,13 @@
 title: "Day 2 Windy Northbay"
 date: 2023-07-23
 categories: 
-image: https://dgtzuqphqg23d.cloudfront.net/GnPOfH67m_d9Wgb30NhFW21p9HblDJWPadtcaql7JLc-576x768.jpg
+image: ../data/paddle_activities/2023-07-23_day-2-windy-northbay/d029ec35-b11d-427b-8dd3-6ec4d1794a3a.jpg
 ---
 
 - Distance: 8.2 km
-- [Strava](https://www.strava.com/activities/9512872934)
 
 Force 6+ so only four of us ventured out. Seal colonies and some fun swell. Excellent nap in the sunshine afterwards.
 
-![](https://dgtzuqphqg23d.cloudfront.net/GnPOfH67m_d9Wgb30NhFW21p9HblDJWPadtcaql7JLc-576x768.jpg)
+![](../data/paddle_activities/2023-07-23_day-2-windy-northbay/d029ec35-b11d-427b-8dd3-6ec4d1794a3a.jpg)
 
 

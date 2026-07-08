@@ -1,15 +1,14 @@
 ---
 title: "Cullercoats and back"
 date: 2023-03-19
-categories: []
-image: https://dgtzuqphqg23d.cloudfront.net/SPfO5y851oWYKJeCQloMaGbQvMkGGUI0AhnyR9RWpIc-768x587.jpg
+categories: 
+image: ../data/paddle_activities/2023-03-19_cullercoats-and-back/2102c7ad-396d-4e3b-90d2-d57dce30f097.jpg
 ---
 
 - Distance: 9.1 km
-- [Strava](https://www.strava.com/activities/8740150985)
 
 
 
-![](https://dgtzuqphqg23d.cloudfront.net/SPfO5y851oWYKJeCQloMaGbQvMkGGUI0AhnyR9RWpIc-768x587.jpg)
+![](../data/paddle_activities/2023-03-19_cullercoats-and-back/2102c7ad-396d-4e3b-90d2-d57dce30f097.jpg)
 
 

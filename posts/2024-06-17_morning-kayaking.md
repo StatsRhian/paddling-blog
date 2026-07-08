@@ -1,15 +1,14 @@
 ---
 title: "Morning Kayaking"
 date: 2024-06-17
-categories: []
-image: https://dgtzuqphqg23d.cloudfront.net/ouEfZg7QltXSdTmcNR5CmZrFaSuZOIJ0VPmiHutbppI-768x432.jpg
+categories: ["solo","tynemouth","sea"]
+image: https://placehold.co/600x400/EEE/31343C
 ---
 
 - Distance: 6.1 km
-- [Strava](https://www.strava.com/activities/11671053211)
 
+A solo paddle before breakfast. Calm.
 
-
-![](https://dgtzuqphqg23d.cloudfront.net/ouEfZg7QltXSdTmcNR5CmZrFaSuZOIJ0VPmiHutbppI-768x432.jpg)
+![](https://placehold.co/600x400/EEE/31343C)
 
 

@@ -1,15 +1,14 @@
 ---
 title: "Night Paddle"
 date: 2021-10-07
-categories: []
-image: https://dgtzuqphqg23d.cloudfront.net/Y0WDy7T9LQGZ_Sz6XRBKMtd4vIl1mExS1HzmFYo0D1g-768x576.jpg
+categories: 
+image: ../data/paddle_activities/2021-10-07_night-paddle/e29cbe32-4b2e-4d3f-a2df-eacb437b69d9.jpg
 ---
 
 - Distance: 3.9 km
-- [Strava](https://www.strava.com/activities/6078924020)
 
-TO DO
 
-![](https://dgtzuqphqg23d.cloudfront.net/Y0WDy7T9LQGZ_Sz6XRBKMtd4vIl1mExS1HzmFYo0D1g-768x576.jpg)
+
+![](../data/paddle_activities/2021-10-07_night-paddle/e29cbe32-4b2e-4d3f-a2df-eacb437b69d9.jpg)
 
 

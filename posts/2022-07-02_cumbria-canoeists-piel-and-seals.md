@@ -2,14 +2,13 @@
 title: "Cumbria Canoeists Piel and seals"
 date: 2022-07-02
 categories: 
-image: https://dgtzuqphqg23d.cloudfront.net/ZnslUqatC0_ilQGU8aD_ghLeQHODoPgqI44cyheMgvA-768x576.jpg
+image: ../data/paddle_activities/2022-07-02_cumbria-canoeists-piel-and-seals/8c1b8f5b-8511-40a4-b97b-4871c0ab19a4.jpg
 ---
 
 - Distance: 8.7 km
-- [Strava](https://www.strava.com/activities/7414402616)
 
 
 
-![](https://dgtzuqphqg23d.cloudfront.net/ZnslUqatC0_ilQGU8aD_ghLeQHODoPgqI44cyheMgvA-768x576.jpg)
+![](../data/paddle_activities/2022-07-02_cumbria-canoeists-piel-and-seals/8c1b8f5b-8511-40a4-b97b-4871c0ab19a4.jpg)
 
 

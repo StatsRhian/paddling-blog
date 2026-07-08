@@ -1,15 +1,14 @@
 ---
 title: "Back to Barrow"
 date: 2022-05-15
-categories: []
-image: https://dgtzuqphqg23d.cloudfront.net/rjjMCzk1qa6t1_yXll5rEOB7A3GhHct9s1_-doO9FJs-768x576.jpg
+categories: 
+image: ../data/paddle_activities/2022-05-15_back-to-barrow/aa83ad6f-0b70-4c30-a3fd-018bb46b975e.jpg
 ---
 
-- Distance: 7.7 km
-- [Strava](https://www.strava.com/activities/7145471316)
+- Distance: NA km
 
 
 
-![](https://dgtzuqphqg23d.cloudfront.net/rjjMCzk1qa6t1_yXll5rEOB7A3GhHct9s1_-doO9FJs-768x576.jpg)
+![](../data/paddle_activities/2022-05-15_back-to-barrow/aa83ad6f-0b70-4c30-a3fd-018bb46b975e.jpg)
 
 

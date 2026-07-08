@@ -6,7 +6,6 @@ image: https://placehold.co/600x400/EEE/31343C
 ---
 
 - Distance: 7.4 km
-- [Strava](https://www.strava.com/activities/5808920797)
 
 Rescue practice
 

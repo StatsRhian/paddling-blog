@@ -2,14 +2,13 @@
 title: "Cumbria Canoiests Piel Island Camp"
 date: 2022-07-01
 categories: 
-image: https://dgtzuqphqg23d.cloudfront.net/uvQyH4scxl1ZH7tdLxSpjCXf962LkoWmf4Jh_P5iKog-768x576.jpg
+image: ../data/paddle_activities/2022-07-01_cumbria-canoiests-piel-island-camp/29f73f3e-56a6-4c25-8309-2dd931446e59.jpg
 ---
 
-- Distance: 14.5 km
-- [Strava](https://www.strava.com/activities/7414372792)
+- Distance: NA km
 
 The pub was open. Met the new King 👑
 
-![](https://dgtzuqphqg23d.cloudfront.net/uvQyH4scxl1ZH7tdLxSpjCXf962LkoWmf4Jh_P5iKog-768x576.jpg)
+![](../data/paddle_activities/2022-07-01_cumbria-canoiests-piel-island-camp/29f73f3e-56a6-4c25-8309-2dd931446e59.jpg)
 
 

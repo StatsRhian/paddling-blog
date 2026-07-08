@@ -1,15 +1,14 @@
 ---
 title: "Summer Isles Day 2"
 date: 2024-05-30
-categories: 
-image: https://dgtzuqphqg23d.cloudfront.net/fv-x9o0HIPgEf636NMCcPVmPPaOrhadoeutvgYh7Ank-768x309.jpg
+categories: ["club: tynemouth","sea","summer-isles-2024-tpc-summer-isles"]
+image: ../data/paddle_activities/2024-05-30_summer-isles-day-2/dbfa5ec8-4319-4409-80af-32c29c53a129.jpg
 ---
 
 - Distance: 16.8 km
-- [Strava](https://www.strava.com/activities/11535005120)
 
-Caves and bioluminescence 
+Caves and bioluminescence
 
-![](https://dgtzuqphqg23d.cloudfront.net/fv-x9o0HIPgEf636NMCcPVmPPaOrhadoeutvgYh7Ank-768x309.jpg)
+![](../data/paddle_activities/2024-05-30_summer-isles-day-2/dbfa5ec8-4319-4409-80af-32c29c53a129.jpg)
 
 

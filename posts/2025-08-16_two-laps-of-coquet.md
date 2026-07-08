@@ -2,11 +2,10 @@
 title: "Two laps of Coquet"
 date: 2025-08-16
 categories: ["peer","coquet","leadership","sea"]
-image: https://dgtzuqphqg23d.cloudfront.net/0e8Z9VwPm3oh6V-Fjj6FpqvTv5TeQTNFh32mGpKmjOg-768x432.jpg
+image: ../data/paddle_activities/2025-08-16_two-laps-of-coquet/502b529e-1895-4364-a5bd-a211e96ae716.jpg
 ---
 
-- Distance: 10.2 km
-- [Strava](https://www.strava.com/activities/15477530382)
+- Distance: 10.3 km
 
 The seals were so good we had to go around twice. 
 
@@ -14,6 +13,6 @@ The seals were so good we had to go around twice.
 
 📸 Kev & Josh
 
-![](https://dgtzuqphqg23d.cloudfront.net/0e8Z9VwPm3oh6V-Fjj6FpqvTv5TeQTNFh32mGpKmjOg-768x432.jpg)
+![](../data/paddle_activities/2025-08-16_two-laps-of-coquet/502b529e-1895-4364-a5bd-a211e96ae716.jpg)
 
 

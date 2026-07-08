@@ -2,17 +2,15 @@
 title: "Novice session with TPC"
 date: 2025-03-01
 categories: ["club: tynemouth","tynemouth","sea"]
-image: https://dgtzuqphqg23d.cloudfront.net/KAVVnYegyd9sJe8oDILifZPFd3JFGj6g7GRNOgyUIrY-768x576.jpg
+image: ../data/paddle_activities/2025-03-01_novice-session-with-tpc/bdef5770-203a-4643-a9cc-92bae2c52191.jpg
 ---
 
 - Distance: 10.8 km
-- [Strava](https://www.strava.com/activities/13759578339)
 
 Running a novice session for new paddlers. We met them at Longsands, and then paddled north to Cullercoats to practice skills in the bay. 
 
-Followed by chips at Oswins 😋
+Followed by chips at Oswins 😋
 
-
-![](https://dgtzuqphqg23d.cloudfront.net/KAVVnYegyd9sJe8oDILifZPFd3JFGj6g7GRNOgyUIrY-768x576.jpg)
+![](../data/paddle_activities/2025-03-01_novice-session-with-tpc/bdef5770-203a-4643-a9cc-92bae2c52191.jpg)
 
 

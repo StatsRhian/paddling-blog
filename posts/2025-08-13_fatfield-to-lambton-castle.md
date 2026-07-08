@@ -1,12 +1,11 @@
 ---
 title: "Fatfield to Lambton Castle"
 date: 2025-08-13
-categories: ["peer","river-wear","leadership"]
-image: https://dgtzuqphqg23d.cloudfront.net/V1w7AvyLnCo3pBYs8_CRcbHDyQ96DaIhxQa9YINZ2OE-768x576.jpg
+categories: ["peer","wear","leadership"]
+image: ../data/paddle_activities/2025-08-13_fatfield-to-lambton-castle/53f605f1-e808-42f6-9b5b-8bf164cfeb91.jpg
 ---
 
 - Distance: 6.4 km
-- [Strava](https://www.strava.com/activities/15449271631)
 
 Evening paddle with Keith to Lambton castle. We got on at the Fatfield slipway an hour before high tide. It was a spring tide so plenty of water.
 
@@ -16,6 +15,6 @@ As we paddled to the Lambton estate the tide began to turn, so once we spotted t
 
 We had a little detour to explore a little tunnel near Fatfield bridge. Lovely evening.
 
-![](https://dgtzuqphqg23d.cloudfront.net/V1w7AvyLnCo3pBYs8_CRcbHDyQ96DaIhxQa9YINZ2OE-768x576.jpg)
+![](../data/paddle_activities/2025-08-13_fatfield-to-lambton-castle/53f605f1-e808-42f6-9b5b-8bf164cfeb91.jpg)
 
 

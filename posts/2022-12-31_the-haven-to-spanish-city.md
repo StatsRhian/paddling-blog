@@ -1,15 +1,14 @@
 ---
 title: "The Haven to Spanish City"
 date: 2022-12-31
-categories: []
-image: https://dgtzuqphqg23d.cloudfront.net/PIl7ebH8nm8lNlDiZcyV3F6CIYSZ3JU3F5r6J9axg4A-768x576.jpg
+categories: 
+image: ../data/paddle_activities/2022-12-31_the-haven-to-spanish-city/a359d088-c3ea-4c88-aa4f-cfad42cdf12b.jpg
 ---
 
 - Distance: 13.4 km
-- [Strava](https://www.strava.com/activities/8316721854)
 
 
 
-![](https://dgtzuqphqg23d.cloudfront.net/PIl7ebH8nm8lNlDiZcyV3F6CIYSZ3JU3F5r6J9axg4A-768x576.jpg)
+![](../data/paddle_activities/2022-12-31_the-haven-to-spanish-city/a359d088-c3ea-4c88-aa4f-cfad42cdf12b.jpg)
 
 

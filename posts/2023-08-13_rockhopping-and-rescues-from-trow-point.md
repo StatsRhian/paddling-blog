@@ -2,14 +2,13 @@
 title: "Rockhopping and rescues from Trow Point"
 date: 2023-08-13
 categories: 
-image: https://dgtzuqphqg23d.cloudfront.net/U2rbcfpRoJN7cqtqQru5NL8VSq6-1Bko46CXAJHBBug-768x346.jpg
+image: ../data/paddle_activities/2023-08-13_rockhopping-and-rescues-from-trow-point/70a2b7a5-8e62-42f3-9b0c-2885789d8bb2.jpg
 ---
 
 - Distance: 12.2 km
-- [Strava](https://www.strava.com/activities/9640236747)
 
 
 
-![](https://dgtzuqphqg23d.cloudfront.net/U2rbcfpRoJN7cqtqQru5NL8VSq6-1Bko46CXAJHBBug-768x346.jpg)
+![](../data/paddle_activities/2023-08-13_rockhopping-and-rescues-from-trow-point/70a2b7a5-8e62-42f3-9b0c-2885789d8bb2.jpg)
 
 

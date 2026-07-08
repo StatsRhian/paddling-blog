@@ -1,17 +1,16 @@
 ---
 title: "First dolphins of the season"
 date: 2024-05-19
-categories: []
-image: https://image.mux.com/kCzAUveHGqRKyaMmLO1RaO219JjBIiV02lk026udXwNTs/thumbnail.jpg?width=600&height=338&fit_mode=preserve&time=0
+categories: ["peer","coquet","sea"]
+image: https://placehold.co/600x400/EEE/31343C
 ---
 
 - Distance: 8.8 km
-- [Strava](https://www.strava.com/activities/11446785365)
 
-Round Coquet
-
+Round Coquet
+
 📷 @KMacventures
 
-![](https://image.mux.com/kCzAUveHGqRKyaMmLO1RaO219JjBIiV02lk026udXwNTs/thumbnail.jpg?width=600&height=338&fit_mode=preserve&time=0)
+![](https://placehold.co/600x400/EEE/31343C)
 
 

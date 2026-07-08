@@ -1,15 +1,14 @@
 ---
 title: "Very short paddle!"
 date: 2022-05-26
-categories: []
-image: https://dgtzuqphqg23d.cloudfront.net/Ikd95N5GC9YF2rU3Ry9BdzOqfVwtdLe3xxzye4DxRxI-768x576.jpg
+categories: 
+image: ../data/paddle_activities/2022-05-26_very-short-paddle/987f9458-32c1-49df-b125-01a5a2e8951c.jpg
 ---
 
 - Distance: 1 km
-- [Strava](https://www.strava.com/activities/7207324413)
 
 
 
-![](https://dgtzuqphqg23d.cloudfront.net/Ikd95N5GC9YF2rU3Ry9BdzOqfVwtdLe3xxzye4DxRxI-768x576.jpg)
+![](../data/paddle_activities/2022-05-26_very-short-paddle/987f9458-32c1-49df-b125-01a5a2e8951c.jpg)
 
 

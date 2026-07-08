@@ -2,14 +2,13 @@
 title: "Supporting Windermere One Way"
 date: 2021-08-28
 categories: ["lake","windermere"]
-image: https://dgtzuqphqg23d.cloudfront.net/B_FLdzyantg2L099Q4iX-KJ9XT1F-yz5SY5uTA03cso-768x576.jpg
+image: ../data/paddle_activities/2021-08-28_supporting-windermere-one-way/1e6cc4a5-6cb0-4d0e-8fcf-bfd8eb74b205.jpg
 ---
 
 - Distance: 17.5 km
-- [Strava](https://www.strava.com/activities/5868583283)
 
- Supporting the swim event. My swimmer Keith decided to call the support boat to collect him half way.
+Supporting the swim event. My swimmer Keith decided to call the support boat to collect him half way.
 
-![](https://dgtzuqphqg23d.cloudfront.net/B_FLdzyantg2L099Q4iX-KJ9XT1F-yz5SY5uTA03cso-768x576.jpg)
+![](../data/paddle_activities/2021-08-28_supporting-windermere-one-way/1e6cc4a5-6cb0-4d0e-8fcf-bfd8eb74b205.jpg)
 
 

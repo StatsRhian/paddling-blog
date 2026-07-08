@@ -1,15 +1,14 @@
 ---
 title: "Costa del Piel"
 date: 2022-05-14
-categories: []
-image: https://dgtzuqphqg23d.cloudfront.net/NbY-0Xlj6k5Kb9AVnGFHFL2VWdZSQdNm9j72ZjVklWk-768x576.jpg
+categories: 
+image: ../data/paddle_activities/2022-05-14_costa-del-piel/589e51fa-d8aa-4d0f-81e9-6e410eff634a.jpg
 ---
 
-- Distance: 11.3 km
-- [Strava](https://www.strava.com/activities/7140241666)
+- Distance: NA km
 
 
 
-![](https://dgtzuqphqg23d.cloudfront.net/NbY-0Xlj6k5Kb9AVnGFHFL2VWdZSQdNm9j72ZjVklWk-768x576.jpg)
+![](../data/paddle_activities/2022-05-14_costa-del-piel/589e51fa-d8aa-4d0f-81e9-6e410eff634a.jpg)
 
 

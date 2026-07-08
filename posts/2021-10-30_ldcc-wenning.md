@@ -2,13 +2,11 @@
 title: "LDCC Wenning"
 date: 2021-10-30
 categories: ["club: lancaster","wenning","whitewater"]
-image: https://dgtzuqphqg23d.cloudfront.net/pk9b0fEmTTzI-u0kZsRyKOtyxRrENT44AjpHfn73kVM-768x576.jpg
+image: ../data/paddle_activities/2021-10-30_ldcc-wenning/89567495-40cf-4aba-b499-7ed0a3df73c4.jpg
 ---
 
 - Distance: 4.5 km
-- [Strava](https://www.strava.com/activities/6186773577)
 
-
 With flooding in the lakes, and lots of rivers on huge the choices were limited.
 We decided on the Wenning which was due to be on a scrape (0.6m). However, it was actually more like the high end of a medium (0.9m - 1m). I was a little nervous, particularly about the get on which seems to be rushing through with few eddies. However, once I was on the water I felt pretty steady and confident.
 We skipped the big wave at the bottom - sneaking through the right hand arch which for once had some water flowing through it. 
@@ -18,6 +16,6 @@ A good confidence-building day for my first day back on the river.
 
 Arne Gerber
 
-![](https://dgtzuqphqg23d.cloudfront.net/pk9b0fEmTTzI-u0kZsRyKOtyxRrENT44AjpHfn73kVM-768x576.jpg)
+![](../data/paddle_activities/2021-10-30_ldcc-wenning/89567495-40cf-4aba-b499-7ed0a3df73c4.jpg)
 
 

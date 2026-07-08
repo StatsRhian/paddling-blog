@@ -2,14 +2,13 @@
 title: "Rockhopping on the North coast"
 date: 2024-10-28
 categories: ["course","anglesey","sea"]
-image: https://dgtzuqphqg23d.cloudfront.net/kDX-_PoDLtQ5LXmW4ZhYnl0_3VUhDX2AM9neA5ulCNQ-768x578.jpg
+image: ../data/paddle_activities/2024-10-28_rockhopping-on-the-north-coast/27bda25c-449d-4a25-b4d1-836525797594.jpg
 ---
 
 - Distance: 15.2 km
-- [Strava](https://www.strava.com/activities/12775167129)
 
-Porth Wen brickworks 
+Porth Wen brickworks
 
-![](https://dgtzuqphqg23d.cloudfront.net/kDX-_PoDLtQ5LXmW4ZhYnl0_3VUhDX2AM9neA5ulCNQ-768x578.jpg)
+![](../data/paddle_activities/2024-10-28_rockhopping-on-the-north-coast/27bda25c-449d-4a25-b4d1-836525797594.jpg)
 
 

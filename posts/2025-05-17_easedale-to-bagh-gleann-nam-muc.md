@@ -2,14 +2,13 @@
 title: "Easedale to Bagh Gleann nam Muc"
 date: 2025-05-17
 categories: ["exped","jura","peer","sea"]
-image: https://dgtzuqphqg23d.cloudfront.net/Q_cn0MyV532opLpYzJWewXKOCK6rv4nV4ypDQ4DHw60-768x432.jpg
+image: ../data/paddle_activities/2025-05-17_easedale-to-bagh-gleann-nam-muc/999f51b8-bd53-45c9-b463-4be6445cd2d0.jpg
 ---
 
 - Distance: 20.8 km
-- [Strava](https://www.strava.com/activities/14510279438)
 
 Avoiding the Corrievreckan
 
-![](https://dgtzuqphqg23d.cloudfront.net/Q_cn0MyV532opLpYzJWewXKOCK6rv4nV4ypDQ4DHw60-768x432.jpg)
+![](../data/paddle_activities/2025-05-17_easedale-to-bagh-gleann-nam-muc/999f51b8-bd53-45c9-b463-4be6445cd2d0.jpg)
 
 

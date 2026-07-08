@@ -2,11 +2,10 @@
 title: "Snow on the Howgills"
 date: 2021-12-05
 categories: ["club: lancaster","lune","tebay","whitewater"]
-image: https://dgtzuqphqg23d.cloudfront.net/kPUdVqnnPbSJkUBo8ZW2RiyO2CJCn5PQKXXCi0D-qRs-768x576.jpg
+image: ../data/paddle_activities/2021-12-05_snow-on-the-howgills/3ac3c1b4-49b5-479e-a3ae-0b9d9b951757.jpg
 ---
 
 - Distance: 9.3 km
-- [Strava](https://www.strava.com/activities/6346614339)
 
 The upper upper Lune is one of my favourite paddles. A nice mix of small rapids, and long wider stretches to enjoy. There is a weird tranquillity of paddling nestled in the valley of Tebay. It's easy to forget that you're paddling alongside the M6.
 
@@ -27,6 +26,6 @@ Gibbi started off taking me under his wing for some skill work, then we moved fu
 Overall it was a very good day for it. Huge thanks to Gibbi, Paul & Simon for the coaching.
 Andrew Irvine
 
-![](https://dgtzuqphqg23d.cloudfront.net/kPUdVqnnPbSJkUBo8ZW2RiyO2CJCn5PQKXXCi0D-qRs-768x576.jpg)
+![](../data/paddle_activities/2021-12-05_snow-on-the-howgills/3ac3c1b4-49b5-479e-a3ae-0b9d9b951757.jpg)
 
 

@@ -2,11 +2,10 @@
 title: "Halton Rapids with LDCC"
 date: 2022-01-23
 categories: ["halton-rapids","club: lancaster","whitewater"]
-image: https://dgtzuqphqg23d.cloudfront.net/rQR2cNfKI9J5e0q1eHuZkl2V5nzJrPLh7iHH8900pe8-768x576.jpg
+image: https://placehold.co/600x400/EEE/31343C
 ---
 
 - Distance: 5.4 km
-- [Strava](https://www.strava.com/activities/6569307688)
 
 - 0.50m
 
@@ -18,6 +17,6 @@ Upon returning to the hut we found Dean who had turned up a few weeks early for 
 Thanks again to all coaches for the expert tuition. Another great day out.
 - Chris N
 
-![](https://dgtzuqphqg23d.cloudfront.net/rQR2cNfKI9J5e0q1eHuZkl2V5nzJrPLh7iHH8900pe8-768x576.jpg)
+![](https://placehold.co/600x400/EEE/31343C)
 
 

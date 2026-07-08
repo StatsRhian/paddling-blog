@@ -1,15 +1,14 @@
 ---
 title: "Arbroath cliffs"
 date: 2024-05-27
-categories: []
-image: https://dgtzuqphqg23d.cloudfront.net/zjzj2IL267JMWmgHR1rLOVuXpS0W3ZhB0_yAuaoMEOw-768x432.jpg
+categories: ["peer","arbroath","sea"]
+image: ../data/paddle_activities/2024-05-27_arbroath-cliffs/1bd7adb4-1cc7-4f37-80ed-cd0d760f601e.jpg
 ---
 
 - Distance: 14.3 km
-- [Strava](https://www.strava.com/activities/11527622005)
 
 
 
-![](https://dgtzuqphqg23d.cloudfront.net/zjzj2IL267JMWmgHR1rLOVuXpS0W3ZhB0_yAuaoMEOw-768x432.jpg)
+![](../data/paddle_activities/2024-05-27_arbroath-cliffs/1bd7adb4-1cc7-4f37-80ed-cd0d760f601e.jpg)
 
 
