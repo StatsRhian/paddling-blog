@@ -24,7 +24,7 @@ jobs:
         uses: actions/cache@v4
         with:
           path: /home/runner/work/_temp/Library
-          key: ${{ runner.os }}-r-${{ hashFiles('**/DESCRIPTION') }}
+          key: ${{ runner.os }}-r-${{ hashFiles('.github/workflows/publish.yml') }}
           restore-keys: ${{ runner.os }}-r-
 
       - name: Install system dependencies for sf
