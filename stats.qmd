@@ -20,17 +20,18 @@ processed <-
   readRDS("data/processed_paddles.rds") |>
    sf::st_drop_geometry()
 
-monthly_totals <- 
+monthly_totals <-
   processed |>
   dplyr::mutate(year_month = lubridate::floor_date(start_date, "month")) |>
   dplyr::group_by(year_month) |>
-  dplyr::summarise(distance = sum(distance), .groups = "drop") |>
+  dplyr::summarise(distance = sum(distance, na.rm = TRUE), .groups = "drop") |>
   tidyr::complete(
     year_month = seq(min(year_month), max(year_month), by = "1 month"),
     fill = list(distance = 0)
     )
 
 longest_paddles <- processed |>
+  dplyr::filter(!is.na(distance)) |>
   dplyr::slice_max(distance, n = 10) |>
   dplyr::select(name, start_date, distance, filename)
 ```
@@ -39,7 +40,10 @@ longest_paddles <- processed |>
 ## At a glance
 
 ```{r}
-longest <- processed |> dplyr::slice_max(distance) |> dplyr::select(name, filename, distance)
+longest <- processed |>
+  dplyr::filter(!is.na(distance)) |>
+  dplyr::slice_max(distance, n = 1) |>
+  dplyr::select(name, filename, distance)
 ```
 
 ```{r}
@@ -54,13 +58,13 @@ bslib::layout_columns(
   ),
   bslib::value_box(
     title = "Distance paddled",
-    value = glue::glue("{round(sum(processed$distance))} km"),
+    value = glue::glue("{round(sum(processed$distance, na.rm = TRUE))} km"),
     showcase = bsicons::bs_icon("pin-map-fill"),
     theme = "primary"
   ),
   bslib::value_box(
     title = "Time on the water",
-    value = glue::glue("{round(sum(processed$moving_time_minutes) / 60)} hours"),
+    value = glue::glue("{round(sum(processed$moving_time_minutes, na.rm = TRUE) / 60)} hours"),
     showcase = bsicons::bs_icon("clock-fill"),
     theme = "primary"
   ),
@@ -88,7 +92,7 @@ bslib::layout_columns(
 year_count <- processed |>
   dplyr::mutate(year = lubridate::year(start_date)) |>
   dplyr::group_by(year) |>
-  dplyr::summarise(total_km = sum(distance),
+  dplyr::summarise(total_km = sum(distance, na.rm = TRUE),
                    count = n()) |>
   tidyr::pivot_longer(
     cols = c(total_km, count),
