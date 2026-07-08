@@ -31,8 +31,23 @@ jobs:
       - name: Generate posts
         run: Rscript update.R
 
+      - name: Render site with Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+      - run: quarto render
+
       - name: Commit generated files
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: ":card_file_box: Update geojson and posts [skip ci]"
           file_pattern: "data/paddle_traces.geojson data/processed_paddles.rds"
+
+      - name: Deploy to Netlify
+        uses: nwtgck/actions-netlify@v2.1
+        with:
+          publish-dir: "./_site"
+          production-branch: main
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          deploy-message: "Deploy from GitHub Actions"
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
