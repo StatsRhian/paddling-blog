@@ -12,5 +12,6 @@
 **/*.quarto_ipynb
 
 data/paddle_activities.csv
+data/processed_paddles.rds
 __pycache__/
 *.pyc
