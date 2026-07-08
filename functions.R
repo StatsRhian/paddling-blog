@@ -44,6 +44,7 @@ get_categories <- function(activity) {
         .x %in% c("tpc") ~ "club: tynemouth",
         .x %in% c("tcc") ~ "club: tynemouth",
         .x %in% c("cc") ~ "club: cumbria",
+        .x %in% c("wpc") ~ "club: wansbeck",
         TRUE ~ .x
       )
     )
@@ -58,29 +59,57 @@ get_image <- function(id) {
   glue::glue("../data/paddle_activities/{id}/{images[1]}")
 }
 
+read_activity_meta <- function() {
+  paths <- list.files("data/paddle_activities",
+                      pattern = "meta\\.yaml$",
+                      recursive = TRUE,
+                      full.names = TRUE)
+
+  activities <- purrr::map_dfr(paths, ~ {
+    yaml_data <- yaml::read_yaml(.x)
+    # Ensure tags is always a list, even if missing
+    if (is.null(yaml_data$tags)) {
+      yaml_data$tags <- list()
+    }
+    tibble::as_tibble(yaml_data)
+  })
+
+  activities
+}
+
 process_paddles <- function() {
-  activities <- readr::read_csv("data/paddle_activities.csv")
+  activities <- read_activity_meta()
   traces <- sf::read_sf("data/paddle_traces.geojson")
-  combined <- dplyr::left_join(activities, traces, by = c("ID" = "activity_id"))
+  combined <- dplyr::left_join(activities, traces, by = c("id" = "activity_id"))
 
   processed_paddles <-
     combined |>
     dplyr::mutate(
-      id = ID,
-      name = sanitise_name(Title), 
-      start_date = lubridate::ymd(Date),
-      description = Description,
-      moving_time_minutes = duration_s / 60,
-      distance = distance_m / 1000,
-      categories = purrr::map(.x = `Private Notes`, .f = get_categories),
-      club = purrr::map(.x = categories, .f = get_club),
+      name = sanitise_name(title),
+      start_date = lubridate::ymd(date),
+      club = club %||% NA_character_,
+      venue = venue %||% NA_character_,
+      tags = purrr::map(.x = tags, .f = ~ .x %||% list()),
+      # Combine club, venue, and tags into categories for site filtering
+      categories = purrr::pmap(
+        list(club = club, venue = venue, tags = tags),
+        function(club, venue, tags) {
+          c(
+            if (!is.na(club) && club != "") club else NULL,
+            if (!is.na(venue) && venue != "") venue else NULL,
+            unlist(tags)
+          )
+        }
+      ),
       image = purrr::map_chr(.x = id, .f = get_image),
-      filename = glue::glue("posts/{id}.md")
+      filename = glue::glue("posts/{id}.md"),
+      moving_time_minutes = duration_s / 60,
+      distance = distance_m / 1000
     ) |>
     dplyr::select(
       id, name, start_date, distance,
       moving_time_minutes, description,
-      categories, club, image, filename, geometry
+      categories, club, venue, tags, image, filename, geometry
     )
 
   saveRDS(processed_paddles, "data/processed_paddles.rds")

@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """Minimal TUI to add a new paddle activity."""
 
-import csv
 from datetime import datetime
 from pathlib import Path
 import re
@@ -24,13 +23,16 @@ def generate_id(date: str, title: str) -> str:
     return f"{date}_{slugify(title)}"
 
 
-def get_user_input(prompt: str, allow_empty: bool = False, allow_multiline: bool = False) -> str:
+def get_user_input(prompt: str, allow_empty: bool = False, allow_multiline: bool = False, default: str = None) -> str:
     """Get input from user with validation."""
     while True:
         if allow_multiline:
             print(f"\n{prompt}: (Enter text, press Enter twice to finish)")
         else:
-            print(f"\n{prompt}:")
+            if default:
+                print(f"\n{prompt} [{default}]:")
+            else:
+                print(f"\n{prompt}:")
 
         lines = []
         empty_count = 0
@@ -45,7 +47,11 @@ def get_user_input(prompt: str, allow_empty: bool = False, allow_multiline: bool
                 # Single-line mode: submit immediately
                 value = line.strip()
                 value = ''.join(c for c in value if ord(c) >= 32 or c == '\n')
-                if value or allow_empty:
+                if value:
+                    return value
+                if default:
+                    return default
+                if allow_empty:
                     return value
                 print("  ⚠️  This field is required.")
                 break
@@ -85,20 +91,16 @@ def validate_date(date_str: str) -> bool:
 
 def main():
     data_dir = Path(__file__).parent / "data"
-    csv_path = data_dir / "paddle_activities.csv"
     activities_dir = data_dir / "paddle_activities"
-
-    if not csv_path.exists():
-        print("❌ Error: paddle_activities.csv not found")
-        sys.exit(1)
 
     print("\n" + "=" * 50)
     print("  🛶 Add New Paddle Activity")
     print("=" * 50)
 
-    # Get date
+    # Get date (default to today)
+    today = datetime.now().strftime("%Y-%m-%d")
     while True:
-        date_input = get_user_input("Date (YYYY-MM-DD)")
+        date_input = get_user_input("Date (YYYY-MM-DD)", default=today)
         if validate_date(date_input):
             # Extract the actual date in case there are extra characters
             match = re.search(r'\d{4}-\d{2}-\d{2}', date_input)
@@ -112,8 +114,36 @@ def main():
     # Get description
     description = get_user_input("Description", allow_empty=True, allow_multiline=True)
 
-    # Get notes
-    notes = get_user_input("Private Notes", allow_empty=True)
+    # Get club (with shorthand expansion)
+    club_abbrev_map = {
+        "tpc": "tynemouth",
+        "tcc": "tynemouth",
+        "lcc": "lakeland",
+        "ldcc": "lancaster",
+        "ucc": "ulverston",
+        "cc": "cumbria",
+        "wpc": "wansbeck"
+    }
+    while True:
+        club_input = get_user_input("Club (tpc/lcc/ldcc/ucc/cc/wpc/tynemouth/cumbria/lakeland/lancaster/ulverston/wansbeck/peer/solo)", allow_empty=True)
+        if not club_input:
+            club = "peer"
+            break
+        club_lower = club_input.lower()
+        club = club_abbrev_map.get(club_lower, club_lower)
+        if club in ["tynemouth", "cumbria", "lakeland", "lancaster", "ulverston", "wansbeck", "peer", "solo"]:
+            break
+        print("  ⚠️  Invalid club. Must be one of: tpc, lcc, ldcc, ucc, cc, wpc, tynemouth, cumbria, lakeland, lancaster, ulverston, wansbeck, peer, solo")
+
+    # Get venue
+    venue = get_user_input("Venue (default: leave blank)", allow_empty=True)
+    if not venue:
+        venue = ""
+
+    # Get tags
+    tags_input = get_user_input("Tags (comma-separated, optional)", allow_empty=True)
+    tags = [t.strip() for t in tags_input.split(",")] if tags_input else []
+    tags = [t for t in tags if t]  # Remove empty strings
 
     # Generate ID
     activity_id = generate_id(date, title)
@@ -127,14 +157,32 @@ def main():
         print(f"\n❌ Error creating folder: {e}")
         sys.exit(1)
 
-    # Append to CSV
+    # Write meta.yaml (manually formatted to avoid YAML quoting dates)
     try:
-        with open(csv_path, "a", newline="", encoding="utf-8") as f:
-            writer = csv.writer(f)
-            writer.writerow([activity_id, date, title, description, notes])
-        print("✅ Added to paddle_activities.csv")
+        yaml_lines = [
+            f"id: {activity_id}",
+            f"date: {date}",
+            f"title: {title}",
+        ]
+        if club:
+            yaml_lines.append(f"club: {club}")
+        if venue:
+            yaml_lines.append(f"venue: {venue}")
+        if tags:
+            yaml_lines.append("tags:")
+            for tag in tags:
+                yaml_lines.append(f"  - {tag}")
+        if description:
+            yaml_lines.append("description: |")
+            for desc_line in description.split("\n"):
+                yaml_lines.append(f"  {desc_line}")
+
+        yaml_path = activity_folder / "meta.yaml"
+        with open(yaml_path, "w", encoding="utf-8") as f:
+            f.write("\n".join(yaml_lines))
+        print("✅ Created meta.yaml")
     except Exception as e:
-        print(f"\n❌ Error writing to CSV: {e}")
+        print(f"\n❌ Error writing meta.yaml: {e}")
         sys.exit(1)
 
     print("\n" + "=" * 50)
