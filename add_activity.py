@@ -157,21 +157,24 @@ def main():
         print(f"\n❌ Error creating folder: {e}")
         sys.exit(1)
 
-    # Write meta.yaml (manually formatted to avoid YAML quoting dates)
+    # Write meta.yaml (quote all fields for consistency and safety)
     try:
+        # Sanitise title: remove quotes and colons (matching R's sanitise_name function)
+        title_sanitised = title.replace('"', '').replace(':', '')
+
         yaml_lines = [
-            f"id: {activity_id}",
-            f"date: {date}",
-            f"title: {title}",
+            f'id: "{activity_id}"',
+            f'date: "{date}"',
+            f'title: "{title_sanitised}"',
         ]
         if club:
-            yaml_lines.append(f"club: {club}")
+            yaml_lines.append(f'club: "{club}"')
         if venue:
-            yaml_lines.append(f"venue: {venue}")
+            yaml_lines.append(f'venue: "{venue}"')
         if tags:
             yaml_lines.append("tags:")
             for tag in tags:
-                yaml_lines.append(f"  - {tag}")
+                yaml_lines.append(f'  - "{tag}"')
         if description:
             yaml_lines.append("description: |")
             for desc_line in description.split("\n"):

@@ -65,16 +65,26 @@ read_activity_meta <- function() {
                       recursive = TRUE,
                       full.names = TRUE)
 
-  activities <- purrr::map_dfr(paths, ~ {
+  purrr::map_dfr(paths, ~ {
     yaml_data <- yaml::read_yaml(.x)
-    # Ensure tags is always a list, even if missing
-    if (is.null(yaml_data$tags)) {
-      yaml_data$tags <- list()
-    }
-    tibble::as_tibble(yaml_data)
-  })
 
-  activities
+    # Normalize tags to character vector
+    tags_value <- if (is.null(yaml_data$tags)) {
+      character(0)
+    } else {
+      unlist(yaml_data$tags, use.names = FALSE)
+    }
+
+    tibble::tibble(
+      id = yaml_data$id,
+      date = yaml_data$date,
+      title = yaml_data$title,
+      club = yaml_data$club %||% NA_character_,
+      venue = yaml_data$venue %||% NA_character_,
+      description = yaml_data$description %||% "",
+      tags = list(tags_value)
+    )
+  })
 }
 
 process_paddles <- function() {
@@ -94,11 +104,11 @@ process_paddles <- function() {
       categories = purrr::pmap(
         list(club = club, venue = venue, tags = tags),
         function(club, venue, tags) {
-          c(
-            if (!is.na(club) && club != "") club else NULL,
-            if (!is.na(venue) && venue != "") venue else NULL,
-            unlist(tags)
-          )
+          result <- character()
+          if (!is.na(club) && club != "") result <- c(result, club)
+          if (!is.na(venue) && venue != "") result <- c(result, venue)
+          if (length(tags) > 0) result <- c(result, as.character(unlist(tags)))
+          result
         }
       ),
       image = purrr::map_chr(.x = id, .f = get_image),
