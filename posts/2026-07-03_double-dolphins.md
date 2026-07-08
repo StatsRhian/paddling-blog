@@ -2,7 +2,7 @@
 title: "Double dolphins"
 date: 2026-07-03
 categories: ["peer","sea","south-shields"]
-image: ../data/paddle_activities/2026-07-03_double-dolphins/_bfMFRs2ncqt_Plq59q0SfNJP658BSZ4HIE_J4Wl9DM-1536x2048.jpg
+image: ../data/paddle_activities/2026-07-03_double-dolphins/CtN1R5gKPD1woLTow92PQ2APBZ5EDdUhvLHOtQL4uCI-2048x1535.jpg
 ---
 
 - Distance: 15.5 km
@@ -13,6 +13,6 @@ Saw a pod of about 8 bottle nose dolphins near Souter point, including Emel (#18
 
 On the way back we saw a different pod much further out. Potentially white beaked dolphins by the look of their side breaching.
 
-![](../data/paddle_activities/2026-07-03_double-dolphins/_bfMFRs2ncqt_Plq59q0SfNJP658BSZ4HIE_J4Wl9DM-1536x2048.jpg)
+![](../data/paddle_activities/2026-07-03_double-dolphins/CtN1R5gKPD1woLTow92PQ2APBZ5EDdUhvLHOtQL4uCI-2048x1535.jpg)
 
 

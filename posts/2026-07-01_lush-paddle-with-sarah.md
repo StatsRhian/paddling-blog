@@ -18,3 +18,5 @@ By the time we got back around the pier the Tyne was totally different to when w
 Finished the evening with a hot chocolate and a chat with Tim at the club.
 
 ![](../data/paddle_activities/2026-07-01_lush-paddle-with-sarah/mhPanag5K8z7qZtAEpBfRh86dupGhcycxjgf9Q4DmpU-1536x2048.jpg)
+
+
