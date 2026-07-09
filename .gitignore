@@ -13,5 +13,6 @@
 
 data/paddle_activities.csv
 data/processed_paddles.rds
+data/paddle_traces.geojson
 __pycache__/
 *.pyc
