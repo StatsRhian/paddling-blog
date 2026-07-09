@@ -7,5 +7,4 @@ dir.create("posts", showWarnings = FALSE)
 source("paddle_post.R")
 processed_paddles <- readRDS("data/processed_paddles.rds")
 purrr::walk(processed_paddles$id, \(x) paddle_post(x, processed_paddles))
-
-
+cli::cli_alert_success("Posts created")

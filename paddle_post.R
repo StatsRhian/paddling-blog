@@ -16,7 +16,7 @@ image: {{ image }}
   paddle <- detailed_paddles |>
     dplyr::filter(id == selected_id)
 
-  template |>
+  rendered <- template |>
     jinjar::render(
       name = paddle$name,
       date = paddle$start_date,
@@ -24,6 +24,7 @@ image: {{ image }}
       distance = round(paddle$distance, 1),
       description = paddle$description,
       image = paddle$image
-    ) |>
-    writeLines(paddle$filename)
+    )
+  filename <- paste(paddle$filename, collapse = "")
+  writeLines(rendered, filename)
 }
