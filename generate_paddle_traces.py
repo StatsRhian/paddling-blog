@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """Generate GeoJSON traces and distance data for all paddle activities."""
 
-import csv
 import json
 import sys
 from pathlib import Path
@@ -11,7 +10,6 @@ from trace_extraction import extract_track
 DATA_DIR = Path(__file__).parent / "data"
 PADDLE_ACTIVITIES_DIR = DATA_DIR / "paddle_activities"
 TRACES_GEOJSON = DATA_DIR / "paddle_traces.geojson"
-ACTIVITIES_CSV = DATA_DIR / "paddle_activities.csv"
 
 
 def load_existing_ids(file_path):
@@ -78,28 +76,20 @@ def main():
 
     DATA_DIR.mkdir(exist_ok=True)
 
-    if not ACTIVITIES_CSV.exists():
-        print(f"Error: {ACTIVITIES_CSV} not found")
-        return
-
     # Load existing processed IDs
     existing_ids = load_existing_ids(TRACES_GEOJSON) if not force_all else set()
 
     # Load existing GeoJSON features
     geojson_features = load_geojson_features() if not force_all else {}
 
-    # Read activities CSV
-    activities = []
-    with open(ACTIVITIES_CSV, "r", encoding="utf-8") as f:
-        reader = csv.DictReader(f)
-        activities = list(reader)
+    # Discover activity IDs from folder names
+    activity_ids = sorted([d.name for d in PADDLE_ACTIVITIES_DIR.iterdir() if d.is_dir()])
 
     processed = 0
     skipped = 0
     missing_files = 0
 
-    for activity in activities:
-        activity_id = activity["ID"]
+    for activity_id in activity_ids:
 
         # Check if already processed
         if activity_id in existing_ids and activity_id not in force_ids:
@@ -149,7 +139,7 @@ def main():
         json.dump(geojson_data, f, indent=2)
 
     # Print summary
-    total = len(activities)
+    total = len(activity_ids)
     print(f"\nTrace generation complete!")
     print(f"  Total activities: {total}")
     print(f"  Processed: {processed}")
