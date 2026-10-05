@@ -24,7 +24,7 @@ paddle_geom |>
     )) |>
   dplyr::mutate(label = purrr::map(label, htmltools::HTML)) |>
   leaflet::leaflet(width = "100%", height = 700) |>
-  leaflet::addProviderTiles("CartoDB.Voyager") |>
+  leaflet::addTiles() |>
   leaflet::addPolylines(
     weight = 5,
     color = "purple",
