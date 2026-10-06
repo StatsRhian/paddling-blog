@@ -24,7 +24,9 @@ paddle_geom |>
     )) |>
   dplyr::mutate(label = purrr::map(label, htmltools::HTML)) |>
   leaflet::leaflet(width = "100%", height = 700) |>
-  leaflet::addTiles() |>
+    leaflet::addProviderTiles(
+      leaflet::providers$OpenTopoMap
+  )|>
   leaflet::addPolylines(
     weight = 5,
     color = "purple",
@@ -37,7 +39,7 @@ paddle_geom |>
       opacity = 1,
       bringToFront = TRUE
   )) |>
-  leaflet::setView(-3, 56, zoom = 7) |>
+  leaflet::setView(-3, 56, zoom = 6) |>
   leaflet.extras::addFullscreenControl() |>
     htmlwidgets::onRender("
     function(el, x) {
