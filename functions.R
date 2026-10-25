@@ -59,6 +59,14 @@ get_image <- function(id) {
   glue::glue("../data/paddle_activities/{id}/{images[1]}")
 }
 
+
+get_photos <- function(id) {
+  folder <- file.path("data", "paddle_activities", id)
+  photo_filepaths <- list.files(folder, pattern = "\\.(jpe?g|png)$", ignore.case = TRUE, full.names = TRUE)
+  return(glue::glue("../{photo_filepaths}"))
+}
+
+
 read_activity_meta <- function() {
   paths <- list.files("data/paddle_activities",
                       pattern = "meta\\.yaml$",
@@ -112,6 +120,7 @@ process_paddles <- function() {
         }
       ),
       image = purrr::map_chr(.x = id, .f = get_image),
+      photos = purrr::map(.x = id, .f = get_photos),
       filename = glue::glue("posts/{id}.md"),
       moving_time_minutes = duration_s / 60,
       distance = distance_m / 1000
@@ -119,7 +128,7 @@ process_paddles <- function() {
     dplyr::select(
       id, name, start_date, distance,
       moving_time_minutes, description,
-      categories, club, venue, tags, image, filename, geometry
+      categories, club, venue, tags, image, photos, filename, geometry
     )
 
   saveRDS(processed_paddles, "data/processed_paddles.rds")
