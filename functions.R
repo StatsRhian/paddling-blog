@@ -1,50 +1,18 @@
-#' Native R slugify (with the help of {stringi})
-#'
-#'
-#' @param x string to slugify
-#' @export
-slugify <- function(x) {
-  x <- stringr::str_replace_all(x, "[^\\P{P}-]", "")
-  x <- stringr::str_trim(x)
-  x <- stringr::str_replace_all(x, "[[:space:]]+", "-")
-  x <- stringr::str_to_lower(x)
-  x
-}
-
-
-get_club <- function(x) {
-  dplyr::case_when(
-    any(grepl("^club:", x)) ~ x[grepl("^club:", x)][1],
-    "peer" %in% x ~ "peer",
-    "solo" %in% x ~ "solo",
-    "course" %in% x ~ "course",
-    "race" %in% x ~ "race",
-    TRUE ~ NA_character_
-  )
-}
-
 sanitise_name <- function(name) {
   name |>
     stringr::str_remove_all('[":]')
 }
 
-get_categories <- function(activity) {
-  activity |>
-    stringr::str_split(",") |>
-    purrr::pluck(1) |>
-    stringr::str_trim() |>
-    stringr::str_squish() |>
-    stringr::str_replace_all(" ", "-") |>
-    stringr::str_to_lower() |>
-    purrr::map_chr(
+prefix_club <- function(club){
+  club |>
+   purrr::map_chr(
       ~ dplyr::case_when(
-        .x %in% c("lcc") ~ "club: lakeland",
-        .x %in% c("ldcc") ~ "club: lancaster",
-        .x %in% c("ucc") ~ "club: ulverston",
-        .x %in% c("tpc") ~ "club: tynemouth",
-        .x %in% c("tcc") ~ "club: tynemouth",
-        .x %in% c("cc") ~ "club: cumbria",
-        .x %in% c("wpc") ~ "club: wansbeck",
+        .x %in% c("lcc", "lakeland") ~ "club: lakeland",
+        .x %in% c("ldcc", "lancaster") ~ "club: lancaster",
+        .x %in% c("ucc", "ulverston") ~ "club: ulverston",
+        .x %in% c("tpc", "tcc", "tynemouth") ~ "club: tynemouth",
+        .x %in% c("cc", "cumbria") ~ "club: cumbria",
+        .x %in% c("wpc", "wansbeck") ~ "club: wansbeck",
         TRUE ~ .x
       )
     )
@@ -105,7 +73,7 @@ process_paddles <- function() {
     dplyr::mutate(
       name = sanitise_name(title),
       start_date = lubridate::ymd(date),
-      club = club %||% NA_character_,
+      club = prefix_club(club) %||% NA_character_,
       venue = venue %||% NA_character_,
       tags = purrr::map(.x = tags, .f = ~ .x %||% list()),
       # Combine club, venue, and tags into categories for site filtering
