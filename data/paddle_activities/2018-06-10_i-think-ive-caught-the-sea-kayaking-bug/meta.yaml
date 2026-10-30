@@ -1,9 +1,9 @@
 id: "2018-06-10_i-think-ive-caught-the-sea-kayaking-bug"
 date: "2018-06-10"
 title: "I think I've caught the sea kayaking bug"
-club: "course"
 venue: "anglesey"
-tags: []
+tags:
+  - "course"
 description: |
   Day 2 of Sea Kayak Anglesey Intromediate course with Stu Leslie.
   

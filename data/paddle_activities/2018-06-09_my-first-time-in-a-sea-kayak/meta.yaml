@@ -1,9 +1,9 @@
 id: "2018-06-09_my-first-time-in-a-sea-kayak"
 date: "2018-06-09"
 title: "My first time in a sea kayak"
-club: "course"
 venue: "anglesey"
-tags: []
+tags:
+  - "course"
 description: |
   After years of thinking I'd quite like to try that sea kayaking thing, I decided to I book an Intromediate sea kayaking course with Sea Kayaking Anglesey. At the time it was run by Phil Clegg but I had Stu Leslie as my guide. 
   
